@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0F1135254C948500CDAC68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */; };
+		3A0F1139254CA2FD00CDAC68 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F1138254CA2FD00CDAC68 /* Utilities.swift */; };
+		3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F9F3E254CB6C800B5121A /* Constants.swift */; };
 		3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E186254C5BE60064B494 /* AppDelegate.swift */; };
 		3AF3E189254C5BE60064B494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E188254C5BE60064B494 /* SceneDelegate.swift */; };
 		3AF3E190254C5BE60064B494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF3E18E254C5BE60064B494 /* Main.storyboard */; };
@@ -16,9 +19,17 @@
 		3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E19E254C63FF0064B494 /* Actions.swift */; };
 		3AF3E1A1254C641D0064B494 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A0254C641D0064B494 /* Leaderboard.swift */; };
 		3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A2254C642B0064B494 /* Rewards.swift */; };
+		3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A4254C696B0064B494 /* SignUpViewController.swift */; };
+		3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A6254C69790064B494 /* LogInViewController.swift */; };
+		3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A8254C698E0064B494 /* StartViewController.swift */; };
+		73302C0C1E9CF8148D28FE11 /* Pods_SustainableEarthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B074E14351AD7CE3AD5FEB /* Pods_SustainableEarthApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20B074E14351AD7CE3AD5FEB /* Pods_SustainableEarthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SustainableEarthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A0F1138254CA2FD00CDAC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		3A7F9F3E254CB6C800B5121A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3AF3E183254C5BE60064B494 /* SustainableEarthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SustainableEarthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF3E186254C5BE60064B494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF3E188254C5BE60064B494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +41,11 @@
 		3AF3E19E254C63FF0064B494 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		3AF3E1A0254C641D0064B494 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		3AF3E1A2254C642B0064B494 /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
+		3AF3E1A4254C696B0064B494 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3AF3E1A6254C69790064B494 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3AF3E1A8254C698E0064B494 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		57E7C4279809100E7A84DDE0 /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
+		B9889CF6DBBB5F6AA1FFEC12 /* Pods-SustainableEarthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.debug.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73302C0C1E9CF8148D28FE11 /* Pods_SustainableEarthApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +65,8 @@
 			children = (
 				3AF3E185254C5BE60064B494 /* SustainableEarthApp */,
 				3AF3E184254C5BE60064B494 /* Products */,
+				AC771AE310683DA696A76C12 /* Pods */,
+				940344DF088054B0C9E6996E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,15 +84,54 @@
 				3AF3E186254C5BE60064B494 /* AppDelegate.swift */,
 				3AF3E188254C5BE60064B494 /* SceneDelegate.swift */,
 				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
+				3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */,
+				3AF3E1AB254C910C0064B494 /* ViewControllers */,
+				3AF3E1AA254C8F960064B494 /* Helpers */,
 				3AF3E191254C5BEC0064B494 /* Assets.xcassets */,
 				3AF3E193254C5BEC0064B494 /* LaunchScreen.storyboard */,
 				3AF3E196254C5BEC0064B494 /* Info.plist */,
+			);
+			path = SustainableEarthApp;
+			sourceTree = "<group>";
+		};
+		3AF3E1AA254C8F960064B494 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A0F1138254CA2FD00CDAC68 /* Utilities.swift */,
+				3A7F9F3E254CB6C800B5121A /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3AF3E1AB254C910C0064B494 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AF3E1A8254C698E0064B494 /* StartViewController.swift */,
+				3AF3E1A6254C69790064B494 /* LogInViewController.swift */,
+				3AF3E1A4254C696B0064B494 /* SignUpViewController.swift */,
 				3AF3E19C254C63F00064B494 /* Home.swift */,
 				3AF3E19E254C63FF0064B494 /* Actions.swift */,
 				3AF3E1A0254C641D0064B494 /* Leaderboard.swift */,
 				3AF3E1A2254C642B0064B494 /* Rewards.swift */,
 			);
-			path = SustainableEarthApp;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		940344DF088054B0C9E6996E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20B074E14351AD7CE3AD5FEB /* Pods_SustainableEarthApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC771AE310683DA696A76C12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9889CF6DBBB5F6AA1FFEC12 /* Pods-SustainableEarthApp.debug.xcconfig */,
+				57E7C4279809100E7A84DDE0 /* Pods-SustainableEarthApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AF3E199254C5BEC0064B494 /* Build configuration list for PBXNativeTarget "SustainableEarthApp" */;
 			buildPhases = (
+				38322C46ECE7823435B3F7E1 /* [CP] Check Pods Manifest.lock */,
 				3AF3E17F254C5BE60064B494 /* Sources */,
 				3AF3E180254C5BE60064B494 /* Frameworks */,
 				3AF3E181254C5BE60064B494 /* Resources */,
+				97D97C519FC550AFFCA1CF06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF3E195254C5BEC0064B494 /* LaunchScreen.storyboard in Resources */,
+				3A0F1135254C948500CDAC68 /* GoogleService-Info.plist in Resources */,
 				3AF3E192254C5BEC0064B494 /* Assets.xcassets in Resources */,
 				3AF3E190254C5BE60064B494 /* Main.storyboard in Resources */,
 			);
@@ -142,16 +203,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38322C46ECE7823435B3F7E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SustainableEarthApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97D97C519FC550AFFCA1CF06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3AF3E17F254C5BE60064B494 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3AF3E19D254C63F00064B494 /* Home.swift in Sources */,
+				3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */,
+				3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */,
 				3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */,
 				3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */,
+				3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */,
+				3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */,
 				3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */,
 				3AF3E189254C5BE60064B494 /* SceneDelegate.swift in Sources */,
+				3A0F1139254CA2FD00CDAC68 /* Utilities.swift in Sources */,
 				3AF3E1A1254C641D0064B494 /* Leaderboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +402,7 @@
 		};
 		3AF3E19A254C5BEC0064B494 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9889CF6DBBB5F6AA1FFEC12 /* Pods-SustainableEarthApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +420,7 @@
 		};
 		3AF3E19B254C5BEC0064B494 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E7C4279809100E7A84DDE0 /* Pods-SustainableEarthApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
