@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
 
-    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
-    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
     
@@ -26,6 +27,28 @@ class LogInViewController: UIViewController {
     func setUpElements(){
         errorLabel.alpha = 0
     }
+    
+    func transitionToHome(){
+           let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? UITabBarController
+           
+           view.window?.rootViewController = homeViewController
+           view.window?.makeKeyAndVisible()
+    }
+    func validateFields() -> String?{
+        // Check all fields are filled
+        if emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            
+            return "Please fill in all fields."
+        }
+        
+        return nil
+    }
+    func showError(_ message:String){
+        errorLabel.text = message
+        errorLabel.alpha = 1
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -37,5 +60,26 @@ class LogInViewController: UIViewController {
     */
 
     @IBAction func logInTapped(_ sender: Any) {
+        // Validate Text Fields
+        let error = self.validateFields()
+        
+        if error != nil {
+            showError(error!)
+        } else {
+            // Create clean versions of text fields
+            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            // Signing in the user
+            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                
+                if error != nil{
+                    self.errorLabel.text = error!.localizedDescription
+                    self.errorLabel.alpha = 1
+                } else {
+                    
+                    self.transitionToHome()
+                }
+            }
+        }
     }
 }

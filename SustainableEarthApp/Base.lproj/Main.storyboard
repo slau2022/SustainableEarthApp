@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exE-NA-rrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-610" y="-826"/>
+            <point key="canvasLocation" x="493" y="-1681"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -138,7 +138,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-17" y="-140"/>
+            <point key="canvasLocation" x="-364" y="-143"/>
         </scene>
         <!--Actions-->
         <scene sceneID="c8f-L8-RMW">
@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbz-nH-3YA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299" y="-1595"/>
+            <point key="canvasLocation" x="-610" y="-1451"/>
         </scene>
         <!--Log In-->
         <scene sceneID="TK5-xF-EWN">
@@ -305,12 +305,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="x5H-a7-mxx">
                                 <rect key="frame" x="40" y="84" width="334" height="220"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wQ-fz-RGp">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wQ-fz-RGp">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELx-tW-uNb">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELx-tW-uNb">
                                         <rect key="frame" x="0.0" y="60" width="334" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -349,15 +349,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="xLg-cz-JMW"/>
                     <connections>
+                        <outlet property="emailTextField" destination="2wQ-fz-RGp" id="c8d-FW-1wU"/>
                         <outlet property="errorLabel" destination="imy-az-fmi" id="rbF-pD-jk7"/>
-                        <outlet property="firstNameTextField" destination="2wQ-fz-RGp" id="hiW-bW-Vi6"/>
-                        <outlet property="lastNameTextField" destination="ELx-tW-uNb" id="fmi-af-T2E"/>
                         <outlet property="loginButton" destination="m5d-EC-5ZH" id="vNC-Gx-9uR"/>
+                        <outlet property="passwordTextField" destination="ELx-tW-uNb" id="PVD-Lu-O5T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKA-MT-pid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299" y="-826"/>
+            <point key="canvasLocation" x="493" y="-965"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K9v-hK-2Ey">
@@ -374,7 +374,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOf-Mo-FxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-610" y="-1595"/>
+            <point key="canvasLocation" x="-1488" y="-1403"/>
         </scene>
     </scenes>
     <resources>
