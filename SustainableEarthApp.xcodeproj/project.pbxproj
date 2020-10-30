@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E186254C5BE60064B494 /* AppDelegate.swift */; };
 		3AF3E189254C5BE60064B494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E188254C5BE60064B494 /* SceneDelegate.swift */; };
-		3AF3E18B254C5BE60064B494 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E18A254C5BE60064B494 /* FirstViewController.swift */; };
-		3AF3E18D254C5BE60064B494 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E18C254C5BE60064B494 /* SecondViewController.swift */; };
 		3AF3E190254C5BE60064B494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF3E18E254C5BE60064B494 /* Main.storyboard */; };
 		3AF3E192254C5BEC0064B494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF3E191254C5BEC0064B494 /* Assets.xcassets */; };
 		3AF3E195254C5BEC0064B494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF3E193254C5BEC0064B494 /* LaunchScreen.storyboard */; };
+		3AF3E19D254C63F00064B494 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E19C254C63F00064B494 /* Home.swift */; };
+		3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E19E254C63FF0064B494 /* Actions.swift */; };
+		3AF3E1A1254C641D0064B494 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A0254C641D0064B494 /* Leaderboard.swift */; };
+		3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A2254C642B0064B494 /* Rewards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AF3E183254C5BE60064B494 /* SustainableEarthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SustainableEarthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF3E186254C5BE60064B494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF3E188254C5BE60064B494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AF3E18A254C5BE60064B494 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3AF3E18C254C5BE60064B494 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3AF3E18F254C5BE60064B494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AF3E191254C5BEC0064B494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF3E194254C5BEC0064B494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AF3E196254C5BEC0064B494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF3E19C254C63F00064B494 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		3AF3E19E254C63FF0064B494 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		3AF3E1A0254C641D0064B494 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		3AF3E1A2254C642B0064B494 /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +64,14 @@
 			children = (
 				3AF3E186254C5BE60064B494 /* AppDelegate.swift */,
 				3AF3E188254C5BE60064B494 /* SceneDelegate.swift */,
-				3AF3E18A254C5BE60064B494 /* FirstViewController.swift */,
-				3AF3E18C254C5BE60064B494 /* SecondViewController.swift */,
 				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
 				3AF3E191254C5BEC0064B494 /* Assets.xcassets */,
 				3AF3E193254C5BEC0064B494 /* LaunchScreen.storyboard */,
 				3AF3E196254C5BEC0064B494 /* Info.plist */,
+				3AF3E19C254C63F00064B494 /* Home.swift */,
+				3AF3E19E254C63FF0064B494 /* Actions.swift */,
+				3AF3E1A0254C641D0064B494 /* Leaderboard.swift */,
+				3AF3E1A2254C642B0064B494 /* Rewards.swift */,
 			);
 			path = SustainableEarthApp;
 			sourceTree = "<group>";
@@ -141,10 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF3E18D254C5BE60064B494 /* SecondViewController.swift in Sources */,
-				3AF3E18B254C5BE60064B494 /* FirstViewController.swift in Sources */,
+				3AF3E19D254C63F00064B494 /* Home.swift in Sources */,
+				3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */,
+				3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */,
 				3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */,
 				3AF3E189254C5BE60064B494 /* SceneDelegate.swift in Sources */,
+				3AF3E1A1254C641D0064B494 /* Leaderboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
