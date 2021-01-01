@@ -11,6 +11,16 @@ import FirebaseAuth
 import Firebase
 
 class SignUpViewController: UIViewController {
+    
+    let menu: DropDown = {
+        let menu = DropDown()
+        menu.dataSource = [
+            "CIT",
+            "MCS",
+            "Dietrich"
+        ]
+        return menu
+    }()
 
     @IBOutlet weak var firstNameTextField: UITextField!
     
@@ -23,10 +33,25 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let myView = UIView(frame: navigationController?.navigationBar.frame ?? .zero)
+        myView.backgroundColor = .red
+        navigationController?.navigationBar.topItem?.titleView = myView
+        guard let topView = navigationController?.navigationBar.topItem?.titleView else {
+            return
+        }
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapTopItem))
+        gesture.numberOfTapsRequired = 1
+        gesture.numberOfTouchesRequired = 1
+        topView.addGestureRecognizer(gesture)
         // Do any additional setup after loading the view.
         setUpElements()
     }
+    
+    @objc func didTapTopItem(){
+        menu.show()
+    }
+    
     func setUpElements(){
         errorLabel.alpha = 0
     }
