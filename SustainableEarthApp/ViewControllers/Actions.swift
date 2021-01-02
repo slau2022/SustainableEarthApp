@@ -10,11 +10,22 @@ import UIKit
 
 class Actions: UIViewController {
 
+
+    @IBOutlet weak var favoritesButton: UIButton!
+    @IBOutlet weak var energyButton: UIButton!
+    @IBOutlet weak var waterButton: UIButton!
+    @IBOutlet weak var recycleButton: UIButton!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
+    
+    // MARK: Actions
+   
     
 
     /*
