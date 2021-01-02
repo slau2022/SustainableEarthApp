@@ -15,7 +15,9 @@ class Actions: UIViewController {
     @IBOutlet weak var energyButton: UIButton!
     @IBOutlet weak var waterButton: UIButton!
     @IBOutlet weak var recycleButton: UIButton!
-        
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
