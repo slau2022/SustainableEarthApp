@@ -185,63 +185,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Affordable Housing" translatesAutoresizingMaskIntoConstraints="NO" id="vU1-52-OmP">
-                                <rect key="frame" x="0.0" y="88" width="138" height="145"/>
+                                <rect key="frame" x="2" y="90" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ad-mF-Uuc">
-                                <rect key="frame" x="276" y="88" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Carbon Neutral Hotel" translatesAutoresizingMaskIntoConstraints="NO" id="8Ad-mF-Uuc">
+                                <rect key="frame" x="278" y="90" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="df5-bp-d03">
-                                <rect key="frame" x="276" y="233" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Farmer's Market" translatesAutoresizingMaskIntoConstraints="NO" id="df5-bp-d03">
+                                <rect key="frame" x="278" y="235" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v64-9O-JgY">
-                                <rect key="frame" x="138" y="233" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EV Charging Station" translatesAutoresizingMaskIntoConstraints="NO" id="v64-9O-JgY">
+                                <rect key="frame" x="140" y="235" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIN-S1-mIe">
-                                <rect key="frame" x="0.0" y="233" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bike Sharing Program" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-vA-HOa">
+                                <rect key="frame" x="140" y="90" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxW-jy-0bh">
-                                <rect key="frame" x="0.0" y="378" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grocery With Locally Grown Food" translatesAutoresizingMaskIntoConstraints="NO" id="HxY-p9-kuF">
+                                <rect key="frame" x="2" y="235" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOR-Ab-UEB">
-                                <rect key="frame" x="276" y="378" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Restaurant With Vegan Options" translatesAutoresizingMaskIntoConstraints="NO" id="Kzu-BZ-w5e">
+                                <rect key="frame" x="280" y="525" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXt-VG-WV0">
-                                <rect key="frame" x="0.0" y="523" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Solar Powered Street Light" translatesAutoresizingMaskIntoConstraints="NO" id="xVU-va-iap">
+                                <rect key="frame" x="2" y="669" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pjr-ai-EPt">
-                                <rect key="frame" x="138" y="523" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Urban Farm" translatesAutoresizingMaskIntoConstraints="NO" id="Vb4-78-lq5">
+                                <rect key="frame" x="140" y="669" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSc-b7-UWY">
-                                <rect key="frame" x="276" y="523" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Public Park" translatesAutoresizingMaskIntoConstraints="NO" id="oKA-Qy-ybh">
+                                <rect key="frame" x="140" y="525" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4G-Ib-dvX">
-                                <rect key="frame" x="0.0" y="668" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="High Speed Rail" translatesAutoresizingMaskIntoConstraints="NO" id="YCV-14-erq">
+                                <rect key="frame" x="2" y="380" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="znf-R9-Aut">
-                                <rect key="frame" x="138" y="668" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Public Drinking Fountain" translatesAutoresizingMaskIntoConstraints="NO" id="ySu-sM-VdT">
+                                <rect key="frame" x="2" y="525" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jkv-KR-7vR">
-                                <rect key="frame" x="276" y="668" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LEED Certified Skyscraper" translatesAutoresizingMaskIntoConstraints="NO" id="BB1-J6-4ZO">
+                                <rect key="frame" x="140" y="380" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-vA-HOa">
-                                <rect key="frame" x="138" y="88" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Office With Green Wall" translatesAutoresizingMaskIntoConstraints="NO" id="qHM-9G-dcr">
+                                <rect key="frame" x="278" y="380" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ITg-UJ-Onj">
-                                <rect key="frame" x="138" y="378" width="138" height="145"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wind Turbines" translatesAutoresizingMaskIntoConstraints="NO" id="zlF-4P-Ule">
+                                <rect key="frame" x="280" y="669" width="134" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -443,6 +443,20 @@
     </scenes>
     <resources>
         <image name="Affordable Housing" width="1208" height="1086"/>
+        <image name="Bike Sharing Program" width="1242" height="1018"/>
+        <image name="Carbon Neutral Hotel" width="1276" height="1132"/>
+        <image name="EV Charging Station" width="960" height="860"/>
+        <image name="Farmer's Market" width="1298" height="1170"/>
+        <image name="Grocery With Locally Grown Food" width="1108" height="936"/>
+        <image name="High Speed Rail" width="1262" height="1204"/>
+        <image name="LEED Certified Skyscraper" width="1230" height="1186"/>
+        <image name="Office With Green Wall" width="1294" height="1088"/>
+        <image name="Public Drinking Fountain" width="1024" height="976"/>
+        <image name="Public Park" width="1150" height="1120"/>
+        <image name="Restaurant With Vegan Options" width="1202" height="1086"/>
+        <image name="Solar Powered Street Light" width="984" height="916"/>
+        <image name="Urban Farm" width="1228" height="1094"/>
+        <image name="Wind Turbines" width="1158" height="1046"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
