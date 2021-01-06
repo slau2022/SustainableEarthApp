@@ -134,7 +134,7 @@
                         <viewLayoutGuide key="safeArea" id="B4R-Gi-eaN"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Zlq-Bj-0oq"/>
+                    <navigationItem key="navigationItem" title="School" id="DKz-fU-C4Y"/>
                     <connections>
                         <outlet property="emailTextField" destination="4fo-KV-dwP" id="tU2-Ur-NZJ"/>
                         <outlet property="errorLabel" destination="X4J-LM-JmM" id="nly-Zq-Vaf"/>
@@ -422,13 +422,13 @@
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="tortoise.fill" catalog="system" width="128" height="66"/>
         <namedColor name="BackgroundColor">
-            <color red="0.91764705882352937" green="0.91764705882352937" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9179999828338623" green="0.9179999828338623" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Color">
-            <color red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.3449999988079071" green="0.3449999988079071" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColor">
-            <color red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.6470000147819519" green="0.6470000147819519" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
