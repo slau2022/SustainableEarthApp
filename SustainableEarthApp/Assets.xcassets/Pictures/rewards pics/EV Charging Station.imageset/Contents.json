@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "EV Charging Station.png",
+      "filename" : "ev.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "ev@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "ev@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

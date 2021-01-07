@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Farmer's Market.png",
+      "filename" : "farmers.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "farmers@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "farmers@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

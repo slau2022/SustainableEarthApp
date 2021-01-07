@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "LEED Certified Skyscraper.png",
+      "filename" : "skyscraper.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "skyscraper@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "skyscraper@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

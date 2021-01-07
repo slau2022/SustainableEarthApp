@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Bike Sharing Program.png",
+      "filename" : "bike.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "bike@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "bike@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

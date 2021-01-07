@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Carbon Neutral Hotel.png",
+      "filename" : "hotel.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "hotel@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "hotel@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
