@@ -9,25 +9,24 @@
 import UIKit
 
 class Actions: UIViewController {
-
-
+    
     @IBOutlet weak var favoritesButton: UIButton!
     @IBOutlet weak var energyButton: UIButton!
     @IBOutlet weak var waterButton: UIButton!
     @IBOutlet weak var recycleButton: UIButton!
     
-    @IBOutlet weak var tableView: UITableView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-
         // Do any additional setup after loading the view.
     }
     
     // MARK: Actions
    
+    //change favorites button image when clicked
+    
+
+    
+
+    
+
     
 
     /*
@@ -40,4 +39,4 @@ class Actions: UIViewController {
     }
     */
 
-}
+

@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "clickedEnergyButton.png",
+      "filename" : "unclickedSearchButton.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
