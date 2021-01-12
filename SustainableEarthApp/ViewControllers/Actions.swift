@@ -15,19 +15,18 @@ class Actions: UIViewController {
     @IBOutlet weak var waterButton: UIButton!
     @IBOutlet weak var recycleButton: UIButton!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+
+
         // Do any additional setup after loading the view.
     }
     
+
     // MARK: Actions
    
     //change favorites button image when clicked
-    
-
-    
-
-    
-
-    
 
     /*
     // MARK: - Navigation
@@ -38,5 +37,4 @@ class Actions: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-
+}

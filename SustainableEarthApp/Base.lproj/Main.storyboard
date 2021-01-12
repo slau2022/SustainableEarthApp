@@ -150,45 +150,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRa-eN-DIy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqD-Kd-UxD">
+                                <rect key="frame" x="15" y="140" width="96" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="7a0-0v-rE3"/>
+                                </constraints>
+                                <state key="normal" image="unclickedFavoritesButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRa-eN-DIy">
                                 <rect key="frame" x="111" y="140" width="95" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="unclickedEnergyButton"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-ZM-7zo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-ZM-7zo">
                                 <rect key="frame" x="298" y="140" width="95" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="unclickedRecycleButton"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXo-gh-uUu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXo-gh-uUu">
                                 <rect key="frame" x="205" y="140" width="95" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="unclickedWaterButton"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quick Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGY-Ct-5tK">
-                                <rect key="frame" x="20" y="208" width="143" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lN1-Ke-dvF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BY2-e9-eZ5"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGY-Ct-5tK">
+                                <rect key="frame" x="20" y="190" width="143" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lN1-Ke-dvF">
-                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqD-Kd-UxD">
-                                <rect key="frame" x="15" y="140" width="96" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="unclickedFavoritesButton"/>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z2x-jM-OTL">
+                                <rect key="frame" x="0.0" y="225" width="414" height="588"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="woh-c5-6qM"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="mx7-0m-1Vq"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qrf-Zv-nF4"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lN1-Ke-dvF" firstAttribute="leading" secondItem="z2x-jM-OTL" secondAttribute="leading" id="5DQ-HO-AQy"/>
+                            <constraint firstItem="qrf-Zv-nF4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uGY-Ct-5tK" secondAttribute="trailing" symbolic="YES" id="8Lz-hs-FjT"/>
+                            <constraint firstItem="PqD-Kd-UxD" firstAttribute="top" secondItem="rXo-gh-uUu" secondAttribute="top" id="8u3-sI-2jW"/>
+                            <constraint firstItem="DRa-eN-DIy" firstAttribute="leading" secondItem="PqD-Kd-UxD" secondAttribute="trailing" id="9gu-NG-Rmd"/>
+                            <constraint firstItem="0sa-ZM-7zo" firstAttribute="leading" secondItem="DRa-eN-DIy" secondAttribute="trailing" constant="92" id="KAi-2E-McK"/>
+                            <constraint firstItem="PqD-Kd-UxD" firstAttribute="top" secondItem="lN1-Ke-dvF" secondAttribute="bottom" constant="8" id="KLR-s4-9uV"/>
+                            <constraint firstItem="PqD-Kd-UxD" firstAttribute="top" secondItem="DRa-eN-DIy" secondAttribute="top" id="SHK-LH-GOV"/>
+                            <constraint firstItem="z2x-jM-OTL" firstAttribute="top" secondItem="uGY-Ct-5tK" secondAttribute="bottom" constant="8" id="UOe-Ai-Fon"/>
+                            <constraint firstItem="z2x-jM-OTL" firstAttribute="bottom" secondItem="qrf-Zv-nF4" secondAttribute="bottom" id="W3y-hD-xJR"/>
+                            <constraint firstItem="PqD-Kd-UxD" firstAttribute="leading" secondItem="qrf-Zv-nF4" secondAttribute="leading" constant="15" id="YC3-hi-UFX"/>
+                            <constraint firstItem="PqD-Kd-UxD" firstAttribute="top" secondItem="0sa-ZM-7zo" secondAttribute="top" id="kcs-eh-DOd"/>
+                            <constraint firstItem="z2x-jM-OTL" firstAttribute="trailing" secondItem="qrf-Zv-nF4" secondAttribute="trailing" id="kzc-28-6CJ"/>
+                            <constraint firstItem="uGY-Ct-5tK" firstAttribute="top" secondItem="PqD-Kd-UxD" secondAttribute="bottom" constant="8" id="lE7-YS-ce9"/>
+                            <constraint firstItem="uGY-Ct-5tK" firstAttribute="top" secondItem="E4u-xD-wLj" secondAttribute="top" constant="190" id="meP-Uk-78t"/>
+                            <constraint firstItem="rXo-gh-uUu" firstAttribute="leading" secondItem="PqD-Kd-UxD" secondAttribute="trailing" constant="94" id="olF-6u-I1Z"/>
+                            <constraint firstItem="lN1-Ke-dvF" firstAttribute="trailing" secondItem="z2x-jM-OTL" secondAttribute="trailing" id="p58-qb-9gx"/>
+                            <constraint firstItem="z2x-jM-OTL" firstAttribute="leading" secondItem="qrf-Zv-nF4" secondAttribute="leading" id="szh-je-mCf"/>
+                            <constraint firstItem="uGY-Ct-5tK" firstAttribute="leading" secondItem="E4u-xD-wLj" secondAttribute="leadingMargin" id="veQ-Om-foS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" selectedImage="clickedSearchButton" systemItem="search" id="MeE-Gg-gg4"/>
                     <navigationItem key="navigationItem" id="5J0-0z-VST"/>
                     <connections>
+                        <outlet property="actionsScroll" destination="z2x-jM-OTL" id="gUo-op-qax"/>
                         <outlet property="energyButton" destination="DRa-eN-DIy" id="AI6-hn-GE0"/>
                         <outlet property="favoritesButton" destination="PqD-Kd-UxD" id="HUe-GR-3Ai"/>
                         <outlet property="recycleButton" destination="0sa-ZM-7zo" id="Yuo-iM-hqL"/>
