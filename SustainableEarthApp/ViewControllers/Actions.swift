@@ -15,18 +15,27 @@ class Actions: UIViewController {
     @IBOutlet weak var waterButton: UIButton!
     @IBOutlet weak var recycleButton: UIButton!
     
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var tableView: UITableView!
+    
+    var messages: [Message] = [
+        Message(action: "Refill Reusable Waterbottle", logged: "Times Logged: 15"),
+        Message(action: "Brought Reusable Mug", logged: "Times Logged: 10"),
+        Message(action: "Compost at Schatz", logged: "Times Logged: 15")
+    ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = self
+        
+        tableView.register(UINib(nibName: Constants.cellNibName, bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
+        
+        
+    // Do any additional setup after loading the view.
     }
     
     // MARK: Actions
    
     //change favorites button image when clicked
-    
-
-    
-
-    
-
     
 
     /*
@@ -40,3 +49,18 @@ class Actions: UIViewController {
     */
 
 
+}
+
+extension Actions: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath) as! MessageCell
+        cell.label.text = messages[indexPath.row].action
+        return cell
+    }
+    
+    
+}

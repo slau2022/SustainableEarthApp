@@ -9,12 +9,10 @@
 import Foundation
 
 struct Constants {
+    static let cellIdentifier = "ReusableCell"
+    static let cellNibName = "MessageCell"
     
     struct Storyboard {
-    
-    static let cellIdentifier = "ReusableCell"
-    
-        
         static let homeViewController = "HomeVC"
     }
 
