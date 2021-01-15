@@ -12,16 +12,6 @@ import Firebase
 import DropDown
 
 class SignUpViewController: UIViewController {
-    
-    let menu: DropDown = {
-        let menu = DropDown()
-        menu.dataSource = [
-            "CIT",
-            "MCS",
-            "Dietrich"
-        ]
-        return menu
-    }()
 
     @IBOutlet weak var firstNameTextField: UITextField!
     
@@ -32,29 +22,18 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var selectCollege: UIButton!
+    @IBOutlet weak var collegesTable: UITableView!
+    var collegesList = ["College of Engineering", "College of Fine Arts", "Dietrich College of Humanities & Social Sciences", "Heinz College of Information Systems and Public Policy", "Mellon College of Science", "School of Computer Science", "Tepper School of Business"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        let myView = UIView(frame: navigationController?.navigationBar.frame ?? .zero)
-        myView.backgroundColor = .red
-        navigationController?.navigationBar.topItem?.titleView = myView
-        guard let topView = navigationController?.navigationBar.topItem?.titleView else {
-            return
-        }
-        
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapTopItem))
-        gesture.numberOfTapsRequired = 1
-        gesture.numberOfTouchesRequired = 1
-        topView.addGestureRecognizer(gesture)
-        // Do any additional setup after loading the view.
         setUpElements()
-    }
-    
-    @objc func didTapTopItem(){
-        menu.show()
     }
     
     func setUpElements(){
         errorLabel.alpha = 0
+        collegesTable.isHidden = true
+        print("SETUP")
     }
     // Check fields to ensure that the fields are correct, otherwise return an error message
     func validateFields() -> String?{
@@ -76,6 +55,14 @@ class SignUpViewController: UIViewController {
         
         return nil
     }
+    @IBAction func selectCollegeClick(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3){
+            self.collegesTable.isHidden = false
+        }
+
+    }
+
+    
     func showError(_ message:String){
         errorLabel.text = message
         errorLabel.alpha = 1
@@ -139,3 +126,20 @@ class SignUpViewController: UIViewController {
     
     
 }
+
+extension SignUpViewController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)-> Int {
+        print("tableView1")
+        print(collegesList)
+        return collegesList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("tableView2")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = collegesList[indexPath.row]
+        return cell
+    }
+    
+}
+

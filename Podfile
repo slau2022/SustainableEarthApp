@@ -6,6 +6,7 @@ target 'SustainableEarthApp' do
   use_frameworks!
 
   # Pods for SustainableEarthApp
+  pod 'Firebase'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
