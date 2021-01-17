@@ -199,17 +199,17 @@
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbt-hI-wGz">
                                                                 <rect key="frame" x="2" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Wind Turbines"/>
+                                                                <state key="normal" backgroundImage="wind1"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBr-Ns-kru">
                                                                 <rect key="frame" x="140" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="High Speed Rail"/>
+                                                                <state key="normal" backgroundImage="rail1"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIP-Cs-jig">
                                                                 <rect key="frame" x="278" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Office With Green Wall"/>
+                                                                <state key="normal" backgroundImage="office1"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -220,17 +220,17 @@
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySY-ci-60p">
                                                                 <rect key="frame" x="2" y="4" width="134" height="146"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="LEED Certified Skyscraper"/>
+                                                                <state key="normal" backgroundImage="skyscraper1"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3b-Ui-jTb">
                                                                 <rect key="frame" x="140" y="4" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Farmer's Market"/>
+                                                                <state key="normal" backgroundImage="farmersmarket1"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j6-Mn-kjG">
                                                                 <rect key="frame" x="278" y="4" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Carbon Neutral Hotel"/>
+                                                                <state key="normal" backgroundImage="hotel1"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -241,12 +241,12 @@
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BF-fJ-QHi">
                                                                 <rect key="frame" x="2" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="EV Charging Station"/>
+                                                                <state key="normal" backgroundImage="ev1"/>
                                                             </button>
                                                             <button clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQk-qa-ghP">
                                                                 <rect key="frame" x="140" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Affordable Housing"/>
+                                                                <state key="normal" backgroundImage="housing1"/>
                                                                 <connections>
                                                                     <segue destination="V4v-dy-UUI" kind="show" id="hDC-rz-dbD"/>
                                                                 </connections>
@@ -254,7 +254,7 @@
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkN-Lj-S9L">
                                                                 <rect key="frame" x="278" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Bike Sharing Program"/>
+                                                                <state key="normal" backgroundImage="bike1"/>
                                                                 <connections>
                                                                     <segue destination="juu-Rb-QPd" kind="show" id="WNw-ng-kV5"/>
                                                                 </connections>
@@ -268,17 +268,17 @@
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KB9-YP-6v0">
                                                                 <rect key="frame" x="2" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Restaurant With Vegan Options"/>
+                                                                <state key="normal" backgroundImage="restaurant1"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKg-X3-Oug">
                                                                 <rect key="frame" x="140" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Solar Powered Street Light"/>
+                                                                <state key="normal" backgroundImage="solar1"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ch-h5-64L">
                                                                 <rect key="frame" x="278" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Urban Farm"/>
+                                                                <state key="normal" backgroundImage="farm1"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -289,17 +289,17 @@
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlR-p2-jpA">
                                                                 <rect key="frame" x="2" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Grocery With Locally Grown Food"/>
+                                                                <state key="normal" backgroundImage="grocery1"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ne-Vu-aHk">
                                                                 <rect key="frame" x="140" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Public Park"/>
+                                                                <state key="normal" backgroundImage="park1"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25F-0o-2r3">
                                                                 <rect key="frame" x="278" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="Public Drinking Fountain"/>
+                                                                <state key="normal" backgroundImage="fountain1"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -365,7 +365,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KsO-sC-oU5"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="akG-6t-DjG" firstAttribute="top" secondItem="KsO-sC-oU5" secondAttribute="top" id="7cT-CV-0tl"/>
                             <constraint firstItem="akG-6t-DjG" firstAttribute="trailing" secondItem="KsO-sC-oU5" secondAttribute="trailing" id="JpW-3l-FRQ"/>
@@ -373,7 +373,7 @@
                             <constraint firstItem="akG-6t-DjG" firstAttribute="leading" secondItem="KsO-sC-oU5" secondAttribute="leading" id="acf-Y8-bx9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rewards" selectedImage="tortoise.fill" catalog="system" id="H7I-L4-4BY"/>
+                    <tabBarItem key="tabBarItem" title="Rewards" selectedImage="tortoise.fill" catalog="system" id="QUE-cQ-41X"/>
                     <navigationItem key="navigationItem" id="0L7-HJ-yd9"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -391,7 +391,7 @@
                         <outlet property="restaurantButton" destination="KB9-YP-6v0" id="sVi-ap-MNp"/>
                         <outlet property="skyscraperButton" destination="ySY-ci-60p" id="heX-Nn-hYf"/>
                         <outlet property="solarPanelButton" destination="SKg-X3-Oug" id="J8X-MO-IIO"/>
-                        <outlet property="turbineButton" destination="fbt-hI-wGz" id="85D-Oq-xZD"/>
+                        <outlet property="turbineButton" destination="fbt-hI-wGz" id="rR0-dD-V4t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfP-Nf-uaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -406,7 +406,144 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGH-5s-FTG">
+                            <view hidden="YES" contentMode="scaleToFill" id="iRN-yy-W0u">
+                                <rect key="frame" x="0.0" y="85" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Rgv-FJ-G2m">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjv-ev-xAQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wind1" translatesAutoresizingMaskIntoConstraints="NO" id="RFG-AZ-3nb">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rail1" translatesAutoresizingMaskIntoConstraints="NO" id="R8j-tY-uhB">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="office1" translatesAutoresizingMaskIntoConstraints="NO" id="N1c-EB-LJP">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubz-ZS-hpP">
+                                                <rect key="frame" x="0.0" y="143" width="414" height="146"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skyscraper1" translatesAutoresizingMaskIntoConstraints="NO" id="sfw-cW-m59">
+                                                        <rect key="frame" x="2" y="4" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="farmersmarket1" translatesAutoresizingMaskIntoConstraints="NO" id="Yke-Gn-4cc">
+                                                        <rect key="frame" x="140" y="4" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hotel1" translatesAutoresizingMaskIntoConstraints="NO" id="Z79-jm-Wz7">
+                                                        <rect key="frame" x="278" y="4" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMB-qR-sWc">
+                                                <rect key="frame" x="0.0" y="291" width="414" height="143"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ev1" translatesAutoresizingMaskIntoConstraints="NO" id="RhB-42-QDa">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="housing1" translatesAutoresizingMaskIntoConstraints="NO" id="gs8-ht-UbL">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bike1" translatesAutoresizingMaskIntoConstraints="NO" id="Hvo-Nt-Yq6">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4G-G0-CRk">
+                                                <rect key="frame" x="0.0" y="436" width="414" height="142"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant1" translatesAutoresizingMaskIntoConstraints="NO" id="Grd-p5-mfe">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solar1" translatesAutoresizingMaskIntoConstraints="NO" id="p0w-1R-UeG">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="farm1" translatesAutoresizingMaskIntoConstraints="NO" id="b4G-I4-dX8">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nxq-51-KbH">
+                                                <rect key="frame" x="0.0" y="580" width="414" height="145"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grocery1" translatesAutoresizingMaskIntoConstraints="NO" id="dIJ-je-ly2">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="park1" translatesAutoresizingMaskIntoConstraints="NO" id="EhZ-Pe-fys">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fountain1" translatesAutoresizingMaskIntoConstraints="NO" id="Tvb-3a-uCn">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ubz-ZS-hpP" firstAttribute="top" secondItem="Hjv-ev-xAQ" secondAttribute="bottom" constant="2" id="3y5-bU-qWl"/>
+                                            <constraint firstAttribute="trailing" secondItem="zMB-qR-sWc" secondAttribute="trailing" id="4bB-9Y-bHZ"/>
+                                            <constraint firstItem="j4G-G0-CRk" firstAttribute="leading" secondItem="Rgv-FJ-G2m" secondAttribute="leading" id="EsQ-Aq-yWY"/>
+                                            <constraint firstItem="Ubz-ZS-hpP" firstAttribute="top" secondItem="Rgv-FJ-G2m" secondAttribute="top" constant="143" id="FeB-2S-jJa"/>
+                                            <constraint firstItem="Hjv-ev-xAQ" firstAttribute="top" secondItem="Rgv-FJ-G2m" secondAttribute="top" id="Fyv-3s-qPh"/>
+                                            <constraint firstItem="Hjv-ev-xAQ" firstAttribute="leading" secondItem="Rgv-FJ-G2m" secondAttribute="leading" id="HYK-kM-c0U"/>
+                                            <constraint firstItem="Ubz-ZS-hpP" firstAttribute="leading" secondItem="Rgv-FJ-G2m" secondAttribute="leading" id="Ocr-Kd-Opa"/>
+                                            <constraint firstItem="Nxq-51-KbH" firstAttribute="top" secondItem="j4G-G0-CRk" secondAttribute="bottom" constant="2" id="W00-ga-LSL"/>
+                                            <constraint firstItem="Ubz-ZS-hpP" firstAttribute="top" secondItem="Hjv-ev-xAQ" secondAttribute="bottom" constant="2" id="Xdk-mP-Osi"/>
+                                            <constraint firstItem="Nxq-51-KbH" firstAttribute="top" secondItem="j4G-G0-CRk" secondAttribute="bottom" constant="2" id="a5p-Gj-94h"/>
+                                            <constraint firstItem="Nxq-51-KbH" firstAttribute="leading" secondItem="Rgv-FJ-G2m" secondAttribute="leading" id="brn-Sh-JTW"/>
+                                            <constraint firstItem="Nxq-51-KbH" firstAttribute="top" secondItem="j4G-G0-CRk" secondAttribute="bottom" constant="2" id="ex6-7s-Oqp"/>
+                                            <constraint firstItem="j4G-G0-CRk" firstAttribute="top" secondItem="zMB-qR-sWc" secondAttribute="bottom" constant="2" id="f4d-Lq-dcs"/>
+                                            <constraint firstItem="Hjv-ev-xAQ" firstAttribute="top" secondItem="Rgv-FJ-G2m" secondAttribute="topMargin" id="g9a-59-fQr"/>
+                                            <constraint firstItem="zMB-qR-sWc" firstAttribute="leading" secondItem="Rgv-FJ-G2m" secondAttribute="leading" id="gwD-TL-sX3"/>
+                                            <constraint firstItem="zMB-qR-sWc" firstAttribute="top" secondItem="Ubz-ZS-hpP" secondAttribute="bottom" constant="2" id="hek-Dj-Omc"/>
+                                            <constraint firstItem="Ubz-ZS-hpP" firstAttribute="top" secondItem="Hjv-ev-xAQ" secondAttribute="bottom" constant="2" id="jpx-j9-oxy"/>
+                                            <constraint firstItem="j4G-G0-CRk" firstAttribute="top" secondItem="zMB-qR-sWc" secondAttribute="bottom" constant="2" id="lg3-yr-3da"/>
+                                            <constraint firstAttribute="trailing" secondItem="j4G-G0-CRk" secondAttribute="trailing" id="p3C-lx-fiY"/>
+                                            <constraint firstItem="zMB-qR-sWc" firstAttribute="top" secondItem="Rgv-FJ-G2m" secondAttribute="top" constant="291" id="p5r-Ty-tcA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hjv-ev-xAQ" secondAttribute="trailing" id="pec-bX-1bE"/>
+                                            <constraint firstItem="zMB-qR-sWc" firstAttribute="centerY" secondItem="Rgv-FJ-G2m" secondAttribute="centerY" id="tA7-12-yRB"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ubz-ZS-hpP" secondAttribute="trailing" id="tUr-ym-Dbl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nxq-51-KbH" secondAttribute="trailing" id="wHf-Pj-JwD"/>
+                                            <constraint firstItem="Nxq-51-KbH" firstAttribute="top" secondItem="Rgv-FJ-G2m" secondAttribute="top" constant="580" id="wr1-db-lTW"/>
+                                            <constraint firstItem="j4G-G0-CRk" firstAttribute="top" secondItem="zMB-qR-sWc" secondAttribute="bottom" constant="2" id="yGu-m3-E9y"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Vue-a7-FEf"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Rgv-FJ-G2m" firstAttribute="top" secondItem="iRN-yy-W0u" secondAttribute="top" id="4HU-kr-hqs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rgv-FJ-G2m" secondAttribute="trailing" id="DKm-Lo-CHy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rgv-FJ-G2m" secondAttribute="bottom" id="RdI-jq-Qga"/>
+                                    <constraint firstItem="Rgv-FJ-G2m" firstAttribute="leading" secondItem="iRN-yy-W0u" secondAttribute="leading" id="f1R-U8-TXT"/>
+                                </constraints>
+                            </view>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" backgroundImage="turt" translatesAutoresizingMaskIntoConstraints="NO" id="FGH-5s-FTG">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -418,14 +555,15 @@
                                 <rect key="frame" x="87" y="234" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Reward Coin" translatesAutoresizingMaskIntoConstraints="NO" id="Y5z-I1-eLz">
-                                <rect key="frame" x="57" y="551" width="39" height="38"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="housing1" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-gy-QfA">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Affordable Housing" translatesAutoresizingMaskIntoConstraints="NO" id="VUE-ZN-fl6">
-                                <rect key="frame" x="85" y="284" width="242" height="242"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bg-bC-PL9">
+                                <rect key="frame" x="61" y="585" width="342" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="purchase1"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fbr-do-1gL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -444,18 +582,156 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bike Sharing Program" translatesAutoresizingMaskIntoConstraints="NO" id="NpJ-Eo-ZkI">
-                                <rect key="frame" x="86" y="286" width="242" height="242"/>
+                            <view hidden="YES" contentMode="scaleToFill" id="cSt-Tx-TRq">
+                                <rect key="frame" x="0.0" y="85" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="51T-oZ-my2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPd-qO-hsQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wind1" translatesAutoresizingMaskIntoConstraints="NO" id="2w1-fu-kXc">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rail1" translatesAutoresizingMaskIntoConstraints="NO" id="P1V-Fk-eXL">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="office1" translatesAutoresizingMaskIntoConstraints="NO" id="iF7-sh-CoC">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EO-qa-GfJ">
+                                                <rect key="frame" x="0.0" y="143" width="414" height="146"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skyscraper1" translatesAutoresizingMaskIntoConstraints="NO" id="BYn-wU-7fs">
+                                                        <rect key="frame" x="2" y="4" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="farmersmarket1" translatesAutoresizingMaskIntoConstraints="NO" id="GRF-Ta-4xB">
+                                                        <rect key="frame" x="140" y="4" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hotel1" translatesAutoresizingMaskIntoConstraints="NO" id="EId-cB-vvi">
+                                                        <rect key="frame" x="278" y="4" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvI-Tr-cwU">
+                                                <rect key="frame" x="0.0" y="291" width="414" height="143"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ev1" translatesAutoresizingMaskIntoConstraints="NO" id="0Mq-y3-nvS">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="housing1" translatesAutoresizingMaskIntoConstraints="NO" id="etn-KY-kfP">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bike1" translatesAutoresizingMaskIntoConstraints="NO" id="kbM-Za-odX">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnu-K0-8QK">
+                                                <rect key="frame" x="0.0" y="436" width="414" height="142"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant1" translatesAutoresizingMaskIntoConstraints="NO" id="DkD-kH-OOT">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solar1" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-MR-c89">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="farm1" translatesAutoresizingMaskIntoConstraints="NO" id="Vew-at-faC">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgj-NO-wsm">
+                                                <rect key="frame" x="0.0" y="580" width="414" height="145"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grocery1" translatesAutoresizingMaskIntoConstraints="NO" id="mLd-ws-RBA">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="park1" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-V6-LjM">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fountain1" translatesAutoresizingMaskIntoConstraints="NO" id="3b4-Lb-Hgu">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Dgj-NO-wsm" firstAttribute="top" secondItem="51T-oZ-my2" secondAttribute="top" constant="580" id="4PI-Me-aeP"/>
+                                            <constraint firstItem="hvI-Tr-cwU" firstAttribute="top" secondItem="4EO-qa-GfJ" secondAttribute="bottom" constant="2" id="6Qt-Kd-vuS"/>
+                                            <constraint firstItem="4EO-qa-GfJ" firstAttribute="top" secondItem="51T-oZ-my2" secondAttribute="top" constant="143" id="6bw-gr-S9A"/>
+                                            <constraint firstItem="Dgj-NO-wsm" firstAttribute="top" secondItem="bnu-K0-8QK" secondAttribute="bottom" constant="2" id="7il-tl-BEc"/>
+                                            <constraint firstItem="hvI-Tr-cwU" firstAttribute="leading" secondItem="51T-oZ-my2" secondAttribute="leading" id="7kq-Cg-CIM"/>
+                                            <constraint firstItem="hvI-Tr-cwU" firstAttribute="top" secondItem="51T-oZ-my2" secondAttribute="top" constant="291" id="9hG-NY-Hy5"/>
+                                            <constraint firstItem="LPd-qO-hsQ" firstAttribute="top" secondItem="51T-oZ-my2" secondAttribute="top" id="BVO-KF-UQH"/>
+                                            <constraint firstItem="4EO-qa-GfJ" firstAttribute="top" secondItem="LPd-qO-hsQ" secondAttribute="bottom" constant="2" id="EZZ-U2-onx"/>
+                                            <constraint firstItem="bnu-K0-8QK" firstAttribute="leading" secondItem="51T-oZ-my2" secondAttribute="leading" id="G7U-uH-COE"/>
+                                            <constraint firstAttribute="trailing" secondItem="4EO-qa-GfJ" secondAttribute="trailing" id="OnQ-CC-rEb"/>
+                                            <constraint firstItem="4EO-qa-GfJ" firstAttribute="top" secondItem="LPd-qO-hsQ" secondAttribute="bottom" constant="2" id="VxW-IP-DEE"/>
+                                            <constraint firstItem="Dgj-NO-wsm" firstAttribute="top" secondItem="bnu-K0-8QK" secondAttribute="bottom" constant="2" id="XA1-Mp-wa8"/>
+                                            <constraint firstItem="bnu-K0-8QK" firstAttribute="top" secondItem="hvI-Tr-cwU" secondAttribute="bottom" constant="2" id="YFk-2f-X0s"/>
+                                            <constraint firstAttribute="trailing" secondItem="LPd-qO-hsQ" secondAttribute="trailing" id="Z2K-Up-lZD"/>
+                                            <constraint firstItem="bnu-K0-8QK" firstAttribute="top" secondItem="hvI-Tr-cwU" secondAttribute="bottom" constant="2" id="eBc-S3-fVw"/>
+                                            <constraint firstItem="Dgj-NO-wsm" firstAttribute="top" secondItem="bnu-K0-8QK" secondAttribute="bottom" constant="2" id="hEA-oY-fdl"/>
+                                            <constraint firstItem="4EO-qa-GfJ" firstAttribute="leading" secondItem="51T-oZ-my2" secondAttribute="leading" id="kUh-73-8CB"/>
+                                            <constraint firstItem="LPd-qO-hsQ" firstAttribute="leading" secondItem="51T-oZ-my2" secondAttribute="leading" id="mIW-Io-60p"/>
+                                            <constraint firstItem="4EO-qa-GfJ" firstAttribute="top" secondItem="LPd-qO-hsQ" secondAttribute="bottom" constant="2" id="puc-xL-5b6"/>
+                                            <constraint firstAttribute="trailing" secondItem="hvI-Tr-cwU" secondAttribute="trailing" id="sRx-MN-jxd"/>
+                                            <constraint firstItem="bnu-K0-8QK" firstAttribute="top" secondItem="hvI-Tr-cwU" secondAttribute="bottom" constant="2" id="sod-8I-pj5"/>
+                                            <constraint firstAttribute="trailing" secondItem="Dgj-NO-wsm" secondAttribute="trailing" id="upL-er-XeQ"/>
+                                            <constraint firstItem="Dgj-NO-wsm" firstAttribute="leading" secondItem="51T-oZ-my2" secondAttribute="leading" id="vHt-Gy-g4B"/>
+                                            <constraint firstItem="LPd-qO-hsQ" firstAttribute="top" secondItem="51T-oZ-my2" secondAttribute="topMargin" id="wwP-Ep-FKc"/>
+                                            <constraint firstItem="hvI-Tr-cwU" firstAttribute="centerY" secondItem="51T-oZ-my2" secondAttribute="centerY" id="yGi-XN-9jV"/>
+                                            <constraint firstAttribute="trailing" secondItem="bnu-K0-8QK" secondAttribute="trailing" id="ydx-dL-M1S"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="diB-HE-pU9"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="51T-oZ-my2" secondAttribute="trailing" id="RoI-rh-cQU"/>
+                                    <constraint firstItem="51T-oZ-my2" firstAttribute="top" secondItem="cSt-Tx-TRq" secondAttribute="top" id="pF1-QF-aPc"/>
+                                    <constraint firstAttribute="bottom" secondItem="51T-oZ-my2" secondAttribute="bottom" id="wzO-jY-a17"/>
+                                    <constraint firstItem="51T-oZ-my2" firstAttribute="leading" secondItem="cSt-Tx-TRq" secondAttribute="leading" id="y5E-Si-yAp"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bike1" translatesAutoresizingMaskIntoConstraints="NO" id="ShD-T4-ETM">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="t.bike.sharing.program" translatesAutoresizingMaskIntoConstraints="NO" id="6no-Lv-Lkv">
                                 <rect key="frame" x="86" y="224" width="242" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Reward Coin" translatesAutoresizingMaskIntoConstraints="NO" id="AnH-l6-VBq">
-                                <rect key="frame" x="54" y="551" width="39" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amC-Kn-24D">
+                                <rect key="frame" x="72" y="592" width="342" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="purchase1"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DPW-hR-Lzn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -465,6 +741,160 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2w-gj-zWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1900.0000000000002" y="2005.5803571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qX6-xY-3Gw">
+            <objects>
+                <viewController id="scx-O3-hDJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iJX-mZ-dJL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" id="9bg-Lj-HqX">
+                                <rect key="frame" x="0.0" y="85" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="VoY-oc-StF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kve-Fh-kSh">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wind1" translatesAutoresizingMaskIntoConstraints="NO" id="Xm5-wb-teq">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rail1" translatesAutoresizingMaskIntoConstraints="NO" id="fzh-vH-6ao">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="office1" translatesAutoresizingMaskIntoConstraints="NO" id="yR8-ok-Lq3">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygs-ze-Llw">
+                                                <rect key="frame" x="0.0" y="143" width="414" height="146"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skyscraper1" translatesAutoresizingMaskIntoConstraints="NO" id="LUC-zi-koH">
+                                                        <rect key="frame" x="2" y="4" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="farmersmarket1" translatesAutoresizingMaskIntoConstraints="NO" id="pLs-qd-7Bb">
+                                                        <rect key="frame" x="140" y="4" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hotel1" translatesAutoresizingMaskIntoConstraints="NO" id="U33-fM-i7J">
+                                                        <rect key="frame" x="278" y="4" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUx-ns-wNN">
+                                                <rect key="frame" x="0.0" y="291" width="414" height="143"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ev1" translatesAutoresizingMaskIntoConstraints="NO" id="6Bh-tH-Kf5">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="housing1" translatesAutoresizingMaskIntoConstraints="NO" id="qFm-jN-ctd">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bike1" translatesAutoresizingMaskIntoConstraints="NO" id="fWr-EJ-8HB">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yea-4x-x29">
+                                                <rect key="frame" x="0.0" y="436" width="414" height="142"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="restaurant1" translatesAutoresizingMaskIntoConstraints="NO" id="UXN-9J-wF4">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="solar1" translatesAutoresizingMaskIntoConstraints="NO" id="nwa-gX-8io">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="farm1" translatesAutoresizingMaskIntoConstraints="NO" id="7mS-X2-iTy">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAW-b6-go9">
+                                                <rect key="frame" x="0.0" y="580" width="414" height="145"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grocery1" translatesAutoresizingMaskIntoConstraints="NO" id="cmN-CH-zrN">
+                                                        <rect key="frame" x="2" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="park1" translatesAutoresizingMaskIntoConstraints="NO" id="xn0-dh-Ebb">
+                                                        <rect key="frame" x="140" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fountain1" translatesAutoresizingMaskIntoConstraints="NO" id="sr4-zo-MQF">
+                                                        <rect key="frame" x="278" y="0.0" width="134" height="141"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yAW-b6-go9" firstAttribute="leading" secondItem="VoY-oc-StF" secondAttribute="leading" id="00w-j2-lZR"/>
+                                            <constraint firstItem="Yea-4x-x29" firstAttribute="top" secondItem="bUx-ns-wNN" secondAttribute="bottom" constant="2" id="3UV-uh-j7K"/>
+                                            <constraint firstItem="yAW-b6-go9" firstAttribute="top" secondItem="Yea-4x-x29" secondAttribute="bottom" constant="2" id="Dza-T3-sUK"/>
+                                            <constraint firstAttribute="trailing" secondItem="bUx-ns-wNN" secondAttribute="trailing" id="GDy-3X-Ueh"/>
+                                            <constraint firstItem="yAW-b6-go9" firstAttribute="top" secondItem="Yea-4x-x29" secondAttribute="bottom" constant="2" id="IAo-As-OyG"/>
+                                            <constraint firstItem="Yea-4x-x29" firstAttribute="top" secondItem="bUx-ns-wNN" secondAttribute="bottom" constant="2" id="Plz-nv-WbB"/>
+                                            <constraint firstItem="Ygs-ze-Llw" firstAttribute="top" secondItem="kve-Fh-kSh" secondAttribute="bottom" constant="2" id="RLq-7E-VqO"/>
+                                            <constraint firstItem="yAW-b6-go9" firstAttribute="top" secondItem="VoY-oc-StF" secondAttribute="top" constant="580" id="TSk-MS-xZ8"/>
+                                            <constraint firstItem="bUx-ns-wNN" firstAttribute="centerY" secondItem="VoY-oc-StF" secondAttribute="centerY" id="WIi-oB-DQL"/>
+                                            <constraint firstItem="Ygs-ze-Llw" firstAttribute="top" secondItem="VoY-oc-StF" secondAttribute="top" constant="143" id="WRy-Uv-vYP"/>
+                                            <constraint firstItem="kve-Fh-kSh" firstAttribute="leading" secondItem="VoY-oc-StF" secondAttribute="leading" id="Wg5-7u-WmP"/>
+                                            <constraint firstItem="kve-Fh-kSh" firstAttribute="top" secondItem="VoY-oc-StF" secondAttribute="top" id="X0k-Qz-HCD"/>
+                                            <constraint firstAttribute="trailing" secondItem="yAW-b6-go9" secondAttribute="trailing" id="Zdy-zc-eWT"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yea-4x-x29" secondAttribute="trailing" id="dJd-mL-riY"/>
+                                            <constraint firstItem="Ygs-ze-Llw" firstAttribute="top" secondItem="kve-Fh-kSh" secondAttribute="bottom" constant="2" id="dr9-Wn-7vf"/>
+                                            <constraint firstItem="bUx-ns-wNN" firstAttribute="top" secondItem="VoY-oc-StF" secondAttribute="top" constant="291" id="jQH-Pf-etI"/>
+                                            <constraint firstItem="Ygs-ze-Llw" firstAttribute="top" secondItem="kve-Fh-kSh" secondAttribute="bottom" constant="2" id="lHU-Bs-aRW"/>
+                                            <constraint firstAttribute="trailing" secondItem="kve-Fh-kSh" secondAttribute="trailing" id="ll0-5c-yPZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ygs-ze-Llw" secondAttribute="trailing" id="mAk-nF-2l5"/>
+                                            <constraint firstItem="yAW-b6-go9" firstAttribute="top" secondItem="Yea-4x-x29" secondAttribute="bottom" constant="2" id="mYg-85-PaC"/>
+                                            <constraint firstItem="Yea-4x-x29" firstAttribute="leading" secondItem="VoY-oc-StF" secondAttribute="leading" id="nQh-7A-B9H"/>
+                                            <constraint firstItem="bUx-ns-wNN" firstAttribute="leading" secondItem="VoY-oc-StF" secondAttribute="leading" id="obX-Nx-Ij8"/>
+                                            <constraint firstItem="Yea-4x-x29" firstAttribute="top" secondItem="bUx-ns-wNN" secondAttribute="bottom" constant="2" id="plA-zS-v5P"/>
+                                            <constraint firstItem="bUx-ns-wNN" firstAttribute="top" secondItem="Ygs-ze-Llw" secondAttribute="bottom" constant="2" id="riO-go-zGj"/>
+                                            <constraint firstItem="kve-Fh-kSh" firstAttribute="top" secondItem="VoY-oc-StF" secondAttribute="topMargin" id="wHy-ua-zIY"/>
+                                            <constraint firstItem="Ygs-ze-Llw" firstAttribute="leading" secondItem="VoY-oc-StF" secondAttribute="leading" id="xPV-Xu-hN5"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="jfd-Ol-pI5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VoY-oc-StF" firstAttribute="leading" secondItem="9bg-Lj-HqX" secondAttribute="leading" id="8Io-Ud-0Vn"/>
+                                    <constraint firstItem="VoY-oc-StF" firstAttribute="top" secondItem="9bg-Lj-HqX" secondAttribute="top" id="8Kt-VI-fer"/>
+                                    <constraint firstAttribute="bottom" secondItem="VoY-oc-StF" secondAttribute="bottom" id="KW7-rq-NXR"/>
+                                    <constraint firstAttribute="trailing" secondItem="VoY-oc-StF" secondAttribute="trailing" id="aal-ZE-SN3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PPk-el-Eoi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCe-UR-kFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621.739130434783" y="2021.6517857142856"/>
         </scene>
         <!--Action View Controller-->
         <scene sceneID="rRJ-lh-sMr">
@@ -653,28 +1083,29 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Affordable Housing" width="264" height="264"/>
-        <image name="Bike Sharing Program" width="264" height="264"/>
-        <image name="Carbon Neutral Hotel" width="264" height="264"/>
-        <image name="EV Charging Station" width="264" height="264.5"/>
-        <image name="Farmer's Market" width="264" height="264"/>
-        <image name="Grocery With Locally Grown Food" width="264" height="264"/>
-        <image name="High Speed Rail" width="265.5" height="264"/>
-        <image name="LEED Certified Skyscraper" width="264" height="276"/>
-        <image name="Office With Green Wall" width="264" height="265.5"/>
-        <image name="Public Drinking Fountain" width="264" height="264"/>
-        <image name="Public Park" width="264.5" height="264"/>
-        <image name="Restaurant With Vegan Options" width="264" height="264"/>
-        <image name="Reward Coin" width="896" height="816"/>
-        <image name="Solar Powered Street Light" width="264" height="264"/>
-        <image name="Urban Farm" width="264" height="264.5"/>
-        <image name="Wind Turbines" width="264" height="264.5"/>
+        <image name="bike1" width="168.5" height="182.5"/>
+        <image name="ev1" width="168.5" height="182.5"/>
+        <image name="farm1" width="168.5" height="182.5"/>
+        <image name="farmersmarket1" width="168.5" height="182.5"/>
+        <image name="fountain1" width="168.5" height="185.5"/>
+        <image name="grocery1" width="168.5" height="185.5"/>
+        <image name="hotel1" width="168.5" height="183"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="housing1" width="168.5" height="185.5"/>
+        <image name="office1" width="168.5" height="182.5"/>
+        <image name="park1" width="168.5" height="182.5"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <image name="purchase1" width="288" height="67"/>
+        <image name="rail1" width="168.5" height="183"/>
+        <image name="restaurant1" width="168.5" height="185.5"/>
+        <image name="skyscraper1" width="168.5" height="183"/>
+        <image name="solar1" width="168.5" height="182.5"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="t.affordable.housing" width="1192" height="188"/>
         <image name="t.bike.sharing.program" width="1324" height="210"/>
         <image name="tortoise.fill" catalog="system" width="128" height="66"/>
+        <image name="turt" width="128" height="128"/>
+        <image name="wind1" width="168.5" height="182.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -683,9 +1114,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

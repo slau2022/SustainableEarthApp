@@ -12,3 +12,5 @@ target 'SustainableEarthApp' do
   pod 'Firebase/Firestore'
 
 end
+
+

@@ -9,7 +9,7 @@
 import UIKit
 
 class Rewards: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
