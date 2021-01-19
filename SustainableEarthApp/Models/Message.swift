@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Message {
+struct action {
     let action: String
     let logged: String
 }
