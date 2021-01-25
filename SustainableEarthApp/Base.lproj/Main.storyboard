@@ -105,12 +105,12 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="w3j-YD-KD2">
-                                <rect key="frame" x="75" y="156" width="98" height="229"/>
+                                <rect key="frame" x="75" y="156" width="260" height="229"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZUA-zb-5Tf">
-                                        <rect key="frame" x="0.0" y="0.0" width="98" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="98" id="e8v-6N-SUo"/>
+                                            <constraint firstAttribute="width" constant="260" id="1wU-5I-HlZ"/>
                                             <constraint firstAttribute="height" constant="34" id="eKt-Wi-9Ql"/>
                                         </constraints>
                                         <color key="textColor" name="TextColor"/>
@@ -118,29 +118,29 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAG-Ss-292">
-                                        <rect key="frame" x="0.0" y="65" width="98" height="34"/>
+                                        <rect key="frame" x="0.0" y="65" width="260" height="34"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="260" id="0CF-YE-pjG"/>
                                             <constraint firstAttribute="height" constant="34" id="T0t-Nj-Ykd"/>
-                                            <constraint firstAttribute="width" constant="98" id="aAd-BU-Otn"/>
                                         </constraints>
                                         <color key="textColor" name="TextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4fo-KV-dwP">
-                                        <rect key="frame" x="0.0" y="130" width="98" height="34"/>
+                                        <rect key="frame" x="0.0" y="130" width="260" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="98" id="AW8-mo-gJe"/>
                                             <constraint firstAttribute="height" constant="34" id="kyv-Qb-aMu"/>
+                                            <constraint firstAttribute="width" constant="260" id="u40-Fr-J8c"/>
                                         </constraints>
                                         <color key="textColor" name="TextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbb-rZ-LC5">
-                                        <rect key="frame" x="0.0" y="195" width="98" height="34"/>
+                                        <rect key="frame" x="0.0" y="195" width="260" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="98" id="QqP-lQ-Wtz"/>
+                                            <constraint firstAttribute="width" constant="260" id="THP-dG-YBu"/>
                                             <constraint firstAttribute="height" constant="34" id="mBd-n7-6dX"/>
                                         </constraints>
                                         <color key="textColor" name="TextColor"/>
