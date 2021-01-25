@@ -25,6 +25,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var selectCollege: UIButton!
     @IBOutlet weak var collegesTable: UITableView!
     var collegesList = ["College of Engineering", "College of Fine Arts", "Dietrich College of Humanities & Social Sciences", "Heinz College of Information Systems and Public Policy", "Mellon College of Science", "School of Computer Science", "Tepper School of Business"]
+    @IBOutlet weak var selectGradYear: UIButton!
+    @IBOutlet weak var yearsTable: UITableView!
+    var yearsList = ["2024", "2023", "2022", "2021"]
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
@@ -33,6 +36,7 @@ class SignUpViewController: UIViewController {
     func setUpElements(){
         errorLabel.alpha = 0
         collegesTable.isHidden = true
+        yearsTable.isHidden = true
         print("SETUP")
     }
     // Check fields to ensure that the fields are correct, otherwise return an error message
@@ -57,12 +61,17 @@ class SignUpViewController: UIViewController {
     }
     @IBAction func selectCollegeClick(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3){
-            self.collegesTable.isHidden = false
+            self.collegesTable.isHidden = !(self.collegesTable.isHidden)
         }
 
     }
 
-    
+    @IBAction func selectGradYearClick(_ sender: Any) {
+        UIView.animate(withDuration: 0.3){
+            self.yearsTable.isHidden = !(self.yearsTable.isHidden)
+        }
+
+    }
     func showError(_ message:String){
         errorLabel.text = message
         errorLabel.alpha = 1
@@ -129,16 +138,26 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)-> Int {
-        print("tableView1")
-        print(collegesList)
-        return collegesList.count
+        if self.collegesTable == tableView{
+            return collegesList.count
+        } else {
+            return yearsList.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("tableView2")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = collegesList[indexPath.row]
-        return cell
+        
+        if self.collegesTable == tableView{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            cell.textLabel?.text = collegesList[indexPath.row]
+            return cell
+            
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "year", for: indexPath)
+            cell.textLabel?.text = yearsList[indexPath.row]
+            return cell
+        }
+            
     }
     
 }
