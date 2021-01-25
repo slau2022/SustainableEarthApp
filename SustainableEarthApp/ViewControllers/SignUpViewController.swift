@@ -106,8 +106,8 @@ class SignUpViewController: UIViewController {
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passWordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            
-            
+            let gradYear = selectGradYear.title(for: .normal)!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let college = selectCollege.title(for: .normal)!.trimmingCharacters(in: .whitespacesAndNewlines)
             // create user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                 
@@ -115,11 +115,12 @@ class SignUpViewController: UIViewController {
                 if err != nil {
                     // There was an error creating the user
                     self.showError("Error creating user")
+                    print(err)
                 }
                 else {
                     // User was created successfully, now store the first name and last name
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data:["firstName":firstName, "lastName":lastName, "uid":result!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data:["firstName":firstName, "lastName":lastName, "uid":result!.user.uid, "gradYear": gradYear, "college": college]) { (error) in
                         
                         if error != nil {
                             self.showError("Error saving user data")
@@ -135,6 +136,8 @@ class SignUpViewController: UIViewController {
     
     
 }
+
+// for managing the drop down menus
 
 extension SignUpViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)-> Int {
@@ -158,6 +161,20 @@ extension SignUpViewController: UITableViewDelegate,UITableViewDataSource{
             return cell
         }
             
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.collegesTable == tableView {
+            selectCollege.setTitle("\(collegesList[indexPath.row])", for: .normal)
+            UIView.animate(withDuration: 0.3){
+                self.collegesTable.isHidden = !(self.collegesTable.isHidden)
+            }
+        } else {
+            selectGradYear.setTitle("\(yearsList[indexPath.row])", for: .normal)
+            UIView.animate(withDuration: 0.3){
+                self.yearsTable.isHidden = !(self.yearsTable.isHidden)
+            }
+        }
     }
     
 }
