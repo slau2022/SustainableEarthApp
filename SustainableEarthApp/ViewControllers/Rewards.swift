@@ -10,29 +10,61 @@ import UIKit
 
 class Rewards: UIViewController {
     
-    @IBOutlet weak var windButton: UIButton!
-    @IBOutlet weak var railButton: UIButton!
-    @IBOutlet weak var officeButton: UIButton!
-    @IBOutlet weak var skyscraperButton: UIButton!
-    @IBOutlet weak var farmersMarketButton: UIButton!
-    @IBOutlet weak var hotelButton: UIButton!
-    @IBOutlet weak var evButton: UIButton!
-    @IBOutlet weak var housingButton: UIButton!
-    @IBOutlet weak var bikeButton: UIButton!
-    @IBOutlet weak var restaurantButton: UIButton!
-    @IBOutlet weak var solarButton: UIButton!
-    @IBOutlet weak var farmerButton: UIButton!
-    @IBOutlet weak var groceryButton: UIButton!
-    @IBOutlet weak var parkButton: UIButton!
-    @IBOutlet weak var fountainButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         // Do any additional setup after loading the view.
     }
-    
 
+    @IBAction func windButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func railButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func officeButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func skyscraperButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func farmersButtonPressed(_ sender: Any) {
+    }
+    
+    @IBAction func hotelButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func evButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func housingButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func bikeButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func restaurantButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func solarButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func farmButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func groceryButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func parkButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func fountainButtonPressed(_ sender: UIButton) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 

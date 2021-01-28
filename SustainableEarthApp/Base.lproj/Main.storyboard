@@ -200,16 +200,25 @@
                                                                 <rect key="frame" x="2" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="wind1"/>
+                                                                <connections>
+                                                                    <action selector="windButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="nRO-aH-5It"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBr-Ns-kru">
                                                                 <rect key="frame" x="140" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="rail1"/>
+                                                                <connections>
+                                                                    <action selector="railButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="Wc7-gq-3M2"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIP-Cs-jig">
                                                                 <rect key="frame" x="278" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="office1"/>
+                                                                <connections>
+                                                                    <action selector="officeButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="EAn-XB-Abc"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -221,16 +230,25 @@
                                                                 <rect key="frame" x="2" y="4" width="134" height="146"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="skyscraper1"/>
+                                                                <connections>
+                                                                    <action selector="skyscraperButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="fYn-eJ-1hW"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3b-Ui-jTb">
                                                                 <rect key="frame" x="140" y="4" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="farmersmarket1"/>
+                                                                <connections>
+                                                                    <action selector="farmersButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="aI1-Pj-Rxy"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j6-Mn-kjG">
                                                                 <rect key="frame" x="278" y="4" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="hotel1"/>
+                                                                <connections>
+                                                                    <action selector="hotelButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="ehR-qz-E5K"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -242,19 +260,26 @@
                                                                 <rect key="frame" x="2" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="ev1"/>
+                                                                <connections>
+                                                                    <action selector="evButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="HfY-F9-46K"/>
+                                                                </connections>
                                                             </button>
                                                             <button clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQk-qa-ghP">
                                                                 <rect key="frame" x="140" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="housing1"/>
                                                                 <connections>
-                                                                    <segue destination="V4v-dy-UUI" kind="show" id="hDC-rz-dbD"/>
+                                                                    <action selector="housingButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="6rT-1B-qCs"/>
+                                                                    <segue destination="lo7-cR-ai1" kind="showDetail" id="Gy0-hr-89m"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkN-Lj-S9L">
                                                                 <rect key="frame" x="278" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="bike1"/>
+                                                                <connections>
+                                                                    <action selector="bikeButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="yUR-kX-gQH"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -266,16 +291,25 @@
                                                                 <rect key="frame" x="2" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="restaurant1"/>
+                                                                <connections>
+                                                                    <action selector="restaurantButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="d6U-QK-rLx"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKg-X3-Oug">
                                                                 <rect key="frame" x="140" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="solar1"/>
+                                                                <connections>
+                                                                    <action selector="solarButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="D7r-uh-rCe"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ch-h5-64L">
                                                                 <rect key="frame" x="278" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="farm1"/>
+                                                                <connections>
+                                                                    <action selector="farmButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="kNY-63-EhF"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -287,16 +321,25 @@
                                                                 <rect key="frame" x="2" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="grocery1"/>
+                                                                <connections>
+                                                                    <action selector="groceryButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="mZP-tb-H8H"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ne-Vu-aHk">
                                                                 <rect key="frame" x="140" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="park1"/>
+                                                                <connections>
+                                                                    <action selector="parkButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="Yb0-B1-qHI"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25F-0o-2r3">
                                                                 <rect key="frame" x="278" y="0.0" width="134" height="141"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" backgroundImage="fountain1"/>
+                                                                <connections>
+                                                                    <action selector="fountainButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="oUD-kf-sJX"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -401,16 +444,16 @@
             </objects>
             <point key="canvasLocation" x="1086.9565217391305" y="1317.8571428571429"/>
         </scene>
-        <!--Affordable Housing-->
-        <scene sceneID="Vr0-9O-BQR">
+        <!--Rewards Purchase Window-->
+        <scene sceneID="mDB-co-CL9">
             <objects>
-                <viewController title="Affordable Housing" id="V4v-dy-UUI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dax-je-Qxq">
+                <viewController title="Rewards Purchase Window" id="lo7-cR-ai1" customClass="RewardsPurchaseWindow" customModule="SustainableEarthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NrH-5i-HHU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view hidden="YES" contentMode="scaleToFill" id="yDl-5S-dFs">
-                                <rect key="frame" x="0.0" y="85" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="58" width="414" height="725"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xHv-BE-NAm">
@@ -545,37 +588,32 @@
                                     <constraint firstItem="xHv-BE-NAm" firstAttribute="leading" secondItem="yDl-5S-dFs" secondAttribute="leading" id="ybq-iZ-1CZ"/>
                                 </constraints>
                             </view>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGH-5s-FTG">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items/>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
-                            </tabBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="housing1" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-gy-QfA">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <rect key="frame" x="57" y="241" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-aX-2Yn">
-                                <rect key="frame" x="61" y="592" width="287" height="67"/>
+                                <rect key="frame" x="63.5" y="536" width="287" height="67"/>
                                 <state key="normal" title="Button" image="purchase1"/>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="fbr-do-1gL"/>
+                        <viewLayoutGuide key="safeArea" id="X4d-Iq-7Az"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fbr-do-1gL" firstAttribute="trailing" secondItem="l8b-aX-2Yn" secondAttribute="trailing" constant="66" id="5T7-9F-bl4"/>
-                            <constraint firstItem="l8b-aX-2Yn" firstAttribute="top" secondItem="fbr-do-1gL" secondAttribute="top" constant="504" id="K76-Pl-scV"/>
-                            <constraint firstItem="l8b-aX-2Yn" firstAttribute="leading" secondItem="fbr-do-1gL" secondAttribute="leading" constant="61" id="iE4-GY-opc"/>
+                            <constraint firstItem="l8b-aX-2Yn" firstAttribute="leading" secondItem="X4d-Iq-7Az" secondAttribute="leading" constant="63.5" id="16R-pF-jay"/>
+                            <constraint firstItem="X4d-Iq-7Az" firstAttribute="trailing" secondItem="l8b-aX-2Yn" secondAttribute="trailing" constant="63.5" id="9a8-gW-0Zb"/>
+                            <constraint firstItem="l8b-aX-2Yn" firstAttribute="leading" secondItem="X4d-Iq-7Az" secondAttribute="leading" constant="63.5" id="FVq-gq-N7r"/>
+                            <constraint firstItem="X4d-Iq-7Az" firstAttribute="trailing" secondItem="l8b-aX-2Yn" secondAttribute="trailing" constant="63.5" id="Lqa-sD-n80"/>
+                            <constraint firstItem="l8b-aX-2Yn" firstAttribute="top" secondItem="X4d-Iq-7Az" secondAttribute="top" constant="448" id="UvN-HD-0OB"/>
+                            <constraint firstItem="X4d-Iq-7Az" firstAttribute="bottom" secondItem="l8b-aX-2Yn" secondAttribute="bottom" constant="210" id="qsg-y8-fez"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rewards" image="tortoise.fill" catalog="system" id="Hap-F6-ldq"/>
-                    <navigationItem key="navigationItem" id="2xx-sR-AUy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rid-vQ-lzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCg-Sv-PPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1169.5652173913045" y="2005.5803571428571"/>
+            <point key="canvasLocation" x="1044" y="2037"/>
         </scene>
         <!--Action View Controller-->
         <scene sceneID="rRJ-lh-sMr">
