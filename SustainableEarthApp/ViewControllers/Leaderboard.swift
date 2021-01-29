@@ -14,7 +14,7 @@ class Leaderboard: UIViewController {
     
     var communities: [Community] = [
         Community(title: "Class of 2022+", members: "100 members", rank: "rank 42"),
-        Community(title: "Class of 2024+", members: "64 members", rank: "rank 21")
+        Community(title: "Stever House", members: "64 members", rank: "rank 21")
     ]
     
     override func viewDidLoad() {
@@ -23,6 +23,7 @@ class Leaderboard: UIViewController {
         tableView.dataSource = self
         
         // Do any additional setup after loading the view.
+        tableView.register(UINib(nibName: K.CommNibName, bundle: nil), forCellReuseIdentifier: K.CommCellIdentifier)
     }
     
 
@@ -44,8 +45,8 @@ extension Leaderboard: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.CommCell, for: indexPath)
-        cell.textLabel?.text = communities[indexPath.row].title
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.CommCellIdentifier, for: indexPath) as! CommunityCell
+        cell.label.text = communities[indexPath.row].title
         return cell
     }
 }
