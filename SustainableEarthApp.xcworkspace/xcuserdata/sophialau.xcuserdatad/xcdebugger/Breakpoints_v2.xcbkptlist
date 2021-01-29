@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8A001D35-FD52-4D03-8E41-0D42098DA69B"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8C5F9A2-7FFB-4C76-92F3-3E26F5F639FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SustainableEarthApp/ViewControllers/SignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "SignUpViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D8C5F9A2-7FFB-4C76-92F3-3E26F5F639FF - 880b162bbad338c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SustainableEarthApp.SignUpViewController.collegesList.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "SustainableEarthApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophialau/Documents/GitHub/SustainableEarthApp/SustainableEarthApp/ViewControllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "D8C5F9A2-7FFB-4C76-92F3-3E26F5F639FF - 683630d6a0934fb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SustainableEarthApp.SignUpViewController.collegesList.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "SustainableEarthApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophialau/Documents/GitHub/SustainableEarthApp/SustainableEarthApp/ViewControllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "D8C5F9A2-7FFB-4C76-92F3-3E26F5F639FF - a95d25bcaba612d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SustainableEarthApp.SignUpViewController.collegesList.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "SustainableEarthApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophialau/Documents/GitHub/SustainableEarthApp/SustainableEarthApp/ViewControllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "D8C5F9A2-7FFB-4C76-92F3-3E26F5F639FF - 844326700e3fdab1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SustainableEarthApp.SignUpViewController.collegesList.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SustainableEarthApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophialau/Documents/GitHub/SustainableEarthApp/SustainableEarthApp/ViewControllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "D8C5F9A2-7FFB-4C76-92F3-3E26F5F639FF - 8234505df9bfe936"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SustainableEarthApp.SignUpViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SustainableEarthApp.SignUpViewController"
+                  moduleName = "SustainableEarthApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophialau/Documents/GitHub/SustainableEarthApp/SustainableEarthApp/ViewControllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1315">
+               </Location>
+               <Location
+                  uuid = "D8C5F9A2-7FFB-4C76-92F3-3E26F5F639FF - 829174705accc3fb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SustainableEarthApp.SignUpViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SustainableEarthApp.SignUpViewController&gt;"
+                  moduleName = "SustainableEarthApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophialau/Documents/GitHub/SustainableEarthApp/SustainableEarthApp/ViewControllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1256">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99C41738-F238-4058-B178-9126DCD72661"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SustainableEarthApp/ViewControllers/SignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "SignUpViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E808AD41-B7C4-474B-A277-EBA8D43FE922"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SustainableEarthApp/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1"
+            endingLineNumber = "1"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3DE8A6B-5189-4C2B-8695-5CCBC369A46B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SustainableEarthApp/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
