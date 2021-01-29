@@ -20,6 +20,8 @@ class Rewards: UIViewController {
     }
 
     @IBAction func windButtonPressed(_ sender: UIButton) {
+        let rpWindow = RewardsPurchaseWindow()
+        self.present(rpWindow, animated: true, completion: nil)
     }
     
     @IBAction func railButtonPressed(_ sender: UIButton) {
