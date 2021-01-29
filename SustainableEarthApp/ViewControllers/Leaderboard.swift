@@ -10,9 +10,18 @@ import UIKit
 
 class Leaderboard: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var communities: [Community] = [
+        Community(title: "Class of 2022+", members: "100 members", rank: "rank 42"),
+        Community(title: "Class of 2024+", members: "64 members", rank: "rank 21")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         // Do any additional setup after loading the view.
     }
     
@@ -27,4 +36,22 @@ class Leaderboard: UIViewController {
     }
     */
 
+}
+
+extension Leaderboard: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return communities.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.CommCell, for: indexPath)
+        cell.textLabel?.text = communities[indexPath.row].title
+        return cell
+    }
+}
+
+extension Leaderboard: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("User just clicked on row number: ", indexPath.row)
+    }
 }

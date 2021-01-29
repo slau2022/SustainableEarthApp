@@ -8,6 +8,12 @@
 
 import Foundation
 
+struct K {
+    // static let (constant) = "(string)"
+    // Call as "K.(constant)" in other files
+    static let CommCell = "CommunityCell"
+}
+
 struct Constants {
     
     struct Storyboard {
