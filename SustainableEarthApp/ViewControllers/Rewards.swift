@@ -20,53 +20,81 @@ class Rewards: UIViewController {
     }
 
     @IBAction func windButtonPressed(_ sender: UIButton) {
-        let rpWindow = RewardsPurchaseWindow()
-        self.present(rpWindow, animated: true, completion: nil)
-        // purchaseImageView.image = #imageLiteral(resourceName: "wind1")
+        
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "wind1")
         
         
     }
     
     @IBAction func railButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "rail1")
     }
     
     @IBAction func officeButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "office1")
     }
     
     @IBAction func skyscraperButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "skyscraper1")
     }
     
     @IBAction func farmersButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "farmersmarket1")
     }
     
     @IBAction func hotelButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "hotel1")
     }
     
     @IBAction func evButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "ev1")
     }
     
     @IBAction func housingButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+       // rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "housing1")
     }
     
     @IBAction func bikeButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "bike1")
     }
     
     @IBAction func restaurantButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "restaurant1")
     }
     
     @IBAction func solarButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "solar1")
     }
     
     @IBAction func farmButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "farm1")
     }
     
     @IBAction func groceryButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "grocery1")
     }
     
     @IBAction func parkButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+       // rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "Public Park")
     }
     
     @IBAction func fountainButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        //rpWindow.purchaseImageView.image = #imageLiteral(resourceName: "fountain1")
     }
     
     
