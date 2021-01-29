@@ -589,6 +589,9 @@
                     <tabBarItem key="tabBarItem" title="Rewards" image="tortoise.fill" catalog="system" id="Hap-F6-ldq"/>
                     <navigationItem key="navigationItem" id="JQi-Kq-1hq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="purchaseImageView" destination="bgz-gy-QfA" id="3kL-bT-2qn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCg-Sv-PPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
