@@ -416,29 +416,6 @@
                     <tabBarItem key="tabBarItem" title="Rewards" selectedImage="tortoise.fill" catalog="system" id="yyh-Go-5Rs"/>
                     <navigationItem key="navigationItem" id="0L7-HJ-yd9"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="affordableHousingButton" destination="JQk-qa-ghP" id="5Vi-wJ-snH"/>
-                        <outlet property="bikeButton" destination="zkN-Lj-S9L" id="0Ht-Ea-Izb"/>
-                        <outlet property="carbonNeutralHotelButton" destination="5j6-Mn-kjG" id="Huq-kh-nsc"/>
-                        <outlet property="chargingButton" destination="8BF-fJ-QHi" id="mp6-I5-St4"/>
-                        <outlet property="evButton" destination="8BF-fJ-QHi" id="mNv-f1-p0f"/>
-                        <outlet property="farmButton" destination="1ch-h5-64L" id="Bq6-8C-hJg"/>
-                        <outlet property="farmerButton" destination="1ch-h5-64L" id="Wpd-rG-oWp"/>
-                        <outlet property="farmersMarketButton" destination="R3b-Ui-jTb" id="1lA-Ma-3zs"/>
-                        <outlet property="fountainButton" destination="25F-0o-2r3" id="MaK-ch-Nf8"/>
-                        <outlet property="groceryButton" destination="qlR-p2-jpA" id="3SS-Iw-M0w"/>
-                        <outlet property="hotelButton" destination="5j6-Mn-kjG" id="t4M-9g-77s"/>
-                        <outlet property="housingButton" destination="JQk-qa-ghP" id="ELZ-Mg-VIU"/>
-                        <outlet property="officeButton" destination="EIP-Cs-jig" id="kh3-GM-o7C"/>
-                        <outlet property="parkButton" destination="9ne-Vu-aHk" id="s5P-ck-b17"/>
-                        <outlet property="railButton" destination="LBr-Ns-kru" id="A6a-2M-is2"/>
-                        <outlet property="restaurantButton" destination="KB9-YP-6v0" id="zl5-O6-erC"/>
-                        <outlet property="skyscraperButton" destination="ySY-ci-60p" id="fJX-XI-HpT"/>
-                        <outlet property="solarButton" destination="SKg-X3-Oug" id="8Kf-0k-Ga6"/>
-                        <outlet property="solarPanelButton" destination="SKg-X3-Oug" id="J8X-MO-IIO"/>
-                        <outlet property="turbineButton" destination="fbt-hI-wGz" id="rR0-dD-V4t"/>
-                        <outlet property="windButton" destination="fbt-hI-wGz" id="jDv-UD-jrM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfP-Nf-uaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -528,8 +505,16 @@
                                                         <rect key="frame" x="278" y="0.0" width="134" height="141"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-aX-2Yn">
+                                                        <rect key="frame" x="63" y="40" width="288" height="67"/>
+                                                        <state key="normal" image="purchase1"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="l8b-aX-2Yn" firstAttribute="centerX" secondItem="IIu-HH-nKn" secondAttribute="centerX" id="PZv-Sk-YFg"/>
+                                                    <constraint firstItem="l8b-aX-2Yn" firstAttribute="top" secondItem="IIu-HH-nKn" secondAttribute="top" constant="40" id="eVh-O0-ZsC"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOP-oI-RID">
                                                 <rect key="frame" x="0.0" y="580" width="414" height="145"/>
@@ -588,24 +573,15 @@
                                     <constraint firstItem="xHv-BE-NAm" firstAttribute="leading" secondItem="yDl-5S-dFs" secondAttribute="leading" id="ybq-iZ-1CZ"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="housing1" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-gy-QfA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="housing1" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-gy-QfA">
                                 <rect key="frame" x="57" y="241" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-aX-2Yn">
-                                <rect key="frame" x="63.5" y="536" width="287" height="67"/>
-                                <state key="normal" title="Button" image="purchase1"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X4d-Iq-7Az"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="l8b-aX-2Yn" firstAttribute="leading" secondItem="X4d-Iq-7Az" secondAttribute="leading" constant="63.5" id="16R-pF-jay"/>
-                            <constraint firstItem="X4d-Iq-7Az" firstAttribute="trailing" secondItem="l8b-aX-2Yn" secondAttribute="trailing" constant="63.5" id="9a8-gW-0Zb"/>
-                            <constraint firstItem="l8b-aX-2Yn" firstAttribute="leading" secondItem="X4d-Iq-7Az" secondAttribute="leading" constant="63.5" id="FVq-gq-N7r"/>
-                            <constraint firstItem="X4d-Iq-7Az" firstAttribute="trailing" secondItem="l8b-aX-2Yn" secondAttribute="trailing" constant="63.5" id="Lqa-sD-n80"/>
-                            <constraint firstItem="l8b-aX-2Yn" firstAttribute="top" secondItem="X4d-Iq-7Az" secondAttribute="top" constant="448" id="UvN-HD-0OB"/>
-                            <constraint firstItem="X4d-Iq-7Az" firstAttribute="bottom" secondItem="l8b-aX-2Yn" secondAttribute="bottom" constant="210" id="qsg-y8-fez"/>
+                            <constraint firstItem="bgz-gy-QfA" firstAttribute="top" secondItem="X4d-Iq-7Az" secondAttribute="top" constant="153" id="O0z-8F-cTH"/>
+                            <constraint firstItem="X4d-Iq-7Az" firstAttribute="bottom" secondItem="bgz-gy-QfA" secondAttribute="bottom" constant="272" id="Zyf-om-yNS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rewards" image="tortoise.fill" catalog="system" id="Hap-F6-ldq"/>
@@ -613,7 +589,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCg-Sv-PPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044" y="2037"/>
+            <point key="canvasLocation" x="1043.4782608695652" y="2036.3839285714284"/>
         </scene>
         <!--Action View Controller-->
         <scene sceneID="rRJ-lh-sMr">
