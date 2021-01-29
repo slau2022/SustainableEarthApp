@@ -414,7 +414,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rewards" selectedImage="tortoise.fill" catalog="system" id="yyh-Go-5Rs"/>
-                    <navigationItem key="navigationItem" id="0L7-HJ-yd9"/>
+                    <navigationItem key="navigationItem" id="z3p-fv-oLp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfP-Nf-uaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -573,18 +573,21 @@
                                     <constraint firstItem="xHv-BE-NAm" firstAttribute="leading" secondItem="yDl-5S-dFs" secondAttribute="leading" id="ybq-iZ-1CZ"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="housing1" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-gy-QfA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="housing1" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-gy-QfA">
                                 <rect key="frame" x="57" y="241" width="300" height="300"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X4d-Iq-7Az"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bgz-gy-QfA" firstAttribute="leading" secondItem="X4d-Iq-7Az" secondAttribute="leading" constant="57" id="Ecg-o9-8Fh"/>
                             <constraint firstItem="bgz-gy-QfA" firstAttribute="top" secondItem="X4d-Iq-7Az" secondAttribute="top" constant="153" id="O0z-8F-cTH"/>
                             <constraint firstItem="X4d-Iq-7Az" firstAttribute="bottom" secondItem="bgz-gy-QfA" secondAttribute="bottom" constant="272" id="Zyf-om-yNS"/>
+                            <constraint firstItem="X4d-Iq-7Az" firstAttribute="trailing" secondItem="bgz-gy-QfA" secondAttribute="trailing" constant="57" id="h4h-pk-5Bo"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rewards" image="tortoise.fill" catalog="system" id="Hap-F6-ldq"/>
+                    <navigationItem key="navigationItem" id="JQi-Kq-1hq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCg-Sv-PPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
