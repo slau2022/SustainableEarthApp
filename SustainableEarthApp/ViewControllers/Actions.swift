@@ -29,10 +29,25 @@ class Actions: UIViewController {
         
         tableView.register(UINib(nibName: Constants.cellNibName, bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
         
+//        loadActions()
+        
         
     // Do any additional setup after loading the view.
     }
     
+//    func loadActions() {
+//       messages = []
+//
+//        db.collection(Constants.FStore.collectionName).getDocuments { (querySnapshot, error) in
+//            if let e = error {
+//                print("there was an issue retrieving data from firestore. \(e)")
+//            } else {
+//                query
+//            }
+//
+//        }
+        
+    }
     // MARK: Actions
    
     //change favorites button image when clicked
@@ -49,7 +64,7 @@ class Actions: UIViewController {
     */
 
 
-}
+
 
 extension Actions: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
