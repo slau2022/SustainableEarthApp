@@ -219,6 +219,8 @@ PODS:
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
   - DropDown (2.3.13)
+  - Firebase (6.34.0):
+    - Firebase/Core (= 6.34.0)
   - Firebase/Analytics (6.34.0):
     - Firebase/Core
   - Firebase/Auth (6.34.0):
@@ -334,6 +336,7 @@ PODS:
 
 DEPENDENCIES:
   - DropDown
+  - Firebase
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
@@ -382,6 +385,6 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: d48e97bb23360adb6fb4753e04076a8c413d3c24
+PODFILE CHECKSUM: fb491b09394da1a6a580b4312d3139c9579d396a
 
 COCOAPODS: 1.9.0.beta.3
