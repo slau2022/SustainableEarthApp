@@ -17,6 +17,7 @@
 #import "GoogleDataTransport/GDTCCTLibrary/Private/GDTCCTUploader.h"
 
 #import "GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORConsoleLogger.h"
+#import "GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREndpoints.h"
 #import "GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCOREvent.h"
 #import "GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORPlatform.h"
 #import "GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/GDTCORRegistrar.h"
@@ -49,9 +50,6 @@ static NSString *const kLibraryDataCCTNextUploadTimeKey = @"GDTCCTUploaderFLLNex
 
 /** */
 static NSString *const kLibraryDataFLLNextUploadTimeKey = @"GDTCCTUploaderFLLNextUploadTimeKey";
-
-static NSString *const kINTServerURL =
-    @"https://dummyapiverylong-dummy.dummy.com/dummy/api/very/long";
 
 #if !NDEBUG
 NSNotificationName const GDTCCTUploadCompleteNotification = @"com.GDTCCTUploader.UploadComplete";
@@ -109,6 +107,7 @@ typedef void (^GDTCCTUploaderEventBatchBlock)(NSNumber *_Nullable batchID,
   return self;
 }
 
+<<<<<<< HEAD
 /**
  *
  */
@@ -163,15 +162,23 @@ typedef void (^GDTCCTUploaderEventBatchBlock)(NSNumber *_Nullable batchID,
     CSHServerURL = [NSURL URLWithString:[NSString stringWithUTF8String:URL]];
   });
 
+=======
++ (nullable NSURL *)serverURLForTarget:(GDTCORTarget)target {
+>>>>>>> communities
 #if !NDEBUG
   if (_testServerURL) {
     return _testServerURL;
   }
 #endif  // !NDEBUG
 
+<<<<<<< HEAD
   switch (target) {
     case kGDTCORTargetCCT:
       return CCTServerURL;
+=======
+  return [GDTCOREndpoints uploadURLForTarget:target];
+}
+>>>>>>> communities
 
     case kGDTCORTargetFLL:
       return FLLServerURL;
