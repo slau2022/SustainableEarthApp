@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # 7.4.0
 - [fixed] Check if the reverse client ID is configured as a custom URL scheme before setting it as the callback scheme. (#7211)
 - [added] Add ability to sync auth state across devices. (#6924)
@@ -17,7 +15,6 @@
 - [changed] The global variables `FirebaseAuthVersionNum` and `FirebaseAuthVersionStr` are deleted.
   `FirebaseVersion()` or `FIRFirebaseVersion()` should be used instead.
 
->>>>>>> communities
 # v6.9.1
 - [fixed] Internal source documentation. (#6371)
 
