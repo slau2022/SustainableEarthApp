@@ -18,9 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="sH7-xc-sVU"/>
-
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" selectedImage="house.fill" catalog="system" id="4AU-jM-17k"/>
                     <navigationItem key="navigationItem" id="guw-4q-UeW"/>
@@ -197,7 +195,6 @@
                                             <outlet property="delegate" destination="efE-NO-onF" id="SHs-jc-632"/>
                                         </connections>
                                     </tableView>
-
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="308" id="inu-Co-bm7"/>
@@ -256,7 +253,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B4R-Gi-eaN"/>
-
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="B4R-Gi-eaN" firstAttribute="trailing" secondItem="mXV-zD-SNt" secondAttribute="trailing" constant="53" id="0Sd-NN-HKA"/>
                             <constraint firstItem="B4R-Gi-eaN" firstAttribute="trailing" secondItem="YR4-Lz-irf" secondAttribute="trailing" constant="353" id="0Vb-TK-uGv"/>
@@ -348,7 +345,6 @@
                     <view key="view" contentMode="scaleToFill" id="Nj3-Gd-XEz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Ep-rK-STd">
                                 <rect key="frame" x="0.0" y="247" width="414" height="566"/>
@@ -672,7 +668,6 @@
                             <constraint firstItem="akG-6t-DjG" firstAttribute="bottom" secondItem="KsO-sC-oU5" secondAttribute="bottom" id="LM8-mt-6Be"/>
                             <constraint firstItem="akG-6t-DjG" firstAttribute="leading" secondItem="KsO-sC-oU5" secondAttribute="leading" id="acf-Y8-bx9"/>
                         </constraints>
-
                     </view>
                     <tabBarItem key="tabBarItem" title="Rewards" selectedImage="tortoise.fill" catalog="system" id="yyh-Go-5Rs"/>
                     <navigationItem key="navigationItem" id="z3p-fv-oLp"/>
@@ -1058,6 +1053,9 @@
         <image name="BackArrow" width="25.5" height="17"/>
         <image name="ButtonBasic" width="308" height="65"/>
         <image name="ButtonHighlighted" width="288" height="67"/>
+        <image name="Create group" width="228" height="48"/>
+        <image name="Search bar" width="368" height="61"/>
+        <image name="Search icon" width="19.5" height="20"/>
         <image name="TextField" width="308" height="65"/>
         <image name="bike1" width="168.5" height="182.5"/>
         <image name="ev1" width="168.5" height="182.5"/>
@@ -1088,11 +1086,14 @@
         <namedColor name="TextColor">
             <color red="0.6470000147819519" green="0.6470000147819519" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
