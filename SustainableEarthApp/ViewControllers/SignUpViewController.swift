@@ -37,6 +37,13 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 0
         collegesTable.isHidden = true
         yearsTable.isHidden = true
+        firstNameTextField.circleCorner()
+        lastNameTextField.circleCorner()
+        passWordTextField.circleCorner()
+        emailTextField.circleCorner()
+        signUpButton.circleCorner()
+        selectCollege.circleCorner()
+        selectGradYear.circleCorner()
         print("SETUP")
     }
     // Check fields to ensure that the fields are correct, otherwise return an error message
@@ -177,4 +184,3 @@ extension SignUpViewController: UITableViewDelegate,UITableViewDataSource{
     }
     
 }
-
