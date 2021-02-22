@@ -9,7 +9,6 @@
 import UIKit
 import FirebaseAuth
 import Firebase
-import DropDown
 
 class SignUpViewController: UIViewController {
 
