@@ -10,6 +10,9 @@ import UIKit
 
 class Rewards: UIViewController {
     
+    @IBOutlet weak var popUpImageView: UIImageView!
+    
+    @IBOutlet weak var purchaseButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,14 +24,16 @@ class Rewards: UIViewController {
 
     @IBAction func windButtonPressed(_ sender: UIButton) {
         
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
-        //purchaseImageView.image = #imageLiteral(resourceName: "wind1")
+        //popUpImageView.image = #imageLiteral(resourceName: "wind1")
+        // purchaseImageView.image = #imageLiteral(resourceName: "wind1")
+        
+        
+        
         
         
     }
     
     @IBAction func railButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
