@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import Firebase
 
 class Home: UIViewController {
 
+    @IBOutlet weak var testImageRetrieve: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // let storage = Storage.storage()
+        
 
         // Do any additional setup after loading the view.
     }
