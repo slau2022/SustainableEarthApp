@@ -10,13 +10,6 @@ import UIKit
 
 class Leaderboard: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    
-    var communities: [Community] = [
-        Community(title: "Class of 2022+", members: "100 members", rank: "rank 42"),
-        Community(title: "Stever House", members: "64 members", rank: "rank 21")
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -26,6 +19,13 @@ class Leaderboard: UIViewController {
         tableView.register(UINib(nibName: K.CommNibName, bundle: nil), forCellReuseIdentifier: K.CommCellIdentifier)
     }
     
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var communities: [Community] = [
+        Community(title: "Class of 2022+", members: "100 members", rank: "rank 42"),
+        Community(title: "Stever House", members: "64 members", rank: "rank 21")
+    ]
 
     /*
     // MARK: - Navigation
