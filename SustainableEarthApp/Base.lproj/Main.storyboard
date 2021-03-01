@@ -673,7 +673,7 @@
                     <navigationItem key="navigationItem" id="JQi-Kq-1hq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="purchaseImageView" destination="bgz-gy-QfA" id="3kL-bT-2qn"/>
+                        <outlet property="purchaseImageView" destination="bgz-gy-QfA" id="BBX-0Z-zHK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCg-Sv-PPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
