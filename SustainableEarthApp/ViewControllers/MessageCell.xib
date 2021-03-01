@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="187" id="KGk-i7-Jjw" customClass="MessageCell" customModule="SustainableEarthApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reusewaterbottle" translatesAutoresizingMaskIntoConstraints="NO" id="K4e-AQ-XXI">
+                        <rect key="frame" x="10" y="10" width="285" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="Rf1-IN-i9i"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="elb-fy-lIk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sb-ck-MMn">
+                        <rect key="frame" x="30" y="30" width="93" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Times Logged" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRY-cD-6Ct">
+                        <rect key="frame" x="26" y="55" width="92" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinImage" translatesAutoresizingMaskIntoConstraints="NO" id="dWx-Dp-zBB">
+                        <rect key="frame" x="23" y="73" width="37" height="40"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="K4e-AQ-XXI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="30y-Rw-mWm"/>
+                    <constraint firstItem="nRY-cD-6Ct" firstAttribute="top" secondItem="7Sb-ck-MMn" secondAttribute="bottom" constant="4" id="3kc-ht-rUf"/>
+                    <constraint firstAttribute="bottom" secondItem="K4e-AQ-XXI" secondAttribute="bottom" constant="10" id="5FA-XO-obG"/>
+                    <constraint firstItem="7Sb-ck-MMn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="Kq7-TO-p6W"/>
+                    <constraint firstItem="dWx-Dp-zBB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="RND-pI-F4p"/>
+                    <constraint firstItem="K4e-AQ-XXI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UYT-VT-c85"/>
+                    <constraint firstItem="nRY-cD-6Ct" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="hxT-by-gM7"/>
+                    <constraint firstItem="7Sb-ck-MMn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="kYc-uL-d0Z"/>
+                    <constraint firstAttribute="trailing" secondItem="K4e-AQ-XXI" secondAttribute="trailing" constant="10" id="wYZ-Y6-74h"/>
+                    <constraint firstItem="dWx-Dp-zBB" firstAttribute="top" secondItem="nRY-cD-6Ct" secondAttribute="bottom" constant="1" id="zgK-Ba-4s3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="7Sb-ck-MMn" id="yEe-Gp-bDQ"/>
+                <outlet property="messageBubble" destination="H2p-sc-9uM" id="eVD-rg-bNu"/>
+                <outlet property="rightImageView" destination="K4e-AQ-XXI" id="Kmn-1Y-pDM"/>
+            </connections>
+            <point key="canvasLocation" x="-35.507246376811594" y="76.674107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="coinImage" width="37" height="40"/>
+        <image name="reusewaterbottle" width="2121" height="1414"/>
+    </resources>
+</document>

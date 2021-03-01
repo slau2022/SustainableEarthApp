@@ -224,6 +224,11 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="308" id="inu-Co-bm7"/>
+                                    <constraint firstItem="W7D-Mb-way" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="5cx-RF-CFg"/>
+                                    <constraint firstItem="4fo-KV-dwP" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="Lxz-YT-HDH"/>
+                                    <constraint firstItem="dbb-rZ-LC5" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="mn9-AM-Qnq"/>
+                                    <constraint firstItem="PAG-Ss-292" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="sBW-8X-9cn"/>
+                                    <constraint firstItem="X4J-LM-JmM" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="t7x-zX-cuI"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4J-LM-JmM">
@@ -304,11 +309,83 @@
                     <view key="view" contentMode="scaleToFill" id="E4u-xD-wLj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRa-eN-DIy">
+                                <rect key="frame" x="111" y="140" width="95" height="42"/>
+                                <state key="normal" image="unclickedEnergyButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-ZM-7zo">
+                                <rect key="frame" x="298" y="140" width="95" height="42"/>
+                                <state key="normal" image="unclickedRecycleButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXo-gh-uUu">
+                                <rect key="frame" x="205" y="140" width="95" height="42"/>
+                                <state key="normal" image="unclickedWaterButton"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGY-Ct-5tK">
+                                <rect key="frame" x="20" y="192" width="143" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lN1-Ke-dvF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BwK-4R-uwD"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqD-Kd-UxD">
+                                <rect key="frame" x="16" y="140" width="95" height="42"/>
+                                <state key="normal" image="unclickedFavoritesButton"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bGI-cY-vv7">
+                                <rect key="frame" x="0.0" y="227" width="414" height="586"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableCell" id="YFb-xr-zBC">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YFb-xr-zBC" id="DDe-4S-Ra6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qrf-Zv-nF4"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DRa-eN-DIy" firstAttribute="top" secondItem="0sa-ZM-7zo" secondAttribute="top" id="07c-oB-M4E"/>
+                            <constraint firstItem="uGY-Ct-5tK" firstAttribute="leading" secondItem="E4u-xD-wLj" secondAttribute="leadingMargin" id="1Q6-70-WzQ"/>
+                            <constraint firstItem="DRa-eN-DIy" firstAttribute="top" secondItem="lN1-Ke-dvF" secondAttribute="bottom" constant="8" id="3BU-PK-zC0"/>
+                            <constraint firstItem="DRa-eN-DIy" firstAttribute="top" secondItem="PqD-Kd-UxD" secondAttribute="top" id="4eY-bq-kpF"/>
+                            <constraint firstItem="bGI-cY-vv7" firstAttribute="trailing" secondItem="qrf-Zv-nF4" secondAttribute="trailing" id="CGy-gK-gMT"/>
+                            <constraint firstItem="uGY-Ct-5tK" firstAttribute="top" secondItem="E4u-xD-wLj" secondAttribute="top" constant="192" id="E4W-M6-iuQ"/>
+                            <constraint firstItem="qrf-Zv-nF4" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uGY-Ct-5tK" secondAttribute="trailing" symbolic="YES" id="K5A-Bt-Zfg"/>
+                            <constraint firstItem="bGI-cY-vv7" firstAttribute="bottom" secondItem="qrf-Zv-nF4" secondAttribute="bottom" id="NHg-x1-BeN"/>
+                            <constraint firstItem="lN1-Ke-dvF" firstAttribute="leading" secondItem="bGI-cY-vv7" secondAttribute="leading" id="NOc-Qk-mRL"/>
+                            <constraint firstItem="0sa-ZM-7zo" firstAttribute="leading" secondItem="DRa-eN-DIy" secondAttribute="trailing" constant="92" id="PVT-lM-qT4"/>
+                            <constraint firstItem="uGY-Ct-5tK" firstAttribute="top" secondItem="DRa-eN-DIy" secondAttribute="bottom" constant="10" id="TJb-fj-xDg"/>
+                            <constraint firstItem="DRa-eN-DIy" firstAttribute="leading" secondItem="PqD-Kd-UxD" secondAttribute="trailing" id="cBe-Hv-W58"/>
+                            <constraint firstItem="rXo-gh-uUu" firstAttribute="leading" secondItem="PqD-Kd-UxD" secondAttribute="trailing" constant="94" id="cEn-rz-mfg"/>
+                            <constraint firstItem="bGI-cY-vv7" firstAttribute="leading" secondItem="qrf-Zv-nF4" secondAttribute="leading" id="h7R-F2-wLC"/>
+                            <constraint firstItem="DRa-eN-DIy" firstAttribute="leading" secondItem="E4u-xD-wLj" secondAttribute="leading" constant="111" id="oT9-BU-pyU"/>
+                            <constraint firstItem="bGI-cY-vv7" firstAttribute="top" secondItem="uGY-Ct-5tK" secondAttribute="bottom" constant="8" id="oVL-jD-n85"/>
+                            <constraint firstItem="DRa-eN-DIy" firstAttribute="top" secondItem="rXo-gh-uUu" secondAttribute="top" id="pRX-kq-VGU"/>
+                            <constraint firstItem="lN1-Ke-dvF" firstAttribute="trailing" secondItem="bGI-cY-vv7" secondAttribute="trailing" id="pSL-kU-I6f"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Actions" selectedImage="star.fill" catalog="system" id="MeE-Gg-gg4"/>
                     <navigationItem key="navigationItem" id="5J0-0z-VST"/>
+                    <connections>
+                        <outlet property="energyButton" destination="DRa-eN-DIy" id="AI6-hn-GE0"/>
+                        <outlet property="favoritesButton" destination="PqD-Kd-UxD" id="HUe-GR-3Ai"/>
+                        <outlet property="recycleButton" destination="0sa-ZM-7zo" id="Yuo-iM-hqL"/>
+                        <outlet property="tableView" destination="bGI-cY-vv7" id="4aQ-FD-Pzp"/>
+                        <outlet property="waterButton" destination="rXo-gh-uUu" id="mlU-LK-Plz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9Y-mQ-fOC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -931,6 +1008,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vBe-W5-Vsg"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vBe-W5-Vsg" firstAttribute="trailing" secondItem="qvz-tj-kgt" secondAttribute="trailing" constant="40" id="85n-W2-cdL"/>
+                            <constraint firstItem="qvz-tj-kgt" firstAttribute="leading" secondItem="vBe-W5-Vsg" secondAttribute="leading" constant="40" id="DKL-Ub-c3l"/>
+                            <constraint firstItem="vBe-W5-Vsg" firstAttribute="bottom" secondItem="qvz-tj-kgt" secondAttribute="bottom" constant="40" id="j6C-Wr-LRU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sZ5-ZI-VUL"/>
                     <connections>
@@ -1063,6 +1146,7 @@
         <image name="fountain1" width="168.5" height="185.5"/>
         <image name="grocery1" width="168.5" height="185.5"/>
         <image name="hotel1" width="168.5" height="183"/>
+        <image name="clickedSearchButton" width="27" height="26"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="housing1" width="168.5" height="185.5"/>
         <image name="office1" width="168.5" height="182.5"/>
@@ -1091,17 +1175,29 @@
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <image name="unclickedEnergyButton" width="95" height="42"/>
+        <image name="unclickedFavoritesButton" width="95" height="42"/>
+        <image name="unclickedRecycleButton" width="95" height="42"/>
+        <image name="unclickedWaterButton" width="95" height="42"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
