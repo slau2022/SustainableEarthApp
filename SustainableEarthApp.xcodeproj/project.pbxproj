@@ -74,12 +74,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2779157D25AD446A00D1C031 /* Models */ = {
+		3A2B3DFA25ED4EDB00D3B5F5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				2779157E25AD448100D1C031 /* Message.swift */,
 			);
-			path = Models;
+			name = Model;
+			path = "New Group1/Model";
 			sourceTree = "<group>";
 		};
 		3AED09D325ED47AB0013C48C /* Views */ = {
@@ -115,7 +116,7 @@
 				3AF3E186254C5BE60064B494 /* AppDelegate.swift */,
 				3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */,
 				3AF3E188254C5BE60064B494 /* SceneDelegate.swift */,
-				2779157D25AD446A00D1C031 /* Models */,
+				3A2B3DFA25ED4EDB00D3B5F5 /* Model */,
 				3AF3E1AB254C910C0064B494 /* ViewControllers */,
 				3AF3E1AA254C8F960064B494 /* Helpers */,
 				3AF3E191254C5BEC0064B494 /* Assets.xcassets */,
