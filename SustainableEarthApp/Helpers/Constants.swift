@@ -16,11 +16,9 @@ struct K {
 }
 
 struct Constants {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
     
     struct Storyboard {
+        
         static let homeViewController = "HomeVC"
     }
-
 }
