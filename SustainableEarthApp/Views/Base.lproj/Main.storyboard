@@ -223,12 +223,12 @@
                                     </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="308" id="inu-Co-bm7"/>
                                     <constraint firstItem="W7D-Mb-way" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="5cx-RF-CFg"/>
                                     <constraint firstItem="4fo-KV-dwP" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="Lxz-YT-HDH"/>
+                                    <constraint firstAttribute="width" constant="308" id="inu-Co-bm7"/>
                                     <constraint firstItem="dbb-rZ-LC5" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="mn9-AM-Qnq"/>
                                     <constraint firstItem="PAG-Ss-292" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="sBW-8X-9cn"/>
-                                    <constraint firstItem="X4J-LM-JmM" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="t7x-zX-cuI"/>
+                                    <constraint firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="t7x-zX-cuI"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4J-LM-JmM">
@@ -1008,11 +1008,8 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vBe-W5-Vsg"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vBe-W5-Vsg" firstAttribute="trailing" secondItem="qvz-tj-kgt" secondAttribute="trailing" constant="40" id="85n-W2-cdL"/>
-                            <constraint firstItem="qvz-tj-kgt" firstAttribute="leading" secondItem="vBe-W5-Vsg" secondAttribute="leading" constant="40" id="DKL-Ub-c3l"/>
-                            <constraint firstItem="vBe-W5-Vsg" firstAttribute="bottom" secondItem="qvz-tj-kgt" secondAttribute="bottom" constant="40" id="j6C-Wr-LRU"/>
+                            <constraint firstAttribute="leading" secondItem="vBe-W5-Vsg" secondAttribute="leading" constant="40" id="DKL-Ub-c3l"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sZ5-ZI-VUL"/>
@@ -1146,7 +1143,6 @@
         <image name="fountain1" width="168.5" height="185.5"/>
         <image name="grocery1" width="168.5" height="185.5"/>
         <image name="hotel1" width="168.5" height="183"/>
-        <image name="clickedSearchButton" width="27" height="26"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="housing1" width="168.5" height="185.5"/>
         <image name="office1" width="168.5" height="182.5"/>
@@ -1159,6 +1155,10 @@
         <image name="solar1" width="168.5" height="182.5"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="tortoise.fill" catalog="system" width="128" height="66"/>
+        <image name="unclickedEnergyButton" width="95" height="42"/>
+        <image name="unclickedFavoritesButton" width="95" height="42"/>
+        <image name="unclickedRecycleButton" width="95" height="42"/>
+        <image name="unclickedWaterButton" width="95" height="42"/>
         <image name="wind1" width="168.5" height="182.5"/>
         <namedColor name="BackgroundColor">
             <color red="0.9179999828338623" green="0.9179999828338623" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1175,23 +1175,11 @@
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <image name="unclickedEnergyButton" width="95" height="42"/>
-        <image name="unclickedFavoritesButton" width="95" height="42"/>
-        <image name="unclickedRecycleButton" width="95" height="42"/>
-        <image name="unclickedWaterButton" width="95" height="42"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
