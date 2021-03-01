@@ -82,6 +82,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		3AED09D325ED47AB0013C48C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3AF3E17A254C5BE60064B494 = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +111,10 @@
 		3AF3E185254C5BE60064B494 /* SustainableEarthApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AED09D325ED47AB0013C48C /* Views */,
 				3AF3E186254C5BE60064B494 /* AppDelegate.swift */,
-				3AF3E188254C5BE60064B494 /* SceneDelegate.swift */,
-				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
 				3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */,
+				3AF3E188254C5BE60064B494 /* SceneDelegate.swift */,
 				2779157D25AD446A00D1C031 /* Models */,
 				3AF3E1AB254C910C0064B494 /* ViewControllers */,
 				3AF3E1AA254C8F960064B494 /* Helpers */,
