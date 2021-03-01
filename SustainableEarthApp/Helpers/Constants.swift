@@ -8,12 +8,17 @@
 
 import Foundation
 
+struct K {
+    // static let (constant) = "(string)"
+    // Call as "K.(constant)" in other files
+    static let CommCellIdentifier = "ReusableCommCell"
+    static let CommNibName = "CommunityCell"
+}
+
 struct Constants {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
     
     struct Storyboard {
+        
         static let homeViewController = "HomeVC"
     }
-
 }

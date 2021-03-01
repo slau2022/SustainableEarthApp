@@ -18,6 +18,7 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +27,9 @@ class LogInViewController: UIViewController {
     }
     func setUpElements(){
         errorLabel.alpha = 0
+        emailTextField.circleCorner()
+        passwordTextField.circleCorner()
+        loginButton.circleCorner()
     }
     
     func transitionToHome(){
@@ -48,6 +52,7 @@ class LogInViewController: UIViewController {
         errorLabel.text = message
         errorLabel.alpha = 1
     }
+    
     
     /*
     // MARK: - Navigation
@@ -82,4 +87,50 @@ class LogInViewController: UIViewController {
             }
         }
     }
+}
+
+extension UITextField {
+    func circleCorner(){
+        //Basic texfield Setup
+        borderStyle = .none
+        
+        //To apply corner radius
+        layer.cornerRadius = frame.size.height / 2
+
+        //To apply border
+        layer.borderWidth = 0.25
+        layer.borderColor = UIColor.white.cgColor
+
+        //To apply Shadow
+        layer.shadowOpacity = 1
+        layer.shadowRadius = 3.0
+        layer.shadowOffset = CGSize.zero // Use any CGSize
+        layer.shadowColor = UIColor.gray.cgColor
+
+        //To apply padding
+        let paddingView : UIView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: frame.height))
+        leftView = paddingView
+        leftViewMode = UITextField.ViewMode.always
+        
+    }
+}
+
+extension UIButton {
+    func circleCorner(){
+        //To apply corner radius
+        layer.cornerRadius = frame.size.height / 2
+
+        //To apply border
+        layer.borderWidth = 0.25
+        layer.borderColor = UIColor.white.cgColor
+
+        //To apply Shadow
+        layer.shadowOpacity = 1
+        layer.shadowRadius = 3.0
+        layer.shadowOffset = CGSize.zero // Use any CGSize
+        layer.shadowColor = UIColor.gray.cgColor
+
+        
+    }
+    
 }

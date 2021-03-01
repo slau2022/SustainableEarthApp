@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2779157F25AD448100D1C031 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779157E25AD448100D1C031 /* Message.swift */; };
-		2779158425AE245900D1C031 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779158225AE245900D1C031 /* MessageCell.swift */; };
-		2779158525AE245900D1C031 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2779158325AE245900D1C031 /* MessageCell.xib */; };
+		1116D336ED102E6EBA26816A /* Pods_SustainableEarthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6B399DF59E787322E4F5A5 /* Pods_SustainableEarthApp.framework */; };
 		3A0F1135254C948500CDAC68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */; };
 		3A0F1139254CA2FD00CDAC68 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F1138254CA2FD00CDAC68 /* Utilities.swift */; };
 		3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F9F3E254CB6C800B5121A /* Constants.swift */; };
@@ -25,13 +23,13 @@
 		3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A4254C696B0064B494 /* SignUpViewController.swift */; };
 		3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A6254C69790064B494 /* LogInViewController.swift */; };
 		3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A8254C698E0064B494 /* StartViewController.swift */; };
-		BF10DC0E2026C773F7D77AFA /* Pods_SustainableEarthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCEE90CBD9A43D6D930AFBB /* Pods_SustainableEarthApp.framework */; };
+		9730E86E25C347A700F33F76 /* RewardsPurchaseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730E86D25C347A700F33F76 /* RewardsPurchaseWindow.swift */; };
+		975F1CE125C3C23A00FE7107 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F1CE025C3C23A00FE7107 /* Community.swift */; };
+		975F1D0025C3CE3C00FE7107 /* CommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */; };
+		975F1D0125C3CE3C00FE7107 /* CommunityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2779157E25AD448100D1C031 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		2779158225AE245900D1C031 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
-		2779158325AE245900D1C031 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A0F1138254CA2FD00CDAC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3A7F9F3E254CB6C800B5121A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -49,9 +47,13 @@
 		3AF3E1A4254C696B0064B494 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3AF3E1A6254C69790064B494 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3AF3E1A8254C698E0064B494 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		BF0C8C8064ABEEE9ADA6DD49 /* Pods-SustainableEarthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.debug.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.debug.xcconfig"; sourceTree = "<group>"; };
-		DC4848E2FAC87BE93BB56A08 /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
-		DCCEE90CBD9A43D6D930AFBB /* Pods_SustainableEarthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SustainableEarthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6B399DF59E787322E4F5A5 /* Pods_SustainableEarthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SustainableEarthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		661831C4793AF2CD2B3D28BD /* Pods-SustainableEarthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.debug.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9730E86D25C347A700F33F76 /* RewardsPurchaseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsPurchaseWindow.swift; sourceTree = "<group>"; };
+		975F1CE025C3C23A00FE7107 /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
+		975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCell.swift; sourceTree = "<group>"; };
+		975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityCell.xib; sourceTree = "<group>"; };
+		DF664CBD8222DC658287F31F /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +61,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF10DC0E2026C773F7D77AFA /* Pods_SustainableEarthApp.framework in Frameworks */,
+				1116D336ED102E6EBA26816A /* Pods_SustainableEarthApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BC5DBCAB2B8CF1B2B3182D6 /* Frameworks */ = {
+		39E1961CDCEF3B421DA40194 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCCEE90CBD9A43D6D930AFBB /* Pods_SustainableEarthApp.framework */,
+				3B6B399DF59E787322E4F5A5 /* Pods_SustainableEarthApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,8 +98,8 @@
 			children = (
 				3AF3E185254C5BE60064B494 /* SustainableEarthApp */,
 				3AF3E184254C5BE60064B494 /* Products */,
-				AC771AE310683DA696A76C12 /* Pods */,
-				0BC5DBCAB2B8CF1B2B3182D6 /* Frameworks */,
+				DD2ECE85D6179CEEDDC9FBD6 /* Pods */,
+				39E1961CDCEF3B421DA40194 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,16 +114,16 @@
 		3AF3E185254C5BE60064B494 /* SustainableEarthApp */ = {
 			isa = PBXGroup;
 			children = (
-				3AED09D325ED47AB0013C48C /* Views */,
+				975F1CE625C3CB3E00FE7107 /* Views */,
 				3AF3E186254C5BE60064B494 /* AppDelegate.swift */,
-				3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */,
 				3AF3E188254C5BE60064B494 /* SceneDelegate.swift */,
-				3A2B3DFA25ED4EDB00D3B5F5 /* Model */,
+				975F1CDF25C3C20B00FE7107 /* Model */,
 				3AF3E1AB254C910C0064B494 /* ViewControllers */,
 				3AF3E1AA254C8F960064B494 /* Helpers */,
 				3AF3E191254C5BEC0064B494 /* Assets.xcassets */,
 				3AF3E193254C5BEC0064B494 /* LaunchScreen.storyboard */,
 				3AF3E196254C5BEC0064B494 /* Info.plist */,
+				3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */,
 			);
 			path = SustainableEarthApp;
 			sourceTree = "<group>";
@@ -145,18 +147,36 @@
 				3AF3E19E254C63FF0064B494 /* Actions.swift */,
 				3AF3E1A0254C641D0064B494 /* Leaderboard.swift */,
 				3AF3E1A2254C642B0064B494 /* Rewards.swift */,
-				2779158225AE245900D1C031 /* MessageCell.swift */,
-				2779158325AE245900D1C031 /* MessageCell.xib */,
+				9730E86D25C347A700F33F76 /* RewardsPurchaseWindow.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		AC771AE310683DA696A76C12 /* Pods */ = {
+		975F1CDF25C3C20B00FE7107 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BF0C8C8064ABEEE9ADA6DD49 /* Pods-SustainableEarthApp.debug.xcconfig */,
-				DC4848E2FAC87BE93BB56A08 /* Pods-SustainableEarthApp.release.xcconfig */,
+				975F1CE025C3C23A00FE7107 /* Community.swift */,
 			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		975F1CE625C3CB3E00FE7107 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
+				975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */,
+				975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD2ECE85D6179CEEDDC9FBD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				661831C4793AF2CD2B3D28BD /* Pods-SustainableEarthApp.debug.xcconfig */,
+				DF664CBD8222DC658287F31F /* Pods-SustainableEarthApp.release.xcconfig */,
+			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -167,11 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AF3E199254C5BEC0064B494 /* Build configuration list for PBXNativeTarget "SustainableEarthApp" */;
 			buildPhases = (
-				8B5BA900EE6E000B51AA07B8 /* [CP] Check Pods Manifest.lock */,
+				EDD29128E6113DFAE465EB5B /* [CP] Check Pods Manifest.lock */,
 				3AF3E17F254C5BE60064B494 /* Sources */,
 				3AF3E180254C5BE60064B494 /* Frameworks */,
 				3AF3E181254C5BE60064B494 /* Resources */,
-				F74900E0E059414CEF919E33 /* [CP] Embed Pods Frameworks */,
+				FD71AAB2D1D4BBC4BD0737BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,10 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2779158525AE245900D1C031 /* MessageCell.xib in Resources */,
 				3AF3E195254C5BEC0064B494 /* LaunchScreen.storyboard in Resources */,
 				3A0F1135254C948500CDAC68 /* GoogleService-Info.plist in Resources */,
 				3AF3E192254C5BEC0064B494 /* Assets.xcassets in Resources */,
+				975F1D0125C3CE3C00FE7107 /* CommunityCell.xib in Resources */,
 				3AF3E190254C5BE60064B494 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +251,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8B5BA900EE6E000B51AA07B8 /* [CP] Check Pods Manifest.lock */ = {
+		EDD29128E6113DFAE465EB5B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,7 +273,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F74900E0E059414CEF919E33 /* [CP] Embed Pods Frameworks */ = {
+		FD71AAB2D1D4BBC4BD0737BE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,14 +301,15 @@
 				3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */,
 				3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */,
 				3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */,
-				2779158425AE245900D1C031 /* MessageCell.swift in Sources */,
 				3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */,
 				3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */,
 				3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */,
 				3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */,
 				3AF3E189254C5BE60064B494 /* SceneDelegate.swift in Sources */,
-				2779157F25AD448100D1C031 /* Message.swift in Sources */,
+				9730E86E25C347A700F33F76 /* RewardsPurchaseWindow.swift in Sources */,
 				3A0F1139254CA2FD00CDAC68 /* Utilities.swift in Sources */,
+				975F1D0025C3CE3C00FE7107 /* CommunityCell.swift in Sources */,
+				975F1CE125C3C23A00FE7107 /* Community.swift in Sources */,
 				3AF3E1A1254C641D0064B494 /* Leaderboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,11 +454,12 @@
 		};
 		3AF3E19A254C5BEC0064B494 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF0C8C8064ABEEE9ADA6DD49 /* Pods-SustainableEarthApp.debug.xcconfig */;
+			baseConfigurationReference = 661831C4793AF2CD2B3D28BD /* Pods-SustainableEarthApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SustainableEarthApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,11 +473,12 @@
 		};
 		3AF3E19B254C5BEC0064B494 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC4848E2FAC87BE93BB56A08 /* Pods-SustainableEarthApp.release.xcconfig */;
+			baseConfigurationReference = DF664CBD8222DC658287F31F /* Pods-SustainableEarthApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SustainableEarthApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import DropDown
 
 class SignUpViewController: UIViewController {
 
@@ -21,14 +22,29 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var selectCollege: UIButton!
+    @IBOutlet weak var collegesTable: UITableView!
+    var collegesList = ["College of Engineering", "College of Fine Arts", "Dietrich College of Humanities & Social Sciences", "Heinz College of Information Systems and Public Policy", "Mellon College of Science", "School of Computer Science", "Tepper School of Business"]
+    @IBOutlet weak var selectGradYear: UIButton!
+    @IBOutlet weak var yearsTable: UITableView!
+    var yearsList = ["2024", "2023", "2022", "2021"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         setUpElements()
     }
+    
     func setUpElements(){
         errorLabel.alpha = 0
+        collegesTable.isHidden = true
+        yearsTable.isHidden = true
+        firstNameTextField.circleCorner()
+        lastNameTextField.circleCorner()
+        passWordTextField.circleCorner()
+        emailTextField.circleCorner()
+        signUpButton.circleCorner()
+        selectCollege.circleCorner()
+        selectGradYear.circleCorner()
+        print("SETUP")
     }
     // Check fields to ensure that the fields are correct, otherwise return an error message
     func validateFields() -> String?{
@@ -49,6 +65,19 @@ class SignUpViewController: UIViewController {
         }
         
         return nil
+    }
+    @IBAction func selectCollegeClick(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3){
+            self.collegesTable.isHidden = !(self.collegesTable.isHidden)
+        }
+
+    }
+
+    @IBAction func selectGradYearClick(_ sender: Any) {
+        UIView.animate(withDuration: 0.3){
+            self.yearsTable.isHidden = !(self.yearsTable.isHidden)
+        }
+
     }
     func showError(_ message:String){
         errorLabel.text = message
@@ -84,8 +113,8 @@ class SignUpViewController: UIViewController {
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passWordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            
-            
+            let gradYear = selectGradYear.title(for: .normal)!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let college = selectCollege.title(for: .normal)!.trimmingCharacters(in: .whitespacesAndNewlines)
             // create user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                 
@@ -97,7 +126,7 @@ class SignUpViewController: UIViewController {
                 else {
                     // User was created successfully, now store the first name and last name
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data:["firstName":firstName, "lastName":lastName, "uid":result!.user.uid]) { (error) in
+                    db.collection("users").document(email).setData(["firstName":firstName, "lastName":lastName, "uid":result!.user.uid, "gradYear": gradYear, "college": college]) { (error) in
                         
                         if error != nil {
                             self.showError("Error saving user data")
@@ -111,5 +140,47 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    
+}
+
+// for managing the drop down menus
+
+extension SignUpViewController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)-> Int {
+        if self.collegesTable == tableView{
+            return collegesList.count
+        } else {
+            return yearsList.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if self.collegesTable == tableView{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            cell.textLabel?.text = collegesList[indexPath.row]
+            return cell
+            
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "year", for: indexPath)
+            cell.textLabel?.text = yearsList[indexPath.row]
+            return cell
+        }
+            
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.collegesTable == tableView {
+            selectCollege.setTitle("\(collegesList[indexPath.row])", for: .normal)
+            UIView.animate(withDuration: 0.3){
+                self.collegesTable.isHidden = !(self.collegesTable.isHidden)
+            }
+        } else {
+            selectGradYear.setTitle("\(yearsList[indexPath.row])", for: .normal)
+            UIView.animate(withDuration: 0.3){
+                self.yearsTable.isHidden = !(self.yearsTable.isHidden)
+            }
+        }
+    }
     
 }
