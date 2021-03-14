@@ -15,13 +15,14 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpElements()
         // Do any additional setup after loading the view.
         setUpElements()
     }
     
     func setUpElements(){
-        
+        signUpButton.circleCorner()
+        loginButton.circleCorner()
     }
 
     /*

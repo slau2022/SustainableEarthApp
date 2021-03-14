@@ -138,7 +138,7 @@
                                         <rect key="frame" x="34" y="40" width="240" height="95"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="95" id="FAZ-45-tKW"/>
+                                            <constraint firstAttribute="height" priority="999" constant="95" id="FAZ-45-tKW"/>
                                             <constraint firstAttribute="width" constant="240" id="Ihn-aT-xwC"/>
                                         </constraints>
                                         <prototypes>
@@ -194,7 +194,7 @@
                                         <rect key="frame" x="34" y="40" width="240" height="95"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="95" id="2U5-X3-fgU"/>
+                                            <constraint firstAttribute="height" priority="999" constant="95" id="2U5-X3-fgU"/>
                                             <constraint firstAttribute="width" constant="240" id="3Yg-Eo-fCt"/>
                                         </constraints>
                                         <prototypes>
@@ -222,14 +222,6 @@
                                         </connections>
                                     </tableView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="W7D-Mb-way" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="5cx-RF-CFg"/>
-                                    <constraint firstItem="4fo-KV-dwP" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="Lxz-YT-HDH"/>
-                                    <constraint firstAttribute="width" constant="308" id="inu-Co-bm7"/>
-                                    <constraint firstItem="dbb-rZ-LC5" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="mn9-AM-Qnq"/>
-                                    <constraint firstItem="PAG-Ss-292" firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="sBW-8X-9cn"/>
-                                    <constraint firstAttribute="height" secondItem="ZUA-zb-5Tf" secondAttribute="height" id="t7x-zX-cuI"/>
-                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4J-LM-JmM">
                                 <rect key="frame" x="53" y="790" width="308" height="20.5"/>
@@ -968,14 +960,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ButtonBasic" translatesAutoresizingMaskIntoConstraints="NO" id="CD3-Sx-m3g">
-                                <rect key="frame" x="63" y="749" width="288" height="65"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ButtonHighlighted" translatesAutoresizingMaskIntoConstraints="NO" id="8P5-UG-SGL">
-                                <rect key="frame" x="63" y="674" width="288" height="67"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUs-YB-ico">
                                 <rect key="frame" x="63" y="678" width="288" height="30"/>
+                                <color key="backgroundColor" name="ThemeColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -986,6 +973,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceg-nK-Ifp">
                                 <rect key="frame" x="63" y="756" width="288" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" name="TextColor"/>
@@ -1004,21 +992,15 @@
                         <viewLayoutGuide key="safeArea" id="vBe-W5-Vsg"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vBe-W5-Vsg" firstAttribute="trailing" secondItem="8P5-UG-SGL" secondAttribute="trailing" constant="63" id="1Dj-7O-Mgq"/>
                             <constraint firstItem="Ceg-nK-Ifp" firstAttribute="leading" secondItem="vBe-W5-Vsg" secondAttribute="leading" constant="63" id="3E5-yO-a4u"/>
-                            <constraint firstItem="vBe-W5-Vsg" firstAttribute="trailing" secondItem="CD3-Sx-m3g" secondAttribute="trailing" constant="63" id="MCA-k8-0UA"/>
+                            <constraint firstItem="Ceg-nK-Ifp" firstAttribute="top" secondItem="RUs-YB-ico" secondAttribute="bottom" constant="48" id="5Ld-4g-xfA"/>
                             <constraint firstItem="vBe-W5-Vsg" firstAttribute="trailing" secondItem="RUs-YB-ico" secondAttribute="trailing" constant="63" id="S2Y-Cm-25H"/>
                             <constraint firstItem="sH1-fk-rgR" firstAttribute="leading" secondItem="vBe-W5-Vsg" secondAttribute="leading" constant="100" id="T6m-AX-Jf8"/>
                             <constraint firstItem="sH1-fk-rgR" firstAttribute="top" secondItem="vBe-W5-Vsg" secondAttribute="top" constant="412" id="Vbh-4Z-3af"/>
                             <constraint firstItem="vBe-W5-Vsg" firstAttribute="trailing" secondItem="Ceg-nK-Ifp" secondAttribute="trailing" constant="63" id="Ywk-dt-SwU"/>
                             <constraint firstItem="vBe-W5-Vsg" firstAttribute="trailing" secondItem="sH1-fk-rgR" secondAttribute="trailing" constant="99" id="ZBc-s8-ACQ"/>
-                            <constraint firstItem="Ceg-nK-Ifp" firstAttribute="top" secondItem="8P5-UG-SGL" secondAttribute="bottom" constant="15" id="d0A-GN-Nrw"/>
-                            <constraint firstItem="CD3-Sx-m3g" firstAttribute="leading" secondItem="vBe-W5-Vsg" secondAttribute="leading" constant="63" id="gXc-ER-mze"/>
                             <constraint firstItem="RUs-YB-ico" firstAttribute="top" secondItem="sH1-fk-rgR" secondAttribute="bottom" constant="174" id="llj-DQ-460"/>
                             <constraint firstItem="RUs-YB-ico" firstAttribute="leading" secondItem="vBe-W5-Vsg" secondAttribute="leading" constant="63" id="nPJ-Sh-Eeg"/>
-                            <constraint firstItem="8P5-UG-SGL" firstAttribute="leading" secondItem="vBe-W5-Vsg" secondAttribute="leading" constant="63" id="orv-we-p6d"/>
-                            <constraint firstItem="8P5-UG-SGL" firstAttribute="top" secondItem="sH1-fk-rgR" secondAttribute="bottom" constant="170" id="r8v-hX-E8G"/>
-                            <constraint firstItem="CD3-Sx-m3g" firstAttribute="top" secondItem="8P5-UG-SGL" secondAttribute="bottom" constant="8" symbolic="YES" id="xKQ-qm-2hA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sZ5-ZI-VUL"/>
@@ -1140,8 +1122,6 @@
     </scenes>
     <resources>
         <image name="BackArrow" width="25.5" height="17"/>
-        <image name="ButtonBasic" width="308" height="65"/>
-        <image name="ButtonHighlighted" width="288" height="67"/>
         <image name="Create group" width="228" height="48"/>
         <image name="Search bar" width="368" height="61"/>
         <image name="Search icon" width="19.5" height="20"/>

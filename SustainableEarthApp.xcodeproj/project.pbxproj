@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
 		1116D336ED102E6EBA26816A /* Pods_SustainableEarthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6B399DF59E787322E4F5A5 /* Pods_SustainableEarthApp.framework */; };
-		2779157F25AD448100D1C031 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779157E25AD448100D1C031 /* Message.swift */; };
 		2779158425AE245900D1C031 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2779158225AE245900D1C031 /* MessageCell.swift */; };
 		2779158525AE245900D1C031 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2779158325AE245900D1C031 /* MessageCell.xib */; };
-
 		3A0F1135254C948500CDAC68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */; };
 		3A0F1139254CA2FD00CDAC68 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F1138254CA2FD00CDAC68 /* Utilities.swift */; };
+		3A1D21A125FEAE6400C1ABAC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D21A025FEAE6400C1ABAC /* Message.swift */; };
 		3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F9F3E254CB6C800B5121A /* Constants.swift */; };
 		3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E186254C5BE60064B494 /* AppDelegate.swift */; };
 		3AF3E189254C5BE60064B494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E188254C5BE60064B494 /* SceneDelegate.swift */; };
@@ -35,11 +33,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2779157E25AD448100D1C031 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2779158225AE245900D1C031 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		2779158325AE245900D1C031 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A0F1138254CA2FD00CDAC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		3A1D21A025FEAE6400C1ABAC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3A7F9F3E254CB6C800B5121A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3AF3E183254C5BE60064B494 /* SustainableEarthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SustainableEarthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF3E186254C5BE60064B494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,20 +82,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2779157D25AD446A00D1C031 /* Model */ = {
+		3A1D219E25FEAE1F00C1ABAC /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				2779157E25AD448100D1C031 /* Message.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3A4B372025ED57E90069435F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
-			);
-			path = Views;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		3AF3E17A254C5BE60064B494 = {
@@ -107,6 +96,7 @@
 				3AF3E184254C5BE60064B494 /* Products */,
 				DD2ECE85D6179CEEDDC9FBD6 /* Pods */,
 				39E1961CDCEF3B421DA40194 /* Frameworks */,
+				3A1D219E25FEAE1F00C1ABAC /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +154,7 @@
 		975F1CDF25C3C20B00FE7107 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3A1D21A025FEAE6400C1ABAC /* Message.swift */,
 				975F1CE025C3C23A00FE7107 /* Community.swift */,
 			);
 			path = Model;
@@ -185,7 +176,6 @@
 				661831C4793AF2CD2B3D28BD /* Pods-SustainableEarthApp.debug.xcconfig */,
 				DF664CBD8222DC658287F31F /* Pods-SustainableEarthApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -318,9 +308,9 @@
 				3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */,
 				3AF3E189254C5BE60064B494 /* SceneDelegate.swift in Sources */,
 				9730E86E25C347A700F33F76 /* RewardsPurchaseWindow.swift in Sources */,
-				2779157F25AD448100D1C031 /* Message.swift in Sources */,
 				3A0F1139254CA2FD00CDAC68 /* Utilities.swift in Sources */,
 				975F1D0025C3CE3C00FE7107 /* CommunityCell.swift in Sources */,
+				3A1D21A125FEAE6400C1ABAC /* Message.swift in Sources */,
 				975F1CE125C3C23A00FE7107 /* Community.swift in Sources */,
 				3AF3E1A1254C641D0064B494 /* Leaderboard.swift in Sources */,
 			);
