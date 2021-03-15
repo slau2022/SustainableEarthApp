@@ -36,8 +36,9 @@ class Rewards: UIViewController {
 
     @IBAction func windButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showWind = true
+        self.present(popup, animated: true)
         //popUpImageView.image = #imageLiteral(resourceName: "wind1")
         // purchaseImageView.image = #imageLiteral(resourceName: "wind1")
         
@@ -49,106 +50,120 @@ class Rewards: UIViewController {
     
     @IBAction func railButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showRail = true
+        self.present(popup, animated: true)
         
     }
     
     @IBAction func officeButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showOffice = true
+        self.present(popup, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func skyscraperButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showSkyscraper = true
+        self.present(popup, animated: true)
         
     }
     
     @IBAction func farmersButtonPressed(_ sender: Any) {
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showFarmersMarket = true
+        self.present(popup, animated: true)
         
     }
     
     @IBAction func hotelButtonPressed(_ sender: UIButton) {
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showHotel = true
+        self.present(popup, animated: true)
         
     }
     
     @IBAction func evButtonPressed(_ sender: UIButton) {
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showEv = true
+        self.present(popup, animated: true)
         
     }
     
     @IBAction func housingButtonPressed(_ sender: UIButton) {
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showAffordableHousing = true
+        self.present(popup, animated: true)
        
     }
     
     @IBAction func bikeButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showBike = true
+        self.present(popup, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func restaurantButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showRestaruant = true
+        self.present(popup, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func solarButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showSolar = true
+        self.present(popup, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func farmButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showFarm = true
+        self.present(popup, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func groceryButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showGrocery = true
+        self.present(popup, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func parkButtonPressed(_ sender: UIButton) {
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showPark = true
+        self.present(popup, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func fountainButtonPressed(_ sender: UIButton) {
-        let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
-        let popup = sb.instantiateInitialViewController()! as RewardsPurchaseWindow
+        let sb = UIViewController(nibName: "RewardsPurchaseWindow", bundle: nil)
+        let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showFountain = true
+        self.present(popup, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
