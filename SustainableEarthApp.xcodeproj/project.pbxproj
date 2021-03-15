@@ -25,10 +25,12 @@
 		3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A4254C696B0064B494 /* SignUpViewController.swift */; };
 		3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A6254C69790064B494 /* LogInViewController.swift */; };
 		3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A8254C698E0064B494 /* StartViewController.swift */; };
-		BF10DC0E2026C773F7D77AFA /* Pods_SustainableEarthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCEE90CBD9A43D6D930AFBB /* Pods_SustainableEarthApp.framework */; };
+		65B06F5DC1903C9AD5C8FA9B /* Pods_SustainableEarthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276DBA1C756B26002338369E /* Pods_SustainableEarthApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092745E83B9D768816478786 /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
+		276DBA1C756B26002338369E /* Pods_SustainableEarthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SustainableEarthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2779157E25AD448100D1C031 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2779158225AE245900D1C031 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		2779158325AE245900D1C031 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
@@ -49,9 +51,7 @@
 		3AF3E1A4254C696B0064B494 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3AF3E1A6254C69790064B494 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3AF3E1A8254C698E0064B494 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		BF0C8C8064ABEEE9ADA6DD49 /* Pods-SustainableEarthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.debug.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.debug.xcconfig"; sourceTree = "<group>"; };
-		DC4848E2FAC87BE93BB56A08 /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
-		DCCEE90CBD9A43D6D930AFBB /* Pods_SustainableEarthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SustainableEarthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D068792D9B57AE580F37B21D /* Pods-SustainableEarthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.debug.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,21 +59,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF10DC0E2026C773F7D77AFA /* Pods_SustainableEarthApp.framework in Frameworks */,
+				65B06F5DC1903C9AD5C8FA9B /* Pods_SustainableEarthApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BC5DBCAB2B8CF1B2B3182D6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DCCEE90CBD9A43D6D930AFBB /* Pods_SustainableEarthApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2779157D25AD446A00D1C031 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +88,7 @@
 				3AF3E185254C5BE60064B494 /* SustainableEarthApp */,
 				3AF3E184254C5BE60064B494 /* Products */,
 				AC771AE310683DA696A76C12 /* Pods */,
-				0BC5DBCAB2B8CF1B2B3182D6 /* Frameworks */,
+				710DBC3AD9C5FA3DB65F6B39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,11 +142,19 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		710DBC3AD9C5FA3DB65F6B39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				276DBA1C756B26002338369E /* Pods_SustainableEarthApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC771AE310683DA696A76C12 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BF0C8C8064ABEEE9ADA6DD49 /* Pods-SustainableEarthApp.debug.xcconfig */,
-				DC4848E2FAC87BE93BB56A08 /* Pods-SustainableEarthApp.release.xcconfig */,
+				D068792D9B57AE580F37B21D /* Pods-SustainableEarthApp.debug.xcconfig */,
+				092745E83B9D768816478786 /* Pods-SustainableEarthApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -166,11 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AF3E199254C5BEC0064B494 /* Build configuration list for PBXNativeTarget "SustainableEarthApp" */;
 			buildPhases = (
-				8B5BA900EE6E000B51AA07B8 /* [CP] Check Pods Manifest.lock */,
+				42A4CCA1A523915C6E9B280B /* [CP] Check Pods Manifest.lock */,
 				3AF3E17F254C5BE60064B494 /* Sources */,
 				3AF3E180254C5BE60064B494 /* Frameworks */,
 				3AF3E181254C5BE60064B494 /* Resources */,
-				F74900E0E059414CEF919E33 /* [CP] Embed Pods Frameworks */,
+				6ABC3451943B80369739972A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,7 +230,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8B5BA900EE6E000B51AA07B8 /* [CP] Check Pods Manifest.lock */ = {
+		42A4CCA1A523915C6E9B280B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,7 +252,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F74900E0E059414CEF919E33 /* [CP] Embed Pods Frameworks */ = {
+		6ABC3451943B80369739972A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -432,7 +432,7 @@
 		};
 		3AF3E19A254C5BEC0064B494 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF0C8C8064ABEEE9ADA6DD49 /* Pods-SustainableEarthApp.debug.xcconfig */;
+			baseConfigurationReference = D068792D9B57AE580F37B21D /* Pods-SustainableEarthApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,7 +450,7 @@
 		};
 		3AF3E19B254C5BEC0064B494 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC4848E2FAC87BE93BB56A08 /* Pods-SustainableEarthApp.release.xcconfig */;
+			baseConfigurationReference = 092745E83B9D768816478786 /* Pods-SustainableEarthApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
