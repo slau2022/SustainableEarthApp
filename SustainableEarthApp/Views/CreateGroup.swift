@@ -9,9 +9,10 @@
 import UIKit
 import Firebase
 
-class CreateGroup: UITableViewController {
+class CreateGroup: UIViewController {
 
-    @IBOutlet weak var groupName: UITextField!
+    
+    // @IBOutlet weak var communityName: UITextField!
     
     let db = Firestore.firestore()
     
@@ -22,10 +23,10 @@ class CreateGroup: UITableViewController {
     
     
     @IBAction func groupCreated(_ sender: UIButton) {
-        if let name = groupName.text {
+        /* if let name = communityName.text {
             var ref: DocumentReference? = nil
             ref = db.collection("communities").addDocument(data: [
-                "groupName": name
+                "CommunityName": name
             ]) { err in
                 if let err = err {
                     print("Error adding document: \(err)")
@@ -33,6 +34,6 @@ class CreateGroup: UITableViewController {
                     print("Document added with ID: \(ref!.documentID)")
                 }
             }
-        }
+        }*/
     }
 }
