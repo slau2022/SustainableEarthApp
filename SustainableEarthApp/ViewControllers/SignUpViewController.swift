@@ -124,6 +124,7 @@ class SignUpViewController: UIViewController {
                 }
                 else {
                     // User was created successfully, now store the first name and last name
+                    UserDefaults.standard.set(email, forKey:"userEmail")
                     let db = Firestore.firestore()
                     db.collection("users").document(email).setData([
                         "firstName":firstName,

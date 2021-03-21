@@ -13,15 +13,48 @@ class Home: UIViewController {
 
     @IBOutlet weak var testImageRetrieve: UIImageView!
     
+    @IBOutlet weak var Coins: UIButton!
+    @IBOutlet weak var Profile: UIButton!
+    
+    var db: Firestore!
+    
     override func viewDidLoad() {
+        db = Firestore.firestore()
+        Coins.circleCorner()
+        setUpCoins()
+        Coins.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+        Coins.contentEdgeInsets = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 15)
         super.viewDidLoad()
+        
         // let storage = Storage.storage()
         
 
         // Do any additional setup after loading the view.
     }
     
+    
+    func setUpCoins(){
+        
+        let userDoc = UserDefaults.standard.string(forKey: "userEmail") ?? "Error retrieving user"
+        print(userDoc)
+        let docRef = db.collection("users").document(userDoc)
 
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                let coinAmount = document.get("coins")
+                if (coinAmount as? NSNumber) != nil
+                {
+                  let result_string = "\(coinAmount!)"
+                    self.Coins.setTitle(result_string, for: .normal)
+                }
+            } else {
+                print("Document does not exist")
+            }
+        }
+        
+
+        
+    }
     /*
     // MARK: - Navigation
 
