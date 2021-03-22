@@ -45,6 +45,7 @@
 		3AF3E1A6254C69790064B494 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3AF3E1A8254C698E0064B494 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		9730E86D25C347A700F33F76 /* RewardsPurchaseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsPurchaseWindow.swift; sourceTree = "<group>"; };
+		97A2D2342608CED200C70AC1 /* RewardsPurchaseWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = RewardsPurchaseWindow.storyboard; path = /Users/katiehart/Documents/GitHub/SustainableEarthApp/SustainableEarthApp/RewardsPurchaseWindow.storyboard; sourceTree = "<absolute>"; };
 		A0FEB80680D6A926B2C59257 /* Pods_SustainableEarthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SustainableEarthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B90A17DD60CE39AE768755 /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
 		E2640BDD5D026FCDA9E3C7BB /* Pods-SustainableEarthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.debug.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 				3AF3E188254C5BE60064B494 /* SceneDelegate.swift */,
 				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
 				3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */,
+				97A2D2342608CED200C70AC1 /* RewardsPurchaseWindow.storyboard */,
 				3AF3E1AB254C910C0064B494 /* ViewControllers */,
 				3AF3E1AA254C8F960064B494 /* Helpers */,
 				3AF3E191254C5BEC0064B494 /* Assets.xcassets */,

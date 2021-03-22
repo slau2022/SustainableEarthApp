@@ -37,6 +37,7 @@ class Rewards: UIViewController {
     @IBAction func windButtonPressed(_ sender: UIButton) {
         print("hi")
         let sb = UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
+            //UIStoryboard(name: "RewardsPurchaseWindow", bundle: nil)
         let popup = sb.instantiateInitialViewController()! as! RewardsPurchaseWindow
         popup.showWind = true
         self.present(popup, animated: true)

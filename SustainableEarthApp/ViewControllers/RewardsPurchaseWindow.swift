@@ -11,6 +11,7 @@ import UIKit
 class RewardsPurchaseWindow: UIViewController {
 
     @IBOutlet weak var purchaseImageView: UIImageView!
+    @IBOutlet weak var purchaseButton: UIButton!
     
     
     var showAffordableHousing: Bool = false
