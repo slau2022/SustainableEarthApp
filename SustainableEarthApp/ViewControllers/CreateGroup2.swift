@@ -1,24 +1,25 @@
 //
-//  CreateGroup.swift
+//  CreateGroup2.swift
 //  SustainableEarthApp
 //
-//  Created by Casper Wong on 2/15/21.
+//  Created by Casper Wong on 3/20/21.
 //  Copyright © 2021 Sophia Lau. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class CreateGroup: UIViewController {
+class CreateGroup2: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var communityName: UITextField!
     @IBOutlet weak var buttonPressed: UIButton!
     
-    @IBOutlet weak var communityName: UITextField!
-
     let db = Firestore.firestore()
     
     @IBAction func groupCreated(_ sender: Any) {
@@ -31,9 +32,18 @@ class CreateGroup: UIViewController {
                     print("Error adding document: \(err)")
                 } else {
                     print("Document added!")
-                    // print("Document added with ID: \(ref!.documentID)")
                 }
             }
         }
     }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }

@@ -27,6 +27,7 @@
 		975F1CE125C3C23A00FE7107 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F1CE025C3C23A00FE7107 /* Community.swift */; };
 		975F1D0025C3CE3C00FE7107 /* CommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */; };
 		975F1D0125C3CE3C00FE7107 /* CommunityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */; };
+		976F636D2606982700EA6480 /* CreateGroup2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F636C2606982700EA6480 /* CreateGroup2.swift */; };
 		97BF139125DB280D002D1A66 /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BF139025DB280D002D1A66 /* CreateGroup.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		975F1CE025C3C23A00FE7107 /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
 		975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCell.swift; sourceTree = "<group>"; };
 		975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityCell.xib; sourceTree = "<group>"; };
+		976F636C2606982700EA6480 /* CreateGroup2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateGroup2.swift; path = SustainableEarthApp/ViewControllers/CreateGroup2.swift; sourceTree = SOURCE_ROOT; };
 		97BF139025DB280D002D1A66 /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateGroup.swift; path = SustainableEarthApp/Views/CreateGroup.swift; sourceTree = SOURCE_ROOT; };
 		DF664CBD8222DC658287F31F /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				97BF139025DB280D002D1A66 /* CreateGroup.swift */,
+				976F636C2606982700EA6480 /* CreateGroup2.swift */,
 				3AF3E1A8254C698E0064B494 /* StartViewController.swift */,
 				3AF3E1A6254C69790064B494 /* LogInViewController.swift */,
 				3AF3E1A4254C696B0064B494 /* SignUpViewController.swift */,
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976F636D2606982700EA6480 /* CreateGroup2.swift in Sources */,
 				3AF3E19D254C63F00064B494 /* Home.swift in Sources */,
 				3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */,
 				3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */,

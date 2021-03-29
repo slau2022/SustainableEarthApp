@@ -10,6 +10,4 @@ import Foundation
 
 struct Community {
     let title: String
-    let members: String
-    let rank: String
 }

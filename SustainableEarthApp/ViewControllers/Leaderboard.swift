@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class Leaderboard: UIViewController {
 
+    let db = Firestore.firestore()
+    
+    var communities: [Community] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -17,15 +22,35 @@ class Leaderboard: UIViewController {
         
         // Do any additional setup after loading the view.
         tableView.register(UINib(nibName: K.CommNibName, bundle: nil), forCellReuseIdentifier: K.CommCellIdentifier)
+        
+        loadCommunities()
     }
     
+    func loadCommunities() {
+        db.collection("communities").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        if let newTitle = data["CommunityName"] as? String {
+                            let newCommunity = Community(title: newTitle)
+                            self.communities.append(newCommunity)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
     
     @IBOutlet weak var tableView: UITableView!
     
-    var communities: [Community] = [
-        Community(title: "Class of 2022+", members: "100 members", rank: "rank 42"),
-        Community(title: "Stever House", members: "64 members", rank: "rank 21")
-    ]
 
     /*
     // MARK: - Navigation
