@@ -13,6 +13,7 @@
 		3A0F1135254C948500CDAC68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */; };
 		3A0F1139254CA2FD00CDAC68 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F1138254CA2FD00CDAC68 /* Utilities.swift */; };
 		3A1D21A125FEAE6400C1ABAC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D21A025FEAE6400C1ABAC /* Message.swift */; };
+		3A452728261A6A3100FF0897 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A452727261A6A3100FF0897 /* ProfileViewController.swift */; };
 		3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F9F3E254CB6C800B5121A /* Constants.swift */; };
 		3AEE5070261A37EF00048F2A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEE506F261A37EF00048F2A /* CameraViewController.swift */; };
 		3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E186254C5BE60064B494 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 		3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A0F1138254CA2FD00CDAC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3A1D21A025FEAE6400C1ABAC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3A452727261A6A3100FF0897 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3A7F9F3E254CB6C800B5121A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3AEE506F261A37EF00048F2A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		3AF3E183254C5BE60064B494 /* SustainableEarthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SustainableEarthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 				2779158325AE245900D1C031 /* MessageCell.xib */,
 				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
 				3AEE506F261A37EF00048F2A /* CameraViewController.swift */,
+				3A452727261A6A3100FF0897 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				3AEE5070261A37EF00048F2A /* CameraViewController.swift in Sources */,
 				3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */,
 				2779158425AE245900D1C031 /* MessageCell.swift in Sources */,
+				3A452728261A6A3100FF0897 /* ProfileViewController.swift in Sources */,
 				3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */,
 				3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */,
 				3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */,
