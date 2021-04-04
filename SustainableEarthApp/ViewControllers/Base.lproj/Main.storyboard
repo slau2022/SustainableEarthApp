@@ -105,7 +105,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go To Camera"/>
                                 <connections>
-                                    <segue destination="KQm-ra-hRt" kind="show" id="RcG-Ob-mqQ"/>
+                                    <segue destination="KQm-ra-hRt" kind="show" id="a0b-wC-8Ah"/>
                                 </connections>
                             </button>
                         </subviews>
