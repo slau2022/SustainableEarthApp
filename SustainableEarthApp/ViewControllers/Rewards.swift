@@ -20,76 +20,79 @@ class Rewards: UIViewController {
     }
 
     @IBAction func windButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow()
+        present(vc, animated: true)
         
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         //purchaseImageView.image = #imageLiteral(resourceName: "wind1")
         
         
     }
     
     @IBAction func railButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func officeButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func skyscraperButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func farmersButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func hotelButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func evButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func housingButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
        
     }
     
     @IBAction func bikeButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func restaurantButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func solarButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func farmButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func groceryButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func parkButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func fountainButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+//        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     
