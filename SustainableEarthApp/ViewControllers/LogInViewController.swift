@@ -81,7 +81,7 @@ class LogInViewController: UIViewController {
                     self.errorLabel.text = error!.localizedDescription
                     self.errorLabel.alpha = 1
                 } else {
-                    
+                    UserDefaults.standard.set(email, forKey:"userEmail")
                     self.transitionToHome()
                 }
             }

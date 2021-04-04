@@ -16,8 +16,9 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
+        UserDefaults.standard.set("", forKey:"userEmail")
         // Do any additional setup after loading the view.
-        setUpElements()
+
     }
     
     func setUpElements(){
@@ -25,6 +26,7 @@ class StartViewController: UIViewController {
         loginButton.circleCorner()
     }
 
+   
     /*
     // MARK: - Navigation
 

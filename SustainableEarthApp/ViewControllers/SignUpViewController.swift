@@ -9,7 +9,6 @@
 import UIKit
 import FirebaseAuth
 import Firebase
-import DropDown
 
 class SignUpViewController: UIViewController {
 
@@ -125,8 +124,38 @@ class SignUpViewController: UIViewController {
                 }
                 else {
                     // User was created successfully, now store the first name and last name
+                    UserDefaults.standard.set(email, forKey:"userEmail")
                     let db = Firestore.firestore()
-                    db.collection("users").document(email).setData(["firstName":firstName, "lastName":lastName, "uid":result!.user.uid, "gradYear": gradYear, "college": college]) { (error) in
+                    db.collection("users").document(email).setData([
+                        "firstName":firstName,
+                        "lastName":lastName,
+                        "uid":result!.user.uid,
+                        "gradYear": gradYear,
+                        "college": college,
+                        "actionsLogged": // @TODO: titles should load from Cloudstore Firebase
+                            [
+                                "Attended A Seminar About Sustainability": 0,
+                                "Attended A Sustainable Earth Event": 0,
+                                "Bought A Vegetarian Meal":0,
+                                "Brought Reusable Mug":0,
+                                "Brought Reusable Silverware":0,
+                                "Composted":0,
+                                "Printed Double-Sided":0,
+                                "Recycled":0,
+                                "Refer A Friend":0,
+                                "Refilled Reusable Water Bottle": 0,
+                                "Skipped The Lid Or Straw": 0,
+                                "Skipped The Plastic Bag": 0,
+                                "Used Public Transportation": 0
+                            ],
+                        "numFriends": 0,
+                        "friends": [],
+                        "groups": ["Class of " + gradYear, college],
+                        "coins": 100,
+                        "rewards": [
+                            
+                        ]
+                        ]) { (error) in
                         
                         if error != nil {
                             self.showError("Error saving user data")
