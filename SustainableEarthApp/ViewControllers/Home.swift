@@ -15,6 +15,13 @@ class Home: UIViewController {
     
     @IBOutlet weak var Coins: UIButton!
     @IBOutlet weak var Profile: UIButton!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var messages: [Message] = [
+        Message(action: "Refill Reusable Waterbottle", logged: "Times Logged: 15"),
+        Message(action: "Brought Reusable Mug", logged: "Times Logged: 10"),
+        Message(action: "Compost at Schatz", logged: "Times Logged: 15")
+    ]
     
     var db: Firestore!
     
@@ -24,6 +31,9 @@ class Home: UIViewController {
         setUpCoins()
         Coins.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
         Coins.contentEdgeInsets = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 15)
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: Constants.cellNibName, bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
+
         super.viewDidLoad()
         
         // let storage = Storage.storage()
@@ -65,4 +75,18 @@ class Home: UIViewController {
     }
     */
 
+}
+
+extension Home: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath) as! MessageCell
+        cell.label.text = messages[indexPath.row].action
+        return cell
+    }
+    
+    
 }
