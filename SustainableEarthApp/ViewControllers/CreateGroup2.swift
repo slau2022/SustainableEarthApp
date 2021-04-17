@@ -23,10 +23,11 @@ class CreateGroup2: UIViewController {
     let db = Firestore.firestore()
     
     @IBAction func groupCreated(_ sender: Any) {
-        if let name = communityName.text {
+        if let name = communityName.text, let messageSender = Auth.auth().currentUser?.email {
             // var ref: DocumentReference? = nil
-            db.collection("communities").addDocument(data: [
-                "CommunityName": name
+            db.collection("communities").document(name).setData([
+                "CommunityName": name,
+                "Members": [messageSender]
             ]) { err in
                 if let err = err {
                     print("Error adding document: \(err)")

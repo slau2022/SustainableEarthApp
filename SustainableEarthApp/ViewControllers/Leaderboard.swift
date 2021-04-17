@@ -34,8 +34,9 @@ class Leaderboard: UIViewController {
                 if let snapshotDocuments = querySnapshot?.documents {
                     for doc in snapshotDocuments {
                         let data = doc.data()
-                        if let newTitle = data["CommunityName"] as? String {
-                            let newCommunity = Community(title: newTitle)
+                        if let newTitle = data["CommunityName"] as? String, let members = data["Members"] as? Array<Any> {
+                            print("hi:", members.count)
+                            let newCommunity = Community(title: newTitle, numUsers: members.count)
                             self.communities.append(newCommunity)
                             
                             DispatchQueue.main.async {
@@ -71,7 +72,8 @@ extension Leaderboard: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.CommCellIdentifier, for: indexPath) as! CommunityCell
-        cell.label.text = communities[indexPath.row].title
+        cell.header.text = communities[indexPath.row].title
+        cell.numUsers.text = "Size: \(communities[indexPath.row].numUsers)"
         return cell
     }
 }

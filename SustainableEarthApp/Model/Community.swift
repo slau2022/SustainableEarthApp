@@ -10,4 +10,5 @@ import Foundation
 
 struct Community {
     let title: String
+    let numUsers: Int
 }

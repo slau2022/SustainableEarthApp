@@ -28,7 +28,6 @@
 		975F1D0025C3CE3C00FE7107 /* CommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */; };
 		975F1D0125C3CE3C00FE7107 /* CommunityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */; };
 		976F636D2606982700EA6480 /* CreateGroup2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F636C2606982700EA6480 /* CreateGroup2.swift */; };
-		97BF139125DB280D002D1A66 /* CreateGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BF139025DB280D002D1A66 /* CreateGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +55,6 @@
 		975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCell.swift; sourceTree = "<group>"; };
 		975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityCell.xib; sourceTree = "<group>"; };
 		976F636C2606982700EA6480 /* CreateGroup2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateGroup2.swift; path = SustainableEarthApp/ViewControllers/CreateGroup2.swift; sourceTree = SOURCE_ROOT; };
-		97BF139025DB280D002D1A66 /* CreateGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateGroup.swift; path = SustainableEarthApp/Views/CreateGroup.swift; sourceTree = SOURCE_ROOT; };
 		DF664CBD8222DC658287F31F /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +125,6 @@
 		3AF3E1AB254C910C0064B494 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				97BF139025DB280D002D1A66 /* CreateGroup.swift */,
 				976F636C2606982700EA6480 /* CreateGroup2.swift */,
 				3AF3E1A8254C698E0064B494 /* StartViewController.swift */,
 				3AF3E1A6254C69790064B494 /* LogInViewController.swift */,
@@ -290,7 +287,6 @@
 				3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */,
 				3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */,
 				3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */,
-				97BF139125DB280D002D1A66 /* CreateGroup.swift in Sources */,
 				3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */,
 				3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */,
 				3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */,
