@@ -750,6 +750,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="JQi-Kq-1hq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="purchaseButton" destination="l8b-aX-2Yn" id="cqF-gT-Kfk"/>
+                        <outlet property="purchaseImageView" destination="y8n-O1-ZJk" id="Ph3-iz-m4V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCg-Sv-PPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

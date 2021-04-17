@@ -20,7 +20,8 @@ class Rewards: UIViewController {
     }
 
     @IBAction func windButtonPressed(_ sender: UIButton) {
-        let vc = RewardsPurchaseWindow()
+        print("hi")
+        let vc = RewardsPurchaseWindow(purchaseImageName: "wind")
         present(vc, animated: true)
         
         
@@ -31,67 +32,95 @@ class Rewards: UIViewController {
     }
     
     @IBAction func railButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "rail")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func officeButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "office")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func skyscraperButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "skyscraper")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func farmersButtonPressed(_ sender: Any) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "market")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func hotelButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "hotel")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func evButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "ev")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func housingButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "housing")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
        
     }
     
     @IBAction func bikeButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "bike")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func restaurantButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "restaurant")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
     }
     
     @IBAction func solarButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "solar")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func farmButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "farm")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func groceryButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "grocery")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func parkButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "park")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
     @IBAction func fountainButtonPressed(_ sender: UIButton) {
+        let vc = RewardsPurchaseWindow(purchaseImageName: "fountain")
+        present(vc, animated: true)
 //        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
     
