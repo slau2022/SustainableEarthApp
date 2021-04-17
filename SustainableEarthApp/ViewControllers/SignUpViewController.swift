@@ -67,12 +67,7 @@ class SignUpViewController: UIViewController {
         return nil
     }
     @IBAction func backFromSignUpPressed(_ sender: Any) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "startView") as! StartViewController
-
-        view.window?.rootViewController = nextViewController
-        view.window?.makeKeyAndVisible()
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func selectCollegeClick(_ sender: UIButton) {
