@@ -35,7 +35,6 @@ class Leaderboard: UIViewController {
                     for doc in snapshotDocuments {
                         let data = doc.data()
                         if let newTitle = data["CommunityName"] as? String, let members = data["Members"] as? Array<Any> {
-                            print("hi:", members.count)
                             let newCommunity = Community(title: newTitle, numUsers: members.count)
                             self.communities.append(newCommunity)
                             
@@ -43,29 +42,16 @@ class Leaderboard: UIViewController {
                                 self.tableView.reloadData()
                             }
                         }
-                        
                     }
                 }
             }
         }
     }
-    
     @IBOutlet weak var tableView: UITableView!
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
-extension Leaderboard: UITableViewDataSource {
+
+extension Leaderboard: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return communities.count
     }
@@ -73,13 +59,14 @@ extension Leaderboard: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.CommCellIdentifier, for: indexPath) as! CommunityCell
         cell.header.text = communities[indexPath.row].title
-        cell.numUsers.text = "Size: \(communities[indexPath.row].numUsers)"
+        cell.numUsers.text = "Size:  \(communities[indexPath.row].numUsers)"
         return cell
     }
-}
 
-extension Leaderboard: UITableViewDelegate {
+    // var allowsSelectionDuringEditing: Bool { true }
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("User just clicked on row number: ", indexPath.row)
+        print("aaaa")
+        print(indexPath.row)
     }
 }
