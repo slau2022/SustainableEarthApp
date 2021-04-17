@@ -11,6 +11,7 @@ import FirebaseAuth
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet weak var backFromLogin: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -64,6 +65,15 @@ class LogInViewController: UIViewController {
     }
     */
 
+    @IBAction func backFromLoginPressed(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "startView") as! StartViewController
+
+        view.window?.rootViewController = nextViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
     @IBAction func logInTapped(_ sender: Any) {
         // Validate Text Fields
         let error = self.validateFields()

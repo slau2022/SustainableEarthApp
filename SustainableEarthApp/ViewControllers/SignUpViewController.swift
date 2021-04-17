@@ -12,6 +12,7 @@ import Firebase
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var backFromSignUp: UIButton!
     @IBOutlet weak var firstNameTextField: UITextField!
     
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -65,6 +66,15 @@ class SignUpViewController: UIViewController {
         
         return nil
     }
+    @IBAction func backFromSignUpPressed(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "startView") as! StartViewController
+
+        view.window?.rootViewController = nextViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
     @IBAction func selectCollegeClick(_ sender: UIButton) {
         UIView.animate(withDuration: 0.3){
             self.collegesTable.isHidden = !(self.collegesTable.isHidden)

@@ -281,6 +281,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yj-VB-pno">
                                 <rect key="frame" x="35" y="54" width="26" height="18"/>
                                 <state key="normal" backgroundImage="BackArrow"/>
+                                <connections>
+                                    <action selector="backFromSignUpPressed:" destination="efE-NO-onF" eventType="touchUpInside" id="qzS-uU-eky"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-eu-kwC">
                                 <rect key="frame" x="53" y="405" width="308" height="135"/>
@@ -364,8 +367,9 @@
                             <constraint firstItem="5ki-M6-22c" firstAttribute="leading" secondItem="B4R-Gi-eaN" secondAttribute="leading" constant="53" id="tx1-IY-zyh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="School" id="DKz-fU-C4Y"/>
+                    <navigationItem key="navigationItem" title="Title" id="ajq-ET-ROl"/>
                     <connections>
+                        <outlet property="backFromSignUp" destination="8Yj-VB-pno" id="ULA-tQ-DLg"/>
                         <outlet property="collegesTable" destination="nbm-ww-i90" id="QMj-IO-LBG"/>
                         <outlet property="emailTextField" destination="4fo-KV-dwP" id="tU2-Ur-NZJ"/>
                         <outlet property="errorLabel" destination="X4J-LM-JmM" id="nly-Zq-Vaf"/>
@@ -1041,7 +1045,7 @@
         <!--Start-->
         <scene sceneID="Yyc-gy-LyX">
             <objects>
-                <viewController title="Start" id="BkW-EO-j0R" customClass="StartViewController" customModule="SustainableEarthApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="startView" title="Start" id="BkW-EO-j0R" customClass="StartViewController" customModule="SustainableEarthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FbU-PS-JKm" customClass="StartView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1164,6 +1168,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKV-oF-fmU">
                                 <rect key="frame" x="40" y="69" width="25.5" height="18"/>
                                 <state key="normal" backgroundImage="BackArrow"/>
+                                <connections>
+                                    <action selector="backFromLoginPressed:" destination="Kte-4E-Cqn" eventType="touchUpInside" id="hqw-kJ-Oeh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="216-qc-LmF"/>
@@ -1182,6 +1189,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xLg-cz-JMW"/>
                     <connections>
+                        <outlet property="backFromLogin" destination="jKV-oF-fmU" id="48J-hb-fNw"/>
                         <outlet property="emailTextField" destination="2wQ-fz-RGp" id="c8d-FW-1wU"/>
                         <outlet property="errorLabel" destination="imy-az-fmi" id="rbF-pD-jk7"/>
                         <outlet property="loginButton" destination="m5d-EC-5ZH" id="vNC-Gx-9uR"/>
@@ -1190,7 +1198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKA-MT-pid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="-965"/>
+            <point key="canvasLocation" x="492.75362318840581" y="-965.625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K9v-hK-2Ey">
