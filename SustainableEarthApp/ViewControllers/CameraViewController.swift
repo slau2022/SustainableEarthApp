@@ -9,19 +9,32 @@
 import UIKit
 import Vision
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var caption: UITextView!
     
     let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        caption.delegate = self
+        caption.text = "Add a caption..."
+        caption.textColor = UIColor.lightGray
+        
+        self.navigationController?.isNavigationBarHidden = true
+        present(imagePicker, animated: true, completion: nil)
         
         imagePicker.delegate = self
         imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
         // Do any additional setup after loading the view.
+    }
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+            textView.text = nil
+            textView.textColor = UIColor.darkGray
+        }
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
@@ -33,10 +46,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
-    @IBAction func cameraTapped(_ sender: Any) {
-        present(imagePicker, animated: true, completion: nil)
-    }
-    
+   
     /*
     // MARK: - Navigation
 

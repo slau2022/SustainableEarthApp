@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lav-az-ny1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hoS-PY-Ta9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -107,9 +107,6 @@
                                 <rect key="frame" x="158" y="667" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go To Camera"/>
-                                <connections>
-                                    <segue destination="KQm-ra-hRt" kind="show" id="a0b-wC-8Ah"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sH7-xc-sVU"/>
@@ -1226,33 +1223,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mU7-Z3-5Zo">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tPa-K7-GDc">
+                                <rect key="frame" x="34" y="147" width="158" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Sfg-Ph-xai">
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="830"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uO-Ed-UK9">
+                                <rect key="frame" x="34" y="146" width="158" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WmC-aB-6kK">
+                                <rect key="frame" x="203" y="147" width="150" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1i-CV-pzO">
+                                <rect key="frame" x="56" y="319" width="255" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="cfT-S4-h7q" kind="show" id="usM-b7-NcB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OcR-DE-SBs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="mU7-Z3-5Zo" firstAttribute="trailing" secondItem="OcR-DE-SBs" secondAttribute="trailing" id="Sku-KF-2YT"/>
-                            <constraint firstItem="mU7-Z3-5Zo" firstAttribute="top" secondItem="OcR-DE-SBs" secondAttribute="top" id="mJk-rc-z5H"/>
-                            <constraint firstItem="mU7-Z3-5Zo" firstAttribute="leading" secondItem="OcR-DE-SBs" secondAttribute="leading" id="oq5-Po-dQb"/>
-                            <constraint firstItem="mU7-Z3-5Zo" firstAttribute="bottom" secondItem="OcR-DE-SBs" secondAttribute="bottom" id="wKh-yW-l2p"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="296-gx-YNW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="USX-Ni-m7d">
-                            <connections>
-                                <action selector="cameraTapped:" destination="7JR-Fe-FKa" id="eIX-dp-Z96"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
-                        <outlet property="imageView" destination="mU7-Z3-5Zo" id="rwL-9i-Cp0"/>
+                        <outlet property="caption" destination="WmC-aB-6kK" id="sld-hc-xPb"/>
+                        <outlet property="imageView" destination="4uO-Ed-UK9" id="TSU-u2-vCp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xr1-1n-fgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-915.94202898550736" y="2064.5089285714284"/>
+            <point key="canvasLocation" x="-1813.0434782608697" y="2064.5089285714284"/>
+        </scene>
+        <!--Done Logging View Controller-->
+        <scene sceneID="s1z-d0-CRi">
+            <objects>
+                <viewController id="cfT-S4-h7q" customClass="DoneLoggingViewController" customModule="SustainableEarthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <imageView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" id="9fI-Vm-V4N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <navigationItem key="navigationItem" id="6G4-F7-2mt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46L-bU-ru3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1019" y="2065"/>
+        </scene>
+        <!--Demo Log Action View Controller-->
+        <scene sceneID="yQw-eK-b8b">
+            <objects>
+                <viewController id="xKC-F1-xRe" customClass="DemoLogActionViewController" customModule="SustainableEarthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="loA-qV-GS5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUq-HW-y1c">
+                                <rect key="frame" x="55" y="642" width="271" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="7JR-Fe-FKa" kind="show" id="2cL-JV-P73"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first page" translatesAutoresizingMaskIntoConstraints="NO" id="Ten-c5-P6g">
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="830"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dDm-fl-jvA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qaA-NF-FF5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9W4-YA-OVt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2610.144927536232" y="2064.5089285714284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x2q-R2-bag">
@@ -1266,12 +1319,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="7JR-Fe-FKa" kind="relationship" relationship="rootViewController" id="wja-yM-0eD"/>
+                        <segue destination="xKC-F1-xRe" kind="relationship" relationship="rootViewController" id="cGf-6H-wty"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGU-Ol-onW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1826.0869565217392" y="2064.5089285714284"/>
+            <point key="canvasLocation" x="-3439" y="2065"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="D8N-vl-Ip1">
@@ -1390,18 +1443,104 @@
             </objects>
             <point key="canvasLocation" x="1954" y="585"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="32x-uh-UWk">
+            <objects>
+                <viewController id="eR0-co-AbZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gJM-mf-zYu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartupLogo" translatesAutoresizingMaskIntoConstraints="NO" id="XPS-eT-mg1">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From Sustainable Earth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIn-wF-PHd">
+                                <rect key="frame" x="93" y="716" width="229" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" name="Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XGh-28-6kW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zla-0q-7cU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3439" y="2839"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ad5-gZ-tcU">
+            <objects>
+                <viewController id="KdC-OX-v3L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lby-Vd-IQE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="sxv-d6-pIs">
+                                <rect key="frame" x="20" y="0.0" width="374" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="143-OF-pFW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4L5-Vb-SjE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2671.0144927536235" y="2838.6160714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tg6-tD-OwL">
+            <objects>
+                <viewController id="hoS-PY-Ta9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LWL-h7-LBq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FIa-lD-WfL">
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="830"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartupLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Opn-Nq-f9V">
+                                <rect key="frame" x="70" y="179" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From Sustainable Earth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chZ-au-2lp">
+                                <rect key="frame" x="76" y="713" width="229" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" name="Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="azf-Ij-mHl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPG-oY-fY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4358" y="2839"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BackArrow" width="25.5" height="17"/>
         <image name="Coin" width="37" height="39.5"/>
         <image name="Create group" width="228" height="48"/>
+        <image name="Image" width="375" height="812"/>
+        <image name="Image-1" width="375" height="811"/>
+        <image name="Image-2" width="375" height="801"/>
         <image name="Search bar" width="368" height="61"/>
         <image name="Search icon" width="19.5" height="20"/>
+        <image name="StartupLogo" width="267" height="275"/>
         <image name="User icon" width="39" height="39"/>
         <image name="bike1" width="168.5" height="182.5"/>
         <image name="ev1" width="168.5" height="182.5"/>
         <image name="farm1" width="168.5" height="182.5"/>
         <image name="farmersmarket1" width="168.5" height="182.5"/>
+        <image name="first page" width="375" height="812"/>
         <image name="fountain1" width="168.5" height="185.5"/>
         <image name="grocery1" width="168.5" height="185.5"/>
         <image name="hotel1" width="168.5" height="183"/>
@@ -1435,6 +1574,9 @@
             <color red="0.48199999332427979" green="0.94499999284744263" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">

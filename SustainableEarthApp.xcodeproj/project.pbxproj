@@ -15,6 +15,8 @@
 		3A1D21A125FEAE6400C1ABAC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D21A025FEAE6400C1ABAC /* Message.swift */; };
 		3A452728261A6A3100FF0897 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A452727261A6A3100FF0897 /* ProfileViewController.swift */; };
 		3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F9F3E254CB6C800B5121A /* Constants.swift */; };
+		3AE14FA026353719004CD1CB /* DemoLogActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE14F9F26353719004CD1CB /* DemoLogActionViewController.swift */; };
+		3AE14FA726354656004CD1CB /* DoneLoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE14FA626354656004CD1CB /* DoneLoggingViewController.swift */; };
 		3AEE5070261A37EF00048F2A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEE506F261A37EF00048F2A /* CameraViewController.swift */; };
 		3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E186254C5BE60064B494 /* AppDelegate.swift */; };
 		3AF3E189254C5BE60064B494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E188254C5BE60064B494 /* SceneDelegate.swift */; };
@@ -42,6 +44,8 @@
 		3A1D21A025FEAE6400C1ABAC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3A452727261A6A3100FF0897 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3A7F9F3E254CB6C800B5121A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3AE14F9F26353719004CD1CB /* DemoLogActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLogActionViewController.swift; sourceTree = "<group>"; };
+		3AE14FA626354656004CD1CB /* DoneLoggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneLoggingViewController.swift; sourceTree = "<group>"; };
 		3AEE506F261A37EF00048F2A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		3AF3E183254C5BE60064B494 /* SustainableEarthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SustainableEarthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF3E186254C5BE60064B494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
 				3AEE506F261A37EF00048F2A /* CameraViewController.swift */,
 				3A452727261A6A3100FF0897 /* ProfileViewController.swift */,
+				3AE14F9F26353719004CD1CB /* DemoLogActionViewController.swift */,
+				3AE14FA626354656004CD1CB /* DoneLoggingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -303,7 +309,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE14FA026353719004CD1CB /* DemoLogActionViewController.swift in Sources */,
 				3AF3E19D254C63F00064B494 /* Home.swift in Sources */,
+				3AE14FA726354656004CD1CB /* DoneLoggingViewController.swift in Sources */,
 				3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */,
 				3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */,
 				3AEE5070261A37EF00048F2A /* CameraViewController.swift in Sources */,
