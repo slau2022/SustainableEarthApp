@@ -10,11 +10,10 @@ import UIKit
 import Firebase
 
 class Home: UIViewController {
-
-    @IBOutlet weak var testImageRetrieve: UIImageView!
     
     @IBOutlet weak var Coins: UIButton!
-    @IBOutlet weak var Profile: UIButton!
+
+    @IBOutlet weak var toProfile: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     var messages: [Message] = [
@@ -42,6 +41,15 @@ class Home: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func toProfilePressed(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "profileView") as! ProfileViewController
+
+        view.window?.rootViewController = nextViewController
+        view.window?.makeKeyAndVisible()
+    }
     
     func setUpCoins(){
         
