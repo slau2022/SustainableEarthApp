@@ -8,50 +8,92 @@
 
 import UIKit
 
-class Actions: UIViewController {
+class actionData {
+    var actionName: String?
+    var actionCoins: String?
+    
+    init(acName:String, acCoins:String) {
+        self.actionName = acName
+        self.actionCoins = acCoins
+    }
+}
+
+class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var actionArray = [actionData]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let compostSchatz = actionData(acName: "Compost at Schatz", acCoins: "10")
+        actionArray.append(compostSchatz)
+        
+        let fillWaterbottle = actionData(acName: "Refill reusable waterbottle", acCoins: "20")
+        actionArray.append(fillWaterbottle)
+        
+        let shortShower = actionData(acName: "Take a 5 minute shower", acCoins: "5")
+        actionArray.append(shortShower)
+        
+        let noMeat = actionData(acName: "Participate in 'No Meat Monday'", acCoins: "15")
+        actionArray.append(noMeat)
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return actionArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "tableView")
+        if cell == nil {
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "tableView")
+        }
+        
+        cell?.textLabel?.text = actionArray[indexPath.row].actionName
+        cell?.detailTextLabel?.text = actionArray[indexPath.row].actionCoins
+        
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailedActionVC {
+            destination.action = actionArray[(tableView.indexPathForSelectedRow?.row)!]
+        tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
+        }
+    }
+    
     
     @IBOutlet weak var favoritesButton: UIButton!
     @IBOutlet weak var energyButton: UIButton!
     @IBOutlet weak var waterButton: UIButton!
     @IBOutlet weak var recycleButton: UIButton!
     
-    @IBOutlet weak var tableView: UITableView!
     
-    var messages: [Message] = [
-        Message(action: "Refill Reusable Waterbottle", logged: "Times Logged: 15"),
-        Message(action: "Brought Reusable Mug", logged: "Times Logged: 10"),
-        Message(action: "Compost at Schatz", logged: "Times Logged: 15")
-    ]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.dataSource = self
+    
+    
+    
+    
         
-        tableView.register(UINib(nibName: Constants.cellNibName, bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
-        
-//        loadActions()
         
         
     // Do any additional setup after loading the view.
-    }
+
     
-//    func loadActions() {
-//       messages = []
 //
-//        db.collection(Constants.FStore.collectionName).getDocuments { (querySnapshot, error) in
-//            if let e = error {
-//                print("there was an issue retrieving data from firestore. \(e)")
-//            } else {
-//                query
-//            }
-//
-//        }
         
-    }
+
     // MARK: Actions
-   
-    //change favorites button image when clicked
-    
+       
 
     /*
     // MARK: - Navigation
@@ -62,20 +104,13 @@ class Actions: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-
-
-
-extension Actions: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messages.count
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination as? DetailedActionVC {
+//            destination.action = actionArray[(actionsTable.indexPathForSelectedRow?.row)!]
+//        }
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath) as! MessageCell
-        cell.label.text = messages[indexPath.row].action
-        return cell
-    }
+
     
     
-}
+

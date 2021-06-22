@@ -10,5 +10,5 @@ import Foundation
 
 struct Message {
     let action: String
-    let logged: String
+    let reward: String
 }
