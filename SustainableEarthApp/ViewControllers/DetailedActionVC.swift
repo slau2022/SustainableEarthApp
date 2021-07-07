@@ -11,6 +11,8 @@ import UIKit
 class DetailedActionVC: UIViewController {
     
     @IBOutlet weak var labelActionName: UILabel!
+    @IBOutlet weak var labelCoins: UILabel!
+    @IBOutlet weak var labelDescription: UILabel!
     
     var action: actionData?
     
@@ -18,6 +20,8 @@ class DetailedActionVC: UIViewController {
         super.viewDidLoad()
         
         labelActionName.text = "\((action?.actionName)!)"
+        labelCoins.text = "\((action?.actionCoins)!)"
+        labelDescription.text = "\((action?.actionDescription)!)"
     
     
 

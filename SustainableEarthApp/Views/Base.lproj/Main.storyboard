@@ -470,30 +470,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="reusewaterbottle" translatesAutoresizingMaskIntoConstraints="NO" id="xqe-25-kB7">
-                                <rect key="frame" x="0.0" y="88" width="414" height="270"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="fob-7N-XyF"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb6-54-SNk">
-                                <rect key="frame" x="20" y="384" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb6-54-SNk">
+                                <rect key="frame" x="20" y="380" width="48" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpO-1P-bop">
+                                <rect key="frame" x="48" y="409" width="42" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.55294117649999996" green="0.70980392160000005" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="recycle" translatesAutoresizingMaskIntoConstraints="NO" id="Cah-L6-Hqq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="272"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx5-nh-hC3">
+                                <rect key="frame" x="20" y="443" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coin" translatesAutoresizingMaskIntoConstraints="NO" id="hF3-y0-2wD">
+                                <rect key="frame" x="20" y="409" width="25" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="4xO-CJ-Mbe"/>
+                                    <constraint firstAttribute="width" constant="25" id="AqJ-wR-eu8"/>
+                                    <constraint firstAttribute="height" constant="29" id="LjP-de-JM9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fdN-kU-db6"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="fdN-kU-db6" firstAttribute="trailing" secondItem="mb6-54-SNk" secondAttribute="trailing" constant="20" id="OEr-Zp-FjQ"/>
-                            <constraint firstItem="mb6-54-SNk" firstAttribute="top" secondItem="xqe-25-kB7" secondAttribute="bottom" constant="26" id="d2i-vW-Pos"/>
-                            <constraint firstItem="mb6-54-SNk" firstAttribute="leading" secondItem="fdN-kU-db6" secondAttribute="leading" constant="20" id="gWU-Yq-Vwr"/>
+                            <constraint firstItem="mb6-54-SNk" firstAttribute="leading" secondItem="fdN-kU-db6" secondAttribute="leading" constant="20" id="0vy-Kd-Bd2"/>
+                            <constraint firstItem="hF3-y0-2wD" firstAttribute="top" secondItem="mb6-54-SNk" secondAttribute="bottom" constant="5" id="DjJ-bu-a7V"/>
+                            <constraint firstItem="Cah-L6-Hqq" firstAttribute="top" secondItem="fdN-kU-db6" secondAttribute="top" id="HPg-ig-VRM"/>
+                            <constraint firstItem="fdN-kU-db6" firstAttribute="bottom" secondItem="hF3-y0-2wD" secondAttribute="bottom" constant="375" id="I0m-Qw-Ukw"/>
+                            <constraint firstItem="fdN-kU-db6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mb6-54-SNk" secondAttribute="trailing" symbolic="YES" id="Sek-hC-JsP"/>
+                            <constraint firstItem="mb6-54-SNk" firstAttribute="top" secondItem="Cah-L6-Hqq" secondAttribute="bottom" constant="20" id="WSd-yy-1Ux"/>
+                            <constraint firstItem="mb6-54-SNk" firstAttribute="top" secondItem="Cah-L6-Hqq" secondAttribute="bottom" constant="20" id="ZDK-Pw-RoY"/>
+                            <constraint firstItem="Mx5-nh-hC3" firstAttribute="top" secondItem="hF3-y0-2wD" secondAttribute="bottom" constant="5" id="bGl-mF-ctO"/>
+                            <constraint firstItem="fdN-kU-db6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UpO-1P-bop" secondAttribute="trailing" symbolic="YES" id="bQe-tG-e33"/>
+                            <constraint firstItem="UpO-1P-bop" firstAttribute="top" secondItem="mb6-54-SNk" secondAttribute="bottom" constant="5" id="dwN-WI-KGt"/>
+                            <constraint firstItem="Cah-L6-Hqq" firstAttribute="trailing" secondItem="fdN-kU-db6" secondAttribute="trailing" id="enZ-3N-u6F"/>
+                            <constraint firstItem="hF3-y0-2wD" firstAttribute="leading" secondItem="fdN-kU-db6" secondAttribute="leading" constant="20" id="f78-fn-MM3"/>
+                            <constraint firstItem="hF3-y0-2wD" firstAttribute="top" secondItem="mb6-54-SNk" secondAttribute="bottom" constant="5" id="gbe-BU-zcb"/>
+                            <constraint firstItem="Mx5-nh-hC3" firstAttribute="leading" secondItem="fdN-kU-db6" secondAttribute="leading" constant="20" id="jpt-RP-9hX"/>
+                            <constraint firstItem="UpO-1P-bop" firstAttribute="leading" secondItem="hF3-y0-2wD" secondAttribute="trailing" constant="3" id="kOj-q3-vSs"/>
+                            <constraint firstItem="UpO-1P-bop" firstAttribute="leading" secondItem="hF3-y0-2wD" secondAttribute="trailing" constant="3" id="o1w-zH-PvV"/>
+                            <constraint firstItem="fdN-kU-db6" firstAttribute="bottom" secondItem="UpO-1P-bop" secondAttribute="bottom" constant="375" id="oKv-mU-O6o"/>
+                            <constraint firstItem="Cah-L6-Hqq" firstAttribute="leading" secondItem="fdN-kU-db6" secondAttribute="leading" id="skp-uv-K5j"/>
+                            <constraint firstItem="fdN-kU-db6" firstAttribute="trailing" secondItem="Mx5-nh-hC3" secondAttribute="trailing" constant="20" id="uhG-er-Dml"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y5v-bq-fRg"/>
                     <connections>
                         <outlet property="labelActionName" destination="mb6-54-SNk" id="BWC-Cg-bsP"/>
+                        <outlet property="labelCoins" destination="UpO-1P-bop" id="R9y-Lp-gfO"/>
+                        <outlet property="labelDescription" destination="Mx5-nh-hC3" id="SOj-91-WNt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYE-pi-zfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1144,6 +1179,7 @@
     </scenes>
     <resources>
         <image name="BackArrow" width="25.5" height="17"/>
+        <image name="Coin" width="37" height="39.5"/>
         <image name="Create group" width="228" height="48"/>
         <image name="Search bar" width="368" height="61"/>
         <image name="Search icon" width="19.5" height="20"/>
@@ -1161,8 +1197,8 @@
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="purchase1" width="288" height="67"/>
         <image name="rail1" width="168.5" height="183"/>
+        <image name="recycle" width="1200" height="799"/>
         <image name="restaurant1" width="168.5" height="185.5"/>
-        <image name="reusewaterbottle" width="2121" height="1414"/>
         <image name="skyscraper1" width="168.5" height="183"/>
         <image name="solar1" width="168.5" height="182.5"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
@@ -1189,6 +1225,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
