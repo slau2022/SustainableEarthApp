@@ -15,15 +15,17 @@ class Leaderboard: UIViewController {
     
     var communities: [Community] = []
     
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
+        loadCommunities()
+        
         tableView.dataSource = self
+        tableView.delegate = self
         
         // Do any additional setup after loading the view.
         tableView.register(UINib(nibName: K.CommNibName, bundle: nil), forCellReuseIdentifier: K.CommCellIdentifier)
-        
-        loadCommunities()
     }
     
     func loadCommunities() {
@@ -47,11 +49,10 @@ class Leaderboard: UIViewController {
             }
         }
     }
-    @IBOutlet weak var tableView: UITableView!
 }
 
 
-extension Leaderboard: UITableViewDataSource, UITableViewDelegate {
+extension Leaderboard: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return communities.count
     }
@@ -62,11 +63,22 @@ extension Leaderboard: UITableViewDataSource, UITableViewDelegate {
         cell.numUsers.text = "Size:  \(communities[indexPath.row].numUsers)"
         return cell
     }
+}
 
-    // var allowsSelectionDuringEditing: Bool { true }
+extension Leaderboard: UITableViewDelegate{
+    var allowsSelectionDuringEditing: Bool { true }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("aaaa")
         print(indexPath.row)
+        performSegue(withIdentifier: "SwitchLeaderboard", sender: self)
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? SpecificLeaderboard {
+            destination.CommunityName = communities[(tableView.indexPathForSelectedRow?.row)!].title
+            tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
+        }
+    }
+    
 }
