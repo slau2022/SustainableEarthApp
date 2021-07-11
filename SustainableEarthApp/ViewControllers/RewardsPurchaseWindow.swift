@@ -14,6 +14,9 @@ class RewardsPurchaseWindow: UIViewController {
     @IBOutlet weak var purchaseButton: UIButton!
    
     @IBOutlet weak var purchaseImageView: UIImageView?
+
+    
+    
     
     var imageDict:[String:UIImage] = ["wind":#imageLiteral(resourceName: "wind1"), "rail":#imageLiteral(resourceName: "rail1"), "office": #imageLiteral(resourceName: "office1"), "skyscraper": #imageLiteral(resourceName: "skyscraper1"), "market": #imageLiteral(resourceName: "farmersmarket1"), "hotel": #imageLiteral(resourceName: "hotel1"), "ev": #imageLiteral(resourceName: "ev1"), "housing": #imageLiteral(resourceName: "housing1"), "bike": #imageLiteral(resourceName: "bike1"), "restaurant": #imageLiteral(resourceName: "restaurant1"), "solar": #imageLiteral(resourceName: "solar1"), "farm": #imageLiteral(resourceName: "farm1"), "grocery": #imageLiteral(resourceName: "grocery1"), "park": #imageLiteral(resourceName: "park1"), "fountain": #imageLiteral(resourceName: "fountain1")]
    
@@ -45,6 +48,11 @@ class RewardsPurchaseWindow: UIViewController {
     }
     
     
+    @IBAction func backButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+
+
+    }
     
     
     
