@@ -11,7 +11,6 @@ import Firebase
 
 class Home: UIViewController {
     
-    @IBOutlet weak var Coins: UIButton!
 
     @IBOutlet weak var toProfile: UIButton!
     @IBOutlet weak var tableView: UITableView!
@@ -26,10 +25,9 @@ class Home: UIViewController {
     
     override func viewDidLoad() {
         db = Firestore.firestore()
-        Coins.circleCorner()
-        setUpCoins()
-        Coins.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
-        Coins.contentEdgeInsets = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 15)
+        // setUpCoins()
+        // Coins.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+        // Coins.contentEdgeInsets = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 15)
         tableView.dataSource = self
         tableView.register(UINib(nibName: Constants.cellNibName, bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
 
@@ -51,7 +49,7 @@ class Home: UIViewController {
         view.window?.makeKeyAndVisible()
     }
     
-    func setUpCoins(){
+    /*func setUpCoins(){
         
         let userDoc = UserDefaults.standard.string(forKey: "userEmail") ?? "Error retrieving user"
         print(userDoc)
@@ -72,7 +70,7 @@ class Home: UIViewController {
         
 
         
-    }
+    }*/
     /*
     // MARK: - Navigation
 
