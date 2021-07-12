@@ -12,3 +12,8 @@ struct Community {
     let title: String
     let numUsers: Int
 }
+
+struct User {
+    let name: String
+    let score: Int
+}

@@ -69,7 +69,6 @@ extension Leaderboard: UITableViewDelegate{
     var allowsSelectionDuringEditing: Bool { true }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
         performSegue(withIdentifier: "SwitchLeaderboard", sender: self)
     }
     

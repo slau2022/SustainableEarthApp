@@ -7,29 +7,72 @@
 //
 
 import UIKit
+import Firebase
 
 class SpecificLeaderboard: UIViewController {
     
+    let db = Firestore.firestore()
+    
     var CommunityName: String = "Error getting community"
+    
+    var usersArray: [User] = []
 
     @IBOutlet weak var LeaderboardTitle: UILabel!
+    
+    @IBOutlet weak var LeaderboardSize: UILabel!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         LeaderboardTitle.text = "\(CommunityName) !!"
+        loadUsers()
+        
+        tableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadUsers() {
+        // See: https://firebase.google.com/docs/firestore/query-data/queries?authuser=0
+        db.collection("communities").whereField("CommunityName", isEqualTo: CommunityName).getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let usersInCommunity = document.data()["Members"] as! Array<String>
+                    self.LeaderboardSize.text = "\(usersInCommunity.count)"
+                    for userID in usersInCommunity {
+                        // Get points of user from user database
+                        self.db.collection("users").document(userID).getDocument { (userInfo, error) in
+                            if let userInfo = userInfo, userInfo.exists {
+                                if let points = userInfo["coins"] as? Int {
+                                    let newUser = User(name: userID, score: points)
+                                    self.usersArray.append(newUser)
+                                    
+                                    DispatchQueue.main.async {
+                                        self.tableView.reloadData()
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // Add user & coins to array
+                    }
+                }
+            }
+        }
     }
-    */
+}
 
+extension SpecificLeaderboard: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return usersArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.SpecificLeaderboardCellIdentifier, for: indexPath)
+        cell.textLabel?.text = "\(usersArray[indexPath.row].name), \(usersArray[indexPath.row].score)"
+        return cell
+    }
 }
