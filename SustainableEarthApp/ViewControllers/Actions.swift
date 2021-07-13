@@ -12,11 +12,13 @@ class actionData {
     var actionName: String?
     var actionCoins: String?
     var actionDescription: String?
+    var actionImageName: String?
     
-    init(acName:String, acCoins:String, acDescription:String) {
+    init(acName:String, acCoins:String, acDescription:String, acImgName:String) {
         self.actionName = acName
         self.actionCoins = acCoins
         self.actionDescription = acDescription
+        self.actionImageName = acImgName
     }
 }
 
@@ -29,16 +31,16 @@ class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let compost = actionData(acName: "Compost", acCoins: "10", acDescription: "blah blah")
+        let compost = actionData(acName: "Compost", acCoins: "10", acDescription: "blah blah", acImgName:"recycle")
         actionArray.append(compost)
         
-        let fillWaterbottle = actionData(acName: "Refill reusable waterbottle", acCoins: "20", acDescription: "70 Million plastic water bottles are used in the United States each day and only 23% of them are recycled.\n\nAvoid single use plastic and refill your reusable water bottle")
+        let fillWaterbottle = actionData(acName: "Refill reusable waterbottle", acCoins: "20", acDescription: "70 Million plastic water bottles are used in the United States each day and only 23% of them are recycled.\n\nAvoid single use plastic and refill your reusable water bottle", acImgName:"reusewaterbottle")
         actionArray.append(fillWaterbottle)
         
-        let shortShower = actionData(acName: "Take a 5 minute shower", acCoins: "5", acDescription: "blah blah")
+        let shortShower = actionData(acName: "Take a 5 minute shower", acCoins: "5", acDescription: "blah blah", acImgName:"recycle")
         actionArray.append(shortShower)
         
-        let noMeat = actionData(acName: "Participate in 'No Meat Monday'", acCoins: "25", acDescription: "blah blah")
+        let noMeat = actionData(acName: "Participate in 'No Meat Monday'", acCoins: "25", acDescription: "blah blah", acImgName:"recycle")
         actionArray.append(noMeat)
         
         tableView.dataSource = self

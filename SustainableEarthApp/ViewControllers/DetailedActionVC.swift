@@ -14,6 +14,8 @@ class DetailedActionVC: UIViewController {
     @IBOutlet weak var labelCoins: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     
+    @IBOutlet weak var actionImage: UIImageView!
+
     var action: actionData?
     
     override func viewDidLoad() {
@@ -22,6 +24,7 @@ class DetailedActionVC: UIViewController {
         labelActionName.text = "\((action?.actionName)!)"
         labelCoins.text = "\((action?.actionCoins)!)"
         labelDescription.text = "\((action?.actionDescription)!)"
+        actionImage.image = UIImage(named:(action?.actionImageName)!)
     
     
 
