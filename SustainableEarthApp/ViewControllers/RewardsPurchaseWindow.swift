@@ -46,9 +46,12 @@ class RewardsPurchaseWindow: UIViewController {
         
     
     }
+   
     
-    
-    @IBAction func backButton(_ sender: Any) {
+    @IBAction func backButton(_ sender: UIButton) {
+        print("hi")
+        let vc = RewardsSuccessfulPurchase(newPurchaseImageName: purchaseImageName)
+        present(vc, animated: true)
         self.navigationController?.popViewController(animated: true)
 
 
