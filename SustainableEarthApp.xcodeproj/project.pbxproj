@@ -28,6 +28,8 @@
 		975F1D0025C3CE3C00FE7107 /* CommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */; };
 		975F1D0125C3CE3C00FE7107 /* CommunityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */; };
 		976F636D2606982700EA6480 /* CreateGroup2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976F636C2606982700EA6480 /* CreateGroup2.swift */; };
+		977836CF269EABFF0012B8EE /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977836CD269EABFF0012B8EE /* LeaderboardCell.swift */; };
+		977836D0269EABFF0012B8EE /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 977836CE269EABFF0012B8EE /* LeaderboardCell.xib */; };
 		97C1BA9B26985F1000400B2F /* SpecificLeaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C1BA9A26985F1000400B2F /* SpecificLeaderboard.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCell.swift; sourceTree = "<group>"; };
 		975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityCell.xib; sourceTree = "<group>"; };
 		976F636C2606982700EA6480 /* CreateGroup2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateGroup2.swift; path = SustainableEarthApp/ViewControllers/CreateGroup2.swift; sourceTree = SOURCE_ROOT; };
+		977836CD269EABFF0012B8EE /* LeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
+		977836CE269EABFF0012B8EE /* LeaderboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
 		97C1BA9A26985F1000400B2F /* SpecificLeaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpecificLeaderboard.swift; path = SustainableEarthApp/ViewControllers/SpecificLeaderboard.swift; sourceTree = SOURCE_ROOT; };
 		DF664CBD8222DC658287F31F /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +159,8 @@
 				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
 				975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */,
 				975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */,
+				977836CD269EABFF0012B8EE /* LeaderboardCell.swift */,
+				977836CE269EABFF0012B8EE /* LeaderboardCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 				3AF3E192254C5BEC0064B494 /* Assets.xcassets in Resources */,
 				975F1D0125C3CE3C00FE7107 /* CommunityCell.xib in Resources */,
 				3AF3E190254C5BE60064B494 /* Main.storyboard in Resources */,
+				977836D0269EABFF0012B8EE /* LeaderboardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +307,7 @@
 				975F1D0025C3CE3C00FE7107 /* CommunityCell.swift in Sources */,
 				975F1CE125C3C23A00FE7107 /* Structs.swift in Sources */,
 				3AF3E1A1254C641D0064B494 /* Leaderboard.swift in Sources */,
+				977836CF269EABFF0012B8EE /* LeaderboardCell.swift in Sources */,
 				97C1BA9B26985F1000400B2F /* SpecificLeaderboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

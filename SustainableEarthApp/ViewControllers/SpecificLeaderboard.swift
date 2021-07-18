@@ -29,8 +29,9 @@ class SpecificLeaderboard: UIViewController {
         loadUsers()
         
         tableView.dataSource = self
-
-        // Do any additional setup after loading the view.
+        
+        // tableView.register(UINib(nibName: K.LeaderboardNibName, bundle: nil), forCellReuseIdentifier: K.LeaderboardCellIdentifier)
+        
     }
     
     func loadUsers() {
@@ -71,8 +72,13 @@ extension SpecificLeaderboard: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.SpecificLeaderboardCellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.LeaderboardCellIdentifier, for: indexPath) // as! LeaderboardCell
         cell.textLabel?.text = "\(usersArray[indexPath.row].name), \(usersArray[indexPath.row].score)"
+        /*
+        cell.NameCell.text = "Name"
+        cell.ScoreCell.text = "Score"
+        cell.PlacingCell.text = "\(indexPath.row)"
+        */
         return cell
     }
 }
