@@ -30,7 +30,7 @@ class SpecificLeaderboard: UIViewController {
         
         tableView.dataSource = self
         
-        // tableView.register(UINib(nibName: K.LeaderboardNibName, bundle: nil), forCellReuseIdentifier: K.LeaderboardCellIdentifier)
+        tableView.register(UINib(nibName: K.LeaderboardNibName, bundle: nil), forCellReuseIdentifier: K.LeaderboardCellIdentifier)
         
     }
     
@@ -42,7 +42,7 @@ class SpecificLeaderboard: UIViewController {
             } else {
                 for document in querySnapshot!.documents {
                     let usersInCommunity = document.data()["Members"] as! Array<String>
-                    self.LeaderboardSize.text = "\(usersInCommunity.count)"
+                    self.LeaderboardSize.text = "Size: \(usersInCommunity.count)"
                     for userID in usersInCommunity {
                         // Get points of user from user database
                         self.db.collection("users").document(userID).getDocument { (userInfo, error) in
@@ -57,8 +57,6 @@ class SpecificLeaderboard: UIViewController {
                                 }
                             }
                         }
-                        
-                        // Add user & coins to array
                     }
                 }
             }
@@ -72,13 +70,11 @@ extension SpecificLeaderboard: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.LeaderboardCellIdentifier, for: indexPath) // as! LeaderboardCell
-        cell.textLabel?.text = "\(usersArray[indexPath.row].name), \(usersArray[indexPath.row].score)"
-        /*
-        cell.NameCell.text = "Name"
-        cell.ScoreCell.text = "Score"
-        cell.PlacingCell.text = "\(indexPath.row)"
-        */
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.LeaderboardCellIdentifier, for: indexPath) as! LeaderboardCell
+        cell.NameCell.text = "\(usersArray[indexPath.row].name)"
+        cell.ScoreCell.text = "\(usersArray[indexPath.row].score)"
+        cell.PlacingCell.text = "\(indexPath.row + 1)"
+        
         return cell
     }
 }

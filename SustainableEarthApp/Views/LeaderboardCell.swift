@@ -10,13 +10,14 @@ import UIKit
 
 class LeaderboardCell: UITableViewCell {
 
+        
     @IBOutlet weak var PlacingCell: UILabel!
     
     @IBOutlet weak var ScoreCell: UILabel!
     
     @IBOutlet weak var NameCell: UILabel!
     
-    // @IBOutlet weak var ImageCell: UIImageView!
+    @IBOutlet weak var ImageCell: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
