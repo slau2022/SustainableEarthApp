@@ -61,8 +61,8 @@
                                 <color key="textColor" name="Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="ButtonHighlighted" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xN2-qh-X7L">
-                                <rect key="frame" x="53" y="753" width="308" height="72"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ButtonHighlighted" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xN2-qh-X7L">
+                                <rect key="frame" x="53" y="753" width="308" height="67"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4J-LM-JmM">
@@ -268,6 +268,7 @@
                             <constraint firstItem="u5d-2U-bgJ" firstAttribute="top" secondItem="KXd-BW-ooE" secondAttribute="bottom" constant="22" id="L9h-h1-blb"/>
                             <constraint firstItem="X4J-LM-JmM" firstAttribute="top" secondItem="W7D-Mb-way" secondAttribute="bottom" constant="3" id="Lyy-9H-GeS"/>
                             <constraint firstItem="mXV-zD-SNt" firstAttribute="top" secondItem="sgk-eu-kwC" secondAttribute="bottom" constant="18" id="NeN-bs-Ngv"/>
+                            <constraint firstItem="xN2-qh-X7L" firstAttribute="top" secondItem="5ki-M6-22c" secondAttribute="bottom" constant="7" id="Ocn-VZ-7C5"/>
                             <constraint firstItem="sgk-eu-kwC" firstAttribute="leading" secondItem="B4R-Gi-eaN" secondAttribute="leading" constant="51" id="OnC-lh-69W"/>
                             <constraint firstItem="YR4-Lz-irf" firstAttribute="leading" secondItem="B4R-Gi-eaN" secondAttribute="leading" constant="35" id="TSB-Um-RU0"/>
                             <constraint firstItem="B4R-Gi-eaN" firstAttribute="bottom" secondItem="X4J-LM-JmM" secondAttribute="bottom" constant="7" id="U0E-q4-UVZ"/>
@@ -393,7 +394,7 @@
                                                                 </constraints>
                                                                 <state key="normal" backgroundImage="wind1"/>
                                                                 <connections>
-                                                                    <action selector="windButtonPressed:" destination="f53-TO-XgD" eventType="touchUpInside" id="nRO-aH-5It"/>
+                                                                    <action selector="showWTurbinePU:" destination="f53-TO-XgD" eventType="touchUpInside" id="b32-OS-3Xp"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBr-Ns-kru">
@@ -641,12 +642,50 @@
                     <navigationItem key="navigationItem" id="z3p-fv-oLp"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="fdh-8w-RZp" kind="presentation" identifier="rewardsToPurchase" modalPresentationStyle="overCurrentContext" id="JCx-nO-xX2"/>
+                        <outlet property="blurView" destination="JME-Ov-l4h" id="keg-RC-Z10"/>
+                        <outlet property="purchaseWTurbine" destination="Fdd-lT-VkC" id="3q5-PY-WR5"/>
+                        <outlet property="wTurbinePU" destination="hy4-iv-YrG" id="YAi-Vf-KlO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfP-Nf-uaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="iq1-6G-rZD">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" id="hy4-iv-YrG">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="232"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdd-lT-VkC">
+                            <rect key="frame" x="157.5" y="101" width="64" height="30"/>
+                            <color key="backgroundColor" name="ThemeColor"/>
+                            <state key="normal" title="purchase">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="purchaseTurbine:" destination="f53-TO-XgD" eventType="touchUpInside" id="CIA-WE-oyQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="ZdE-Yh-qtK"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Fdd-lT-VkC" firstAttribute="centerY" secondItem="hy4-iv-YrG" secondAttribute="centerY" id="XHD-zX-FlB"/>
+                        <constraint firstItem="Fdd-lT-VkC" firstAttribute="centerX" secondItem="hy4-iv-YrG" secondAttribute="centerX" id="eR6-ZI-Pq5"/>
+                    </constraints>
+                </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" id="Veh-0A-seY">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JME-Ov-l4h">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
             </objects>
-            <point key="canvasLocation" x="1086.9565217391305" y="1317.8571428571429"/>
+            <point key="canvasLocation" x="2542" y="1539"/>
         </scene>
         <!--Action View Controller-->
         <scene sceneID="rRJ-lh-sMr">
@@ -855,14 +894,6 @@
             </objects>
             <point key="canvasLocation" x="-1488" y="-1403"/>
         </scene>
-        <!--RewardsPurchaseWindow-->
-        <scene sceneID="CMc-oh-Mse">
-            <objects>
-                <viewControllerPlaceholder storyboardName="RewardsPurchaseWindow" id="fdh-8w-RZp" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="udW-xH-dvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1043.4782608695652" y="2036.3839285714284"/>
-        </scene>
     </scenes>
     <resources>
         <image name="BackArrow" width="25.5" height="17"/>
@@ -896,6 +927,9 @@
         </namedColor>
         <namedColor name="TextColor">
             <color red="0.6470000147819519" green="0.6470000147819519" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeColor">
+            <color red="0.48199999332427979" green="0.94499999284744263" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
