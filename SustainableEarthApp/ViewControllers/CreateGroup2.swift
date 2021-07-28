@@ -23,8 +23,9 @@ class CreateGroup2: UIViewController {
     let db = Firestore.firestore()
     
     @IBAction func groupCreated(_ sender: Any) {
+        print("Check if messageSender is not Null")
         if let name = communityName.text, let messageSender = Auth.auth().currentUser?.email {
-            // var ref: DocumentReference? = nil
+            //var ref: DocumentReference? = nil
             db.collection("communities").document(name).setData([
                 "CommunityName": name,
                 "Members": [messageSender]
