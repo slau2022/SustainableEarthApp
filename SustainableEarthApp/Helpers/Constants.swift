@@ -13,6 +13,8 @@ struct K {
     // Call as "K.(constant)" in other files
     static let CommCellIdentifier = "ReusableCommCell"
     static let CommNibName = "CommunityCell"
+    static let LeaderboardCellIdentifier = "ReusableLeaderboardCell"
+    static let LeaderboardNibName = "LeaderboardCell"
 }
 
 struct Constants {

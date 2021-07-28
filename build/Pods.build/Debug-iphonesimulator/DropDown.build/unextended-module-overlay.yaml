@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/casperwong/Documents/GitHub/SustainableEarthApp/build/Debug-iphonesimulator/DropDown/DropDown.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/casperwong/Documents/GitHub/SustainableEarthApp/build/Pods.build/Debug-iphonesimulator/DropDown.build/unextended-module.modulemap",
+    }]
+  }]
+}
