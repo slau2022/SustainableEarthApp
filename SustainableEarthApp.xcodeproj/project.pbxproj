@@ -131,6 +131,7 @@
 		3AF3E1AB254C910C0064B494 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
 				3AF3E1A0254C641D0064B494 /* Leaderboard.swift */,
 				976F636C2606982700EA6480 /* CreateGroup2.swift */,
 				97C1BA9A26985F1000400B2F /* SpecificLeaderboard.swift */,
@@ -156,7 +157,6 @@
 		975F1CE625C3CB3E00FE7107 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
 				975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */,
 				975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */,
 				977836CD269EABFF0012B8EE /* LeaderboardCell.swift */,
