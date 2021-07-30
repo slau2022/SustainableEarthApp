@@ -13,14 +13,16 @@ struct K {
     // Call as "K.(constant)" in other files
     static let CommCellIdentifier = "ReusableCommCell"
     static let CommNibName = "CommunityCell"
+    static let cellIdentifier = "reusableActionsCell"
+    static let cellNibName = "MessageCell"
 }
 
 struct Constants {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
     
     struct Storyboard {
         static let homeViewController = "HomeVC"
     }
 
-}
+} 
+
+

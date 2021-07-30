@@ -8,12 +8,13 @@
 
 import UIKit
 
+
 class actionData {
     var actionName: String?
     var actionCoins: String?
     var actionDescription: String?
     var actionImageName: String?
-    
+
     init(acName:String, acCoins:String, acDescription:String, acImgName:String) {
         self.actionName = acName
         self.actionCoins = acCoins
@@ -23,26 +24,24 @@ class actionData {
 }
 
 class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var tableView: UITableView!
-    
+
     var actionArray = [actionData]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let compost = actionData(acName: "Compost", acCoins: "10", acDescription: "blah blah", acImgName:"recycle")
         actionArray.append(compost)
-        
+
         let fillWaterbottle = actionData(acName: "Refill reusable waterbottle", acCoins: "20", acDescription: "70 Million plastic water bottles are used in the United States each day and only 23% of them are recycled.\n\nAvoid single use plastic and refill your reusable water bottle", acImgName:"reusewaterbottle")
         actionArray.append(fillWaterbottle)
-        
+
         let shortShower = actionData(acName: "Take a 5 minute shower", acCoins: "5", acDescription: "blah blah", acImgName:"recycle")
         actionArray.append(shortShower)
-        
+
         let noMeat = actionData(acName: "Participate in 'No Meat Monday'", acCoins: "25", acDescription: "blah blah", acImgName:"recycle")
         actionArray.append(noMeat)
-        
+
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -50,36 +49,37 @@ class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return actionArray.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "tableView")
         if cell == nil {
             cell = UITableViewCell(style: .subtitle, reuseIdentifier: "tableView")
         }
-        
+
         cell?.textLabel?.text = actionArray[indexPath.row].actionName
         cell?.detailTextLabel?.text = actionArray[indexPath.row].actionCoins
-        
+
         return cell!
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "showDetail", sender: self)
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailedActionVC {
             destination.action = actionArray[(tableView.indexPathForSelectedRow?.row)!]
         tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
         }
     }
+
+
+
+
     
     
-    @IBOutlet weak var favoritesButton: UIButton!
-    @IBOutlet weak var energyButton: UIButton!
-    @IBOutlet weak var waterButton: UIButton!
-    @IBOutlet weak var recycleButton: UIButton!
+
     
     
     
@@ -113,7 +113,7 @@ class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //        if let destination = segue.destination as? DetailedActionVC {
 //            destination.action = actionArray[(actionsTable.indexPathForSelectedRow?.row)!]
 //        }
-    }
+
 
     
     

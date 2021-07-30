@@ -16,16 +16,16 @@ class DetailedActionVC: UIViewController {
     
     @IBOutlet weak var actionImage: UIImageView!
 
-    var action: actionData?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        labelActionName.text = "\((action?.actionName)!)"
-        labelCoins.text = "\((action?.actionCoins)!)"
-        labelDescription.text = "\((action?.actionDescription)!)"
-        actionImage.image = UIImage(named:(action?.actionImageName)!)
-    
+//    var action: actionData?
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        labelActionName.text = "\((action?.actionName)!)"
+//        labelCoins.text = "\((action?.actionCoins)!)"
+//        labelDescription.text = "\((action?.actionDescription)!)"
+//        actionImage.image = UIImage(named:(action?.actionImageName)!)
+//    
     
 
     
@@ -45,4 +45,4 @@ class DetailedActionVC: UIViewController {
     }
     */
 
-}
+
