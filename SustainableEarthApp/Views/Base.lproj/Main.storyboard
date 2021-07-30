@@ -381,7 +381,7 @@
                         <outlet property="energyButton" destination="DRa-eN-DIy" id="gwa-tP-4xD"/>
                         <outlet property="favoritesButton" destination="PqD-Kd-UxD" id="BOx-g4-HZv"/>
                         <outlet property="recycleButton" destination="0sa-ZM-7zo" id="cWi-Rg-qry"/>
-                        <outlet property="tableView" destination="v8j-AR-emP" id="D2q-AR-tBD"/>
+                        <outlet property="tableView" destination="v8j-AR-emP" id="zvo-1k-vvc"/>
                         <outlet property="waterButton" destination="rXo-gh-uUu" id="Ld8-C4-SAK"/>
                         <segue destination="7e7-bj-4SD" kind="show" identifier="showDetail" id="kAC-2t-rzV"/>
                     </connections>

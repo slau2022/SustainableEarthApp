@@ -24,7 +24,9 @@ class actionData {
 }
 
 class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     var actionArray = [actionData]()
 
     override func viewDidLoad() {
@@ -70,7 +72,7 @@ class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailedActionVC {
             destination.action = actionArray[(tableView.indexPathForSelectedRow?.row)!]
-        tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
+            tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
         }
     }
 
@@ -118,3 +120,4 @@ class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
 
+}

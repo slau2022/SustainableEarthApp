@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1116D336ED102E6EBA26816A /* Pods_SustainableEarthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6B399DF59E787322E4F5A5 /* Pods_SustainableEarthApp.framework */; };
 		27AC17B1261A617D00A32EEF /* DetailedActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC17B0261A617D00A32EEF /* DetailedActionVC.swift */; };
-		27DCAA2F26B4B2A400A8E037 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DCAA2E26B4B2A400A8E037 /* Action.swift */; };
 		3A0F1135254C948500CDAC68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */; };
 		3A0F1139254CA2FD00CDAC68 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F1138254CA2FD00CDAC68 /* Utilities.swift */; };
 		3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F9F3E254CB6C800B5121A /* Constants.swift */; };
@@ -33,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		27AC17B0261A617D00A32EEF /* DetailedActionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedActionVC.swift; sourceTree = "<group>"; };
-		27DCAA2E26B4B2A400A8E037 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A0F1138254CA2FD00CDAC68 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3A7F9F3E254CB6C800B5121A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				975F1CE025C3C23A00FE7107 /* Community.swift */,
-				27DCAA2E26B4B2A400A8E037 /* Action.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,7 +295,6 @@
 				3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */,
 				3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */,
 				3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */,
-				27DCAA2F26B4B2A400A8E037 /* Action.swift in Sources */,
 				3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */,
 				3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */,
 				3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */,
