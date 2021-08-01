@@ -29,7 +29,8 @@ class Leaderboard: UIViewController {
     }
     
     func loadCommunities() {
-        db.collection("communities").getDocuments() { (querySnapshot, err) in
+        db.collection("communities").addSnapshotListener { (querySnapshot, err) in
+            self.communities = []
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {

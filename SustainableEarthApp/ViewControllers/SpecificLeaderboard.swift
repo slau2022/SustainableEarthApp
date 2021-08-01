@@ -16,6 +16,8 @@ class SpecificLeaderboard: UIViewController {
     var CommunityName: String = "Error getting community"
     
     var usersArray: [User] = []
+    
+    var joined: Bool = true
 
     @IBOutlet weak var LeaderboardTitle: UILabel!
     
@@ -23,11 +25,15 @@ class SpecificLeaderboard: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var leaderboardJoinLeave: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Title stuff
         LeaderboardTitle.text = "\(CommunityName) !!"
         loadUsers()
         
+        // Table stuff
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: K.LeaderboardNibName, bundle: nil), forCellReuseIdentifier: K.LeaderboardCellIdentifier)
@@ -42,7 +48,29 @@ class SpecificLeaderboard: UIViewController {
             } else {
                 for document in querySnapshot!.documents {
                     let usersInCommunity = document.data()["Members"] as! Array<String>
+                    
+                    // Title stuff
                     self.LeaderboardSize.text = "Size: \(usersInCommunity.count)"
+                    
+                    // Join & leave stuff
+                    if let buttonPresser = Auth.auth().currentUser?.email {
+                        if usersInCommunity.contains(buttonPresser) {
+                            self.leaderboardJoinLeave.setTitleColor(.red, for: .normal)
+                            self.leaderboardJoinLeave.setTitle("Leave", for: .normal)
+                            self.joined = true
+                        }
+                        else {
+                            self.leaderboardJoinLeave.setTitleColor(.green, for: .normal)
+                            self.leaderboardJoinLeave.setTitle("Join", for: .normal)
+                            self.joined = false
+                        }
+                    }
+                    else {
+                        self.leaderboardJoinLeave.setTitle("Error authenticating user", for: .normal)
+                    }
+                    
+                    // Back to table stuff
+                    self.usersArray = []
                     for userID in usersInCommunity {
                         // Get points of user from user database
                         self.db.collection("users").document(userID).getDocument { (userInfo, error) in
@@ -50,6 +78,9 @@ class SpecificLeaderboard: UIViewController {
                                 if let points = userInfo["coins"] as? Int {
                                     let newUser = User(name: userID, score: points)
                                     self.usersArray.append(newUser)
+                                    
+                                    self.usersArray.sort(by: { $0.score > $1.score })
+                                    print(self.usersArray)
                                     
                                     DispatchQueue.main.async {
                                         self.tableView.reloadData()
@@ -60,6 +91,28 @@ class SpecificLeaderboard: UIViewController {
                     }
                 }
             }
+        }
+    }
+    
+    
+    @IBAction func JoinLeavePressed(_ sender: UIButton) {
+        db.collection("communities").document(CommunityName).getDocument{ (document, error) in
+            if let document = document, document.exists, let buttonPresser = Auth.auth().currentUser?.email {
+                var newMembers = document["Members"] as! [String]
+                
+                if self.joined {
+                    if let index = newMembers.firstIndex(of: buttonPresser) {
+                        newMembers.remove(at: index)
+                    }
+                }
+                else {
+                    newMembers.append(buttonPresser)
+                }
+                self.db.collection("communities").document(self.CommunityName).updateData(["Members": newMembers])
+                self.joined = !self.joined
+                self.viewDidLoad()
+            }
+            
         }
     }
 }
