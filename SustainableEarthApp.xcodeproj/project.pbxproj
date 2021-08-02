@@ -34,6 +34,12 @@
 		975F1CE125C3C23A00FE7107 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F1CE025C3C23A00FE7107 /* Community.swift */; };
 		975F1D0025C3CE3C00FE7107 /* CommunityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */; };
 		975F1D0125C3CE3C00FE7107 /* CommunityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */; };
+		AA6C28D5269A887B00DFEA85 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6C28D4269A887B00DFEA85 /* Post.swift */; };
+		AA6C28D7269B609200DFEA85 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6C28D6269B609200DFEA85 /* PostService.swift */; };
+		AA6C28D9269BD2EF00DFEA85 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6C28D8269BD2EF00DFEA85 /* Extension.swift */; };
+		AA7B7B3E26B74E0C002CA911 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B7B3D26B74E0C002CA911 /* ImageCollectionViewCell.swift */; };
+		AA7B7B4226B76060002CA911 /* CustomImageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B7B4126B76060002CA911 /* CustomImageFlowLayout.swift */; };
+		AA7B7B4426B77765002CA911 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B7B4326B77765002CA911 /* Image.swift */; };
 		AAA274F3269383E70019342A /* UploadPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA274F2269383E70019342A /* UploadPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +74,12 @@
 		975F1CE025C3C23A00FE7107 /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
 		975F1CFE25C3CE3C00FE7107 /* CommunityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCell.swift; sourceTree = "<group>"; };
 		975F1CFF25C3CE3C00FE7107 /* CommunityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityCell.xib; sourceTree = "<group>"; };
+		AA6C28D4269A887B00DFEA85 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AA6C28D6269B609200DFEA85 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		AA6C28D8269BD2EF00DFEA85 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		AA7B7B3D26B74E0C002CA911 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		AA7B7B4126B76060002CA911 /* CustomImageFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageFlowLayout.swift; sourceTree = "<group>"; };
+		AA7B7B4326B77765002CA911 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		AAA274F2269383E70019342A /* UploadPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoViewController.swift; sourceTree = "<group>"; };
 		DF664CBD8222DC658287F31F /* Pods-SustainableEarthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.release.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +143,7 @@
 				3AF3E193254C5BEC0064B494 /* LaunchScreen.storyboard */,
 				3AF3E196254C5BEC0064B494 /* Info.plist */,
 				3A0F1134254C948500CDAC68 /* GoogleService-Info.plist */,
+				AA6C28D6269B609200DFEA85 /* PostService.swift */,
 			);
 			path = SustainableEarthApp;
 			sourceTree = "<group>";
@@ -140,6 +153,7 @@
 			children = (
 				3A0F1138254CA2FD00CDAC68 /* Utilities.swift */,
 				3A7F9F3E254CB6C800B5121A /* Constants.swift */,
+				AA6C28D8269BD2EF00DFEA85 /* Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -163,6 +177,9 @@
 				3AE14F9F26353719004CD1CB /* DemoLogActionViewController.swift */,
 				3AE14FA626354656004CD1CB /* DoneLoggingViewController.swift */,
 				AAA274F2269383E70019342A /* UploadPhotoViewController.swift */,
+				AA7B7B3D26B74E0C002CA911 /* ImageCollectionViewCell.swift */,
+				AA7B7B4126B76060002CA911 /* CustomImageFlowLayout.swift */,
+				AA7B7B4326B77765002CA911 /* Image.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -172,6 +189,7 @@
 			children = (
 				3A1D21A025FEAE6400C1ABAC /* Message.swift */,
 				975F1CE025C3C23A00FE7107 /* Community.swift */,
+				AA6C28D4269A887B00DFEA85 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,18 +331,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE14FA026353719004CD1CB /* DemoLogActionViewController.swift in Sources */,
+				AA7B7B4426B77765002CA911 /* Image.swift in Sources */,
+				AA7B7B3E26B74E0C002CA911 /* ImageCollectionViewCell.swift in Sources */,
+				AA6C28D5269A887B00DFEA85 /* Post.swift in Sources */,
 				3AF3E19D254C63F00064B494 /* Home.swift in Sources */,
+				AA7B7B4226B76060002CA911 /* CustomImageFlowLayout.swift in Sources */,
 				3AE14FA726354656004CD1CB /* DoneLoggingViewController.swift in Sources */,
 				3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */,
 				3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */,
 				3AEE5070261A37EF00048F2A /* CameraViewController.swift in Sources */,
 				3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */,
+				AA6C28D7269B609200DFEA85 /* PostService.swift in Sources */,
 				2779158425AE245900D1C031 /* MessageCell.swift in Sources */,
 				3A452728261A6A3100FF0897 /* ProfileViewController.swift in Sources */,
 				3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */,
 				AAA274F3269383E70019342A /* UploadPhotoViewController.swift in Sources */,
 				3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */,
 				3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */,
+				AA6C28D9269BD2EF00DFEA85 /* Extension.swift in Sources */,
 				3AF3E187254C5BE60064B494 /* AppDelegate.swift in Sources */,
 				3AF3E189254C5BE60064B494 /* SceneDelegate.swift in Sources */,
 				9730E86E25C347A700F33F76 /* RewardsPurchaseWindow.swift in Sources */,
