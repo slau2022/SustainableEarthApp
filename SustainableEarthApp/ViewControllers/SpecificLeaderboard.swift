@@ -27,6 +27,8 @@ class SpecificLeaderboard: UIViewController {
     
     @IBOutlet weak var leaderboardJoinLeave: UIButton!
     
+    @IBOutlet weak var inviteOthers: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Title stuff
@@ -48,16 +50,20 @@ class SpecificLeaderboard: UIViewController {
             } else {
                 for document in querySnapshot!.documents {
                     let usersInCommunity = document.data()["Members"] as! Array<String>
+                    let adminsInCommunity = document.data()["Admins"] as! Array<String>
                     
                     // Title stuff
                     self.LeaderboardSize.text = "Size: \(usersInCommunity.count)"
-                    
-                    // Join & leave stuff
+                                        
+                    // Join & leave + invite stuff
                     if let buttonPresser = Auth.auth().currentUser?.email {
                         if usersInCommunity.contains(buttonPresser) {
                             self.leaderboardJoinLeave.setTitleColor(.red, for: .normal)
                             self.leaderboardJoinLeave.setTitle("Leave", for: .normal)
                             self.joined = true
+                            if adminsInCommunity.contains(buttonPresser) {
+                                self.inviteOthers.isHidden = false
+                            }
                         }
                         else {
                             self.leaderboardJoinLeave.setTitleColor(.green, for: .normal)
@@ -72,13 +78,14 @@ class SpecificLeaderboard: UIViewController {
                     // Back to table stuff
                     self.usersArray = []
                     for userID in usersInCommunity {
-                        // Get points of user from user database
+                        // Get points of user from user database. ONLY WORKS FOR LOWER CASE
                         self.db.collection("users").document(userID).getDocument { (userInfo, error) in
                             if let userInfo = userInfo, userInfo.exists {
                                 if let points = userInfo["coins"] as? Int {
                                     let newUser = User(name: userID, score: points)
                                     self.usersArray.append(newUser)
                                     
+                                    // SLOW EFFICIENCY
                                     self.usersArray.sort(by: { $0.score > $1.score })
                                     print(self.usersArray)
                                     
@@ -95,7 +102,7 @@ class SpecificLeaderboard: UIViewController {
     }
     
     
-    @IBAction func JoinLeavePressed(_ sender: UIButton) {
+    @IBAction func JoinLeavePressed(_ sender: Any) {
         db.collection("communities").document(CommunityName).getDocument{ (document, error) in
             if let document = document, document.exists, let buttonPresser = Auth.auth().currentUser?.email {
                 var newMembers = document["Members"] as! [String]
@@ -112,8 +119,12 @@ class SpecificLeaderboard: UIViewController {
                 self.joined = !self.joined
                 self.viewDidLoad()
             }
-            
         }
+    }
+    
+    
+    @IBAction func invitePressed(_ sender: Any) {
+        print("You got me!")
     }
 }
 

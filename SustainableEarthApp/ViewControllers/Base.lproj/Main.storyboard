@@ -689,8 +689,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVd-Df-cmz">
+                                <rect key="frame" x="275" y="757" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Invite Friends!"/>
+                                <connections>
+                                    <action selector="invitePressed:" destination="D6H-U8-zS1" eventType="touchUpInside" id="CDL-Ie-FDt"/>
+                                    <segue destination="nCA-3N-lMp" kind="show" id="ALb-RB-LXy"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzE-fa-Soo">
-                                <rect key="frame" x="167" y="752" width="81" height="30"/>
+                                <rect key="frame" x="51" y="757" width="81" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Join / Leave"/>
                                 <connections>
@@ -705,6 +714,7 @@
                     <connections>
                         <outlet property="LeaderboardSize" destination="afB-Io-8gn" id="lg0-Tq-8H1"/>
                         <outlet property="LeaderboardTitle" destination="y5h-2B-qec" id="ryT-g4-C1n"/>
+                        <outlet property="inviteOthers" destination="lVd-Df-cmz" id="la9-x0-dyU"/>
                         <outlet property="leaderboardJoinLeave" destination="PzE-fa-Soo" id="pFS-Iw-THp"/>
                         <outlet property="tableView" destination="avf-dM-ECV" id="MXe-tf-spN"/>
                     </connections>
@@ -712,6 +722,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Vu-j4-TIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="298.55072463768118" y="2035.7142857142856"/>
+        </scene>
+        <!--Invite Friends-->
+        <scene sceneID="T5b-G0-LK3">
+            <objects>
+                <viewController id="nCA-3N-lMp" customClass="InviteFriends" customModule="SustainableEarthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sGT-Tj-eY3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sike, you have no friend :' )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCG-fY-dsJ">
+                                <rect key="frame" x="54" y="162" width="205" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="scI-hw-2fk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hFq-J7-JpK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTb-Zs-dAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="2735"/>
         </scene>
         <!--Create Group2-->
         <scene sceneID="FHK-iV-9z5">
