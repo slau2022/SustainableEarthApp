@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
+
 
 class RewardsPurchaseWindow: UIViewController {
 
+    let db = Firestore.firestore()
    
     @IBOutlet weak var purchaseButton: UIButton!
    
@@ -39,6 +42,8 @@ class RewardsPurchaseWindow: UIViewController {
             print(key, value)
             if purchaseImageName == key { purchaseImageView?.image = value
                 print(purchaseImageName, key, value)
+                if let email = (Auth.auth().currentUser?.email) {
+                    db.collection("users").document(email).setData(["rewards":("rewards" + [key])]) }
                 break
             }
         }

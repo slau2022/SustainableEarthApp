@@ -15,7 +15,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
-            endingLineNumber = "17">
+            endingLineNumber = "17"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -28,8 +30,8 @@
             filePath = "SustainableEarthApp/ViewControllers/Rewards.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "Rewards"
             landmarkType = "3">
          </BreakpointContent>
@@ -44,8 +46,8 @@
             filePath = "SustainableEarthApp/ViewControllers/Rewards.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -60,8 +62,8 @@
             filePath = "SustainableEarthApp/ViewControllers/Rewards.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "windButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
