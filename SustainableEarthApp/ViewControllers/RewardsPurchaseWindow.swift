@@ -43,7 +43,11 @@ class RewardsPurchaseWindow: UIViewController {
             if purchaseImageName == key { purchaseImageView?.image = value
                 print(purchaseImageName, key, value)
                 if let email = (Auth.auth().currentUser?.email) {
-                    db.collection("users").document(email).setData(["rewards":("rewards" + [key])]) }
+                    db.collection("users").addDocument(data: ["rewards" : key]) { error in
+                        if let e = error {
+                            print("There was an issue saving reward to Firestore, \(e)")
+                    }
+//                    db.collection("users").document(email).setData(["rewards":("rewards" + [key])]) }
                 break
             }
         }

@@ -33,7 +33,6 @@
                 <navigationController title="Home View Controller" id="9Zr-YR-bnk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="ppn-0I-cIh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tz2-lA-8iK">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -483,7 +482,7 @@
             <objects>
                 <viewController title="Rewards" id="f53-TO-XgD" customClass="Rewards" customModule="SustainableEarthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zrj-m4-rTe">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akG-6t-DjG">
@@ -813,7 +812,7 @@
             <objects>
                 <viewController title="Rewards Purchase Window" id="lo7-cR-ai1" customClass="RewardsPurchaseWindow" customModule="SustainableEarthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="NrH-5i-HHU">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtB-2s-ofW">
@@ -892,7 +891,7 @@
             <objects>
                 <viewController id="lP5-bH-3ZK" customClass="RewardsSuccessfulPurchase" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t7B-g0-a8N" customClass="RewardsSuccessfulPurchase">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Congratulations!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lRQ-Z4-fHl">
@@ -973,7 +972,6 @@
                 <navigationController title="Action View Controller" id="YFO-bt-I9d" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Actions" image="star.fill" catalog="system" id="xVO-sY-Cbc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NCx-8r-a3w">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -990,7 +988,6 @@
                 <navigationController title="Leaderboard View Controller" id="LeX-ug-XOc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Leaderboard" image="person.2.fill" catalog="system" id="dpY-mD-SC0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PVY-hd-3wx">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1007,7 +1004,6 @@
                 <navigationController title="Rewards View Controller" id="6kU-z3-dhR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Rewards" image="tortoise.fill" catalog="system" id="yCd-72-Qxu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DXY-z7-M2k">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
