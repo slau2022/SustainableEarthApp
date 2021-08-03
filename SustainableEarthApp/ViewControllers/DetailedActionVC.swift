@@ -15,6 +15,7 @@ class DetailedActionVC: UIViewController {
     @IBOutlet weak var labelDescription: UILabel!
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     @IBOutlet weak var actionImage: UIImageView!
 
 //    var action: actionData?
@@ -28,6 +29,8 @@ class DetailedActionVC: UIViewController {
 //        actionImage.image = UIImage(named:(action?.actionImageName)!)
 //    
 =======
+=======
+>>>>>>> parent of cb2ec17... unique images created
     var action: actionData?
     
     override func viewDidLoad() {
