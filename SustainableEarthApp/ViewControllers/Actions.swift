@@ -13,13 +13,17 @@ class actionData {
     var actionName: String?
     var actionCoins: String?
     var actionDescription: String?
+<<<<<<< HEAD
     var actionImageName: String?
 
     init(acName:String, acCoins:String, acDescription:String, acImgName:String) {
+=======
+    
+    init(acName:String, acCoins:String, acDescription:String) {
+>>>>>>> parent of cb2ec17... unique images created
         self.actionName = acName
         self.actionCoins = acCoins
         self.actionDescription = acDescription
-        self.actionImageName = acImgName
     }
 }
 
@@ -31,6 +35,7 @@ class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
 
         let compost = actionData(acName: "Compost", acCoins: "10", acDescription: "blah blah", acImgName:"recycle")
         actionArray.append(compost)
@@ -42,6 +47,19 @@ class Actions: UIViewController, UITableViewDelegate, UITableViewDataSource {
         actionArray.append(shortShower)
 
         let noMeat = actionData(acName: "Participate in 'No Meat Monday'", acCoins: "25", acDescription: "blah blah", acImgName:"recycle")
+=======
+        
+        let compost = actionData(acName: "Compost", acCoins: "10", acDescription: "blah blah")
+        actionArray.append(compost)
+        
+        let fillWaterbottle = actionData(acName: "Refill reusable waterbottle", acCoins: "20", acDescription: "70 Million plastic water bottles are used in the United States each day and only 23% of them are recycled.\n\nAvoid single use plastic and refill your reusable water bottle")
+        actionArray.append(fillWaterbottle)
+        
+        let shortShower = actionData(acName: "Take a 5 minute shower", acCoins: "5", acDescription: "blah blah")
+        actionArray.append(shortShower)
+        
+        let noMeat = actionData(acName: "Participate in 'No Meat Monday'", acCoins: "25", acDescription: "blah blah")
+>>>>>>> parent of cb2ec17... unique images created
         actionArray.append(noMeat)
 
         tableView.dataSource = self

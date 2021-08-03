@@ -14,6 +14,7 @@ class DetailedActionVC: UIViewController {
     @IBOutlet weak var labelCoins: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     
+<<<<<<< HEAD
     @IBOutlet weak var actionImage: UIImageView!
 
 //    var action: actionData?
@@ -26,6 +27,17 @@ class DetailedActionVC: UIViewController {
 //        labelDescription.text = "\((action?.actionDescription)!)"
 //        actionImage.image = UIImage(named:(action?.actionImageName)!)
 //    
+=======
+    var action: actionData?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        labelActionName.text = "\((action?.actionName)!)"
+        labelCoins.text = "\((action?.actionCoins)!)"
+        labelDescription.text = "\((action?.actionDescription)!)"
+    
+>>>>>>> parent of cb2ec17... unique images created
     
 
     
