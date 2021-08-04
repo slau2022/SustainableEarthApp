@@ -13,36 +13,17 @@ class DetailedActionVC: UIViewController {
     @IBOutlet weak var labelActionName: UILabel!
     @IBOutlet weak var labelCoins: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
-    
-<<<<<<< HEAD
-<<<<<<< HEAD
     @IBOutlet weak var actionImage: UIImageView!
 
-//    var action: actionData?
-//    
-//    override func viewDidLoad() {
+	var action: actionData?
+	
+//	override func viewDidLoad() {
 //        super.viewDidLoad()
 //        
 //        labelActionName.text = "\((action?.actionName)!)"
 //        labelCoins.text = "\((action?.actionCoins)!)"
 //        labelDescription.text = "\((action?.actionDescription)!)"
 //        actionImage.image = UIImage(named:(action?.actionImageName)!)
-//    
-=======
-=======
->>>>>>> parent of cb2ec17... unique images created
-    var action: actionData?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        labelActionName.text = "\((action?.actionName)!)"
-        labelCoins.text = "\((action?.actionCoins)!)"
-        labelDescription.text = "\((action?.actionDescription)!)"
-    
->>>>>>> parent of cb2ec17... unique images created
-    
-
     
 
         // Do any additional setup after loading the view.
