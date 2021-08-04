@@ -302,10 +302,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGY-Ct-5tK">
-                                <rect key="frame" x="15" y="182" width="142.5" height="26.5"/>
-=======
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRa-eN-DIy">
                                 <rect key="frame" x="111" y="140" width="95" height="42"/>
                                 <state key="normal" image="unclickedEnergyButton"/>
@@ -320,7 +316,6 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Actions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGY-Ct-5tK">
                                 <rect key="frame" x="20" y="192" width="143" height="27"/>
->>>>>>> parent of cb2ec17... unique images created
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -337,11 +332,7 @@
                                 <state key="normal" image="unclickedFavoritesButton"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v8j-AR-emP">
-<<<<<<< HEAD
-                                <rect key="frame" x="0.0" y="218.5" width="414" height="595.5"/>
-=======
                                 <rect key="frame" x="0.0" y="227" width="414" height="586"/>
->>>>>>> parent of cb2ec17... unique images created
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusableActionsCell" rowHeight="90" id="4j0-2y-ap4">
@@ -358,7 +349,6 @@
                                     <outlet property="delegate" destination="vEo-mV-sZ4" id="PFt-im-qO6"/>
                                 </connections>
                             </tableView>
-<<<<<<< HEAD
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="yr0-Od-u2x">
                                 <rect key="frame" x="5" y="137" width="404" height="42"/>
                                 <subviews>
@@ -380,29 +370,10 @@
                                     </button>
                                 </subviews>
                             </stackView>
-=======
->>>>>>> parent of cb2ec17... unique images created
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qrf-Zv-nF4"/>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                         <constraints>
-<<<<<<< HEAD
-                            <constraint firstItem="v8j-AR-emP" firstAttribute="trailing" secondItem="qrf-Zv-nF4" secondAttribute="trailing" id="1Lf-3c-zOE"/>
-                            <constraint firstItem="lN1-Ke-dvF" firstAttribute="top" secondItem="qrf-Zv-nF4" secondAttribute="top" id="4YU-vf-geP"/>
-                            <constraint firstItem="uGY-Ct-5tK" firstAttribute="leading" secondItem="qrf-Zv-nF4" secondAttribute="leading" constant="15" id="5od-dc-LDL"/>
-                            <constraint firstItem="uGY-Ct-5tK" firstAttribute="top" secondItem="yr0-Od-u2x" secondAttribute="bottom" constant="3" id="7pj-X5-5Wz"/>
-                            <constraint firstItem="v8j-AR-emP" firstAttribute="leading" secondItem="qrf-Zv-nF4" secondAttribute="leading" id="B2T-Or-8wF"/>
-                            <constraint firstItem="v8j-AR-emP" firstAttribute="top" secondItem="uGY-Ct-5tK" secondAttribute="bottom" constant="10" id="KRv-Ov-yVb"/>
-                            <constraint firstAttribute="bottom" secondItem="v8j-AR-emP" secondAttribute="bottom" constant="82" id="LZ3-HK-SLN"/>
-                            <constraint firstItem="uGY-Ct-5tK" firstAttribute="top" secondItem="yr0-Od-u2x" secondAttribute="bottom" constant="3" id="PPN-B8-tbt"/>
-                            <constraint firstItem="v8j-AR-emP" firstAttribute="top" secondItem="uGY-Ct-5tK" secondAttribute="bottom" constant="10" id="V0l-Kp-UPY"/>
-                            <constraint firstItem="lN1-Ke-dvF" firstAttribute="trailing" secondItem="qrf-Zv-nF4" secondAttribute="trailing" id="XY2-i9-n8w"/>
-                            <constraint firstItem="yr0-Od-u2x" firstAttribute="top" secondItem="lN1-Ke-dvF" secondAttribute="bottom" constant="5" id="adP-Pm-0de"/>
-                            <constraint firstItem="qrf-Zv-nF4" firstAttribute="trailing" secondItem="yr0-Od-u2x" secondAttribute="trailing" constant="5" id="haj-mR-wWO"/>
-                            <constraint firstItem="yr0-Od-u2x" firstAttribute="top" secondItem="lN1-Ke-dvF" secondAttribute="bottom" constant="5" id="lm8-lu-Vlt"/>
-                            <constraint firstItem="yr0-Od-u2x" firstAttribute="leading" secondItem="qrf-Zv-nF4" secondAttribute="leading" constant="5" id="ouh-WM-Wjq"/>
-                            <constraint firstItem="lN1-Ke-dvF" firstAttribute="leading" secondItem="qrf-Zv-nF4" secondAttribute="leading" id="pwY-D4-zs6"/>
-=======
                             <constraint firstItem="DRa-eN-DIy" firstAttribute="top" secondItem="0sa-ZM-7zo" secondAttribute="top" id="07c-oB-M4E"/>
                             <constraint firstItem="uGY-Ct-5tK" firstAttribute="leading" secondItem="E4u-xD-wLj" secondAttribute="leadingMargin" id="1Q6-70-WzQ"/>
                             <constraint firstItem="DRa-eN-DIy" firstAttribute="top" secondItem="lN1-Ke-dvF" secondAttribute="bottom" constant="8" id="3BU-PK-zC0"/>
@@ -422,7 +393,6 @@
                             <constraint firstItem="DRa-eN-DIy" firstAttribute="leading" secondItem="E4u-xD-wLj" secondAttribute="leading" constant="111" id="oT9-BU-pyU"/>
                             <constraint firstItem="DRa-eN-DIy" firstAttribute="top" secondItem="rXo-gh-uUu" secondAttribute="top" id="pRX-kq-VGU"/>
                             <constraint firstItem="v8j-AR-emP" firstAttribute="bottom" secondItem="qrf-Zv-nF4" secondAttribute="bottom" id="zLp-5X-8vo"/>
->>>>>>> parent of cb2ec17... unique images created
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Actions" selectedImage="star.fill" catalog="system" id="MeE-Gg-gg4"/>
