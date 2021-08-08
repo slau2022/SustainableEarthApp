@@ -4,7 +4,7 @@
 //
 //  Created by Sophia Lau on 10/30/20.
 //  Copyright © 2020 Sophia Lau. All rights reserved.
-//
+//  
 
 import UIKit
 import Firebase
@@ -37,12 +37,16 @@ class Leaderboard: UIViewController {
                 if let snapshotDocuments = querySnapshot?.documents {
                     for doc in snapshotDocuments {
                         let data = doc.data()
-                        if let newTitle = data["CommunityName"] as? String, let members = data["Members"] as? Array<Any> {
-                            let newCommunity = Community(title: newTitle, numUsers: members.count)
-                            self.communities.append(newCommunity)
-                            
-                            DispatchQueue.main.async {
-                                self.tableView.reloadData()
+                        let usersInCommunity = data["Members"] as! Array<String>
+                        // SLOW EFFICIENCY: Probably faster to have an array in users database containing communities they are in, rather than checking if each community contains user
+                        if let user = Auth.auth().currentUser?.email, usersInCommunity.contains(user) {
+                            if let newTitle = data["CommunityName"] as? String, let members = data["Members"] as? Array<Any> {
+                                let newCommunity = Community(title: newTitle, numUsers: members.count)
+                                self.communities.append(newCommunity)
+                                
+                                DispatchQueue.main.async {
+                                    self.tableView.reloadData()
+                                }
                             }
                         }
                     }
@@ -50,6 +54,7 @@ class Leaderboard: UIViewController {
             }
         }
     }
+    
 }
 
 

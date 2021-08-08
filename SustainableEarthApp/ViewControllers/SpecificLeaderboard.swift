@@ -77,6 +77,11 @@ class SpecificLeaderboard: UIViewController {
                     
                     // Back to table stuff
                     self.usersArray = []
+                    if usersInCommunity.count == 0 {
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                        }
+                    }
                     for userID in usersInCommunity {
                         // Get points of user from user database. ONLY WORKS FOR LOWER CASE
                         self.db.collection("users").document(userID).getDocument { (userInfo, error) in
@@ -103,6 +108,19 @@ class SpecificLeaderboard: UIViewController {
     
     
     @IBAction func JoinLeavePressed(_ sender: Any) {
+        if let buttonPresser = Auth.auth().currentUser?.email{
+            if self.joined {
+                db.collection("communities").document(CommunityName).updateData(["Members" : FieldValue.arrayRemove([buttonPresser])])
+            }
+            else {
+                db.collection("communities").document(CommunityName).updateData(["Members" : FieldValue.arrayUnion([buttonPresser])])
+            }
+            self.joined = !self.joined
+            self.viewDidLoad()
+        }
+            
+        /*
+        // Alternative method
         db.collection("communities").document(CommunityName).getDocument{ (document, error) in
             if let document = document, document.exists, let buttonPresser = Auth.auth().currentUser?.email {
                 var newMembers = document["Members"] as! [String]
@@ -120,6 +138,7 @@ class SpecificLeaderboard: UIViewController {
                 self.viewDidLoad()
             }
         }
+        */
     }
     
     

@@ -23,6 +23,7 @@
 		3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A4254C696B0064B494 /* SignUpViewController.swift */; };
 		3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A6254C69790064B494 /* LogInViewController.swift */; };
 		3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E1A8254C698E0064B494 /* StartViewController.swift */; };
+		970DAA9726BFCC53002786C3 /* AllLeaderboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970DAA9626BFCC53002786C3 /* AllLeaderboards.swift */; };
 		9730E86E25C347A700F33F76 /* RewardsPurchaseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9730E86D25C347A700F33F76 /* RewardsPurchaseWindow.swift */; };
 		9751262426B774A200DE789E /* InviteFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9751262326B774A200DE789E /* InviteFriends.swift */; };
 		975F1CE125C3C23A00FE7107 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F1CE025C3C23A00FE7107 /* Structs.swift */; };
@@ -54,6 +55,7 @@
 		3AF3E1A8254C698E0064B494 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3B6B399DF59E787322E4F5A5 /* Pods_SustainableEarthApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SustainableEarthApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		661831C4793AF2CD2B3D28BD /* Pods-SustainableEarthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SustainableEarthApp.debug.xcconfig"; path = "Target Support Files/Pods-SustainableEarthApp/Pods-SustainableEarthApp.debug.xcconfig"; sourceTree = "<group>"; };
+		970DAA9626BFCC53002786C3 /* AllLeaderboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLeaderboards.swift; sourceTree = "<group>"; };
 		9730E86D25C347A700F33F76 /* RewardsPurchaseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsPurchaseWindow.swift; sourceTree = "<group>"; };
 		9751262326B774A200DE789E /* InviteFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriends.swift; sourceTree = "<group>"; };
 		975F1CE025C3C23A00FE7107 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				3AF3E18E254C5BE60064B494 /* Main.storyboard */,
+				970DAA9626BFCC53002786C3 /* AllLeaderboards.swift */,
 				3AF3E1A0254C641D0064B494 /* Leaderboard.swift */,
 				976F636C2606982700EA6480 /* CreateGroup2.swift */,
 				9751262326B774A200DE789E /* InviteFriends.swift */,
@@ -300,6 +303,7 @@
 				3A7F9F3F254CB6C800B5121A /* Constants.swift in Sources */,
 				3AF3E1A5254C696B0064B494 /* SignUpViewController.swift in Sources */,
 				3AF3E19F254C63FF0064B494 /* Actions.swift in Sources */,
+				970DAA9726BFCC53002786C3 /* AllLeaderboards.swift in Sources */,
 				3AF3E1A3254C642B0064B494 /* Rewards.swift in Sources */,
 				3AF3E1A7254C69790064B494 /* LogInViewController.swift in Sources */,
 				3AF3E1A9254C698E0064B494 /* StartViewController.swift in Sources */,
