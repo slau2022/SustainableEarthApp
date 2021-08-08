@@ -37,34 +37,35 @@ class RewardsPurchaseWindow: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    
         for (key, value) in imageDict {
             print(key, value)
             if purchaseImageName == key { purchaseImageView?.image = value
                 print(purchaseImageName, key, value)
                 if let email = (Auth.auth().currentUser?.email) {
-                    db.collection("users").addDocument(data: ["rewards" : key]) { error in
+                    db.collection("users").document(email).updateData(["rewards" : FieldValue.arrayUnion([key])]) { error in
                         if let e = error {
                             print("There was an issue saving reward to Firestore, \(e)")
+                    
                     }
+                
 //                    db.collection("users").document(email).setData(["rewards":("rewards" + [key])]) }
-                break
+                
             }
         }
     
-        
+            break
     
     }
    
     
-    @IBAction func backButton(_ sender: UIButton) {
-        print("hi")
-        let vc = RewardsSuccessfulPurchase(newPurchaseImageName: purchaseImageName)
-        present(vc, animated: true)
-        self.navigationController?.popViewController(animated: true)
+            func backButton(_ sender: UIButton) {
+                print("back button pressed")
+                let vc = RewardsSuccessfulPurchase(newPurchaseImageName: purchaseImageName)
+                present(vc, animated: true)
+                self.navigationController?.popViewController(animated: true)
 
 
-    }
+            }
     
     
     
@@ -164,5 +165,5 @@ class RewardsPurchaseWindow: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-// }
+    }
+}
