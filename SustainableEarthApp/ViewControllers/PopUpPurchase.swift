@@ -1,15 +1,19 @@
 //
-//  PurchasePopUp.swift
+//  PopUpPurchase.swift
 //  SustainableEarthApp
 //
-//  Created by Sophia Lau on 7/30/21.
+//  Created by Sophia Lau on 8/3/21.
 //  Copyright © 2021 Sophia Lau. All rights reserved.
 //
 
 import UIKit
 
-class PurchasePopUp: UIViewController {
+class PopUpPurchase: UIViewController {
 
+    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var purchaseButton: UIButton!
+    @IBOutlet weak var infoText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
