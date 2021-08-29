@@ -20,7 +20,7 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // random comment fora commit hehehes
         // Do any additional setup after loading the view.
         setUpElements()
     }

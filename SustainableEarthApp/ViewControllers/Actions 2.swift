@@ -1,5 +1,5 @@
 //
-//  Rewards.swift
+//  Actions.swift
 //  SustainableEarthApp
 //
 //  Created by Sophia Lau on 10/30/20.
@@ -8,22 +8,15 @@
 
 import UIKit
 
-class Rewards: UIViewController {
-    
-    
-    @IBAction func showWTurbinePU(_ sender: Any) {
-        let vc = PopUpPurchase()
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc, animated: true, completion: nil)
-        vc.infoText.text = "This is the wind turbine popup"
-    }
+class Actions: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 
