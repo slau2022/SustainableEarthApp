@@ -22,12 +22,24 @@ class Actions: UIViewController {
         Message(action: "Brought Reusable Mug", logged: "Times Logged: 10"),
         Message(action: "Compost at Schatz", logged: "Times Logged: 15")
     ]
-    
+    func resizeImage(image: UIImage, scale: CGFloat) -> UIImage {
+        let newWidth = image.size.width * scale
+       let newHeight = image.size.height * scale
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()!
+       UIGraphicsEndImageContext()
+
+       return newImage
+   }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: Constants.cellNibName, bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
+        
+        Utilities.createNavBar(navigationItem)
+
         
 //        loadActions()
         

@@ -8,11 +8,10 @@
 
 import UIKit
 import Firebase
+import Foundation
 
 class Home: UIViewController {
     
-
-    @IBOutlet weak var toProfile: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     var messages: [Message] = [
@@ -25,28 +24,16 @@ class Home: UIViewController {
     
     override func viewDidLoad() {
         db = Firestore.firestore()
-        // setUpCoins()
-        // Coins.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
-        // Coins.contentEdgeInsets = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 15)
         tableView.dataSource = self
         tableView.register(UINib(nibName: Constants.cellNibName, bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
-
+        Utilities.createNavBar(navigationItem)
+        
         super.viewDidLoad()
         
         // let storage = Storage.storage()
         
 
         // Do any additional setup after loading the view.
-    }
-    
-    
-    @IBAction func toProfilePressed(_ sender: Any) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "profileView") as! ProfileViewController
-
-        view.window?.rootViewController = nextViewController
-        view.window?.makeKeyAndVisible()
     }
     
     /*func setUpCoins(){

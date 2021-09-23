@@ -24,6 +24,9 @@ class Leaderboard: UIViewController {
         
         // Do any additional setup after loading the view.
         tableView.register(UINib(nibName: K.CommNibName, bundle: nil), forCellReuseIdentifier: K.CommCellIdentifier)
+        
+        Utilities.createNavBar(navigationItem)
+
     }
     
 

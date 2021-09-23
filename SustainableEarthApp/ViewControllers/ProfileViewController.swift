@@ -15,10 +15,11 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         editProfile.circleCorner()
+        Utilities.createNavBar(navigationItem)
+
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 
