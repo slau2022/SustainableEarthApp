@@ -13,7 +13,6 @@ class Rewards: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Utilities.createNavBar(navigationItem)
 
         
         
