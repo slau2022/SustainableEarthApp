@@ -12,6 +12,7 @@ target 'SustainableEarthApp' do
   pod 'Firebase/Firestore'
   pod 'DropDown'
   pod 'Firebase/Storage'
+  pod 'FirebaseUI/Storage'
 
 end
 
