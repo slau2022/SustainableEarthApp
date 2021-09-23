@@ -36,28 +36,7 @@ class Home: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    /*func setUpCoins(){
-        
-        let userDoc = UserDefaults.standard.string(forKey: "userEmail") ?? "Error retrieving user"
-        print(userDoc)
-        let docRef = db.collection("users").document(userDoc)
-
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let coinAmount = document.get("coins")
-                if (coinAmount as? NSNumber) != nil
-                {
-                  let result_string = "\(coinAmount!)"
-                    self.Coins.setTitle(result_string, for: .normal)
-                }
-            } else {
-                print("Document does not exist")
-            }
-        }
-        
-
-        
-    }*/
+    
     /*
     // MARK: - Navigation
 
