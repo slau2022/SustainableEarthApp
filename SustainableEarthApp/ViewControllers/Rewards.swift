@@ -21,13 +21,17 @@ class Rewards: UIViewController {
     }
 
     @IBAction func windButtonPressed(_ sender: UIButton) {
-        
-        self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
+        let vc = PopUpPurchase()
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: true, completion: nil)
+        vc.infoText.text = "This is the wind turbine popup"
+        // self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         //purchaseImageView.image = #imageLiteral(resourceName: "wind1")
         
         
     }
-    
+    /*
     @IBAction func railButtonPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
         
@@ -92,7 +96,7 @@ class Rewards: UIViewController {
     @IBAction func fountainButtonPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "rewardsToPurchase", sender: self)
     }
-    
+    */
     
     /*
     // MARK: - Navigation

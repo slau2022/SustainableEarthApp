@@ -11,8 +11,10 @@ import UIKit
 class CommunityCell: UITableViewCell {
     
     @IBOutlet weak var communityBubble: UIStackView!
+        
+    @IBOutlet weak var header: UILabel!
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var numUsers: UILabel!
     
     @IBOutlet weak var leftImageView: UIImageView!
     

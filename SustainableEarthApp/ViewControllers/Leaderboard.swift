@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import Firebase
 
 class Leaderboard: UIViewController {
+    
+    let db = Firestore.firestore()
+    
+    var communities: [Community] = []
 
     @IBOutlet weak var tableView: UITableView!
     
-    var communities: [Community] = [
-        Community(title: "Class of 2022+", members: "100 members", rank: "rank 42"),
-        Community(title: "Stever House", members: "64 members", rank: "rank 21")
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadCommunities()
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -30,17 +32,29 @@ class Leaderboard: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadCommunities() {
+        db.collection("communities").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        if let newTitle = data["CommunityName"] as? String, let members = data["Members"] as? Array<Any> {
+                            let newCommunity = Community(title: newTitle, numUsers: members.count)
+                            self.communities.append(newCommunity)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    */
-
 }
+
 
 extension Leaderboard: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,13 +63,25 @@ extension Leaderboard: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.CommCellIdentifier, for: indexPath) as! CommunityCell
-        cell.label.text = communities[indexPath.row].title
+        cell.header.text = communities[indexPath.row].title
+        cell.numUsers.text = "Size:  \(communities[indexPath.row].numUsers)"
         return cell
     }
 }
 
-extension Leaderboard: UITableViewDelegate {
+extension Leaderboard: UITableViewDelegate{
+    var allowsSelectionDuringEditing: Bool { true }
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("User just clicked on row number: ", indexPath.row)
+        performSegue(withIdentifier: "SwitchLeaderboard", sender: self)
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? SpecificLeaderboard {
+            destination.CommunityName = communities[(tableView.indexPathForSelectedRow?.row)!].title
+            tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
+        }
+    }
+    
 }
