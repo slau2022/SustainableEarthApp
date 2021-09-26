@@ -479,6 +479,9 @@
                                     <color key="titleColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" systemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="EUJ-py-m0w" kind="show" id="52u-x3-rVf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rUz-kO-Riy"/>
@@ -488,7 +491,6 @@
                     <navigationItem key="navigationItem" id="hgy-ZV-wfk"/>
                     <connections>
                         <outlet property="tableView" destination="4Ep-rK-STd" id="CB0-va-eSR"/>
-                        <segue destination="EUJ-py-m0w" kind="show" id="tXt-o2-yBv"/>
                         <segue destination="LER-YG-JYo" kind="show" id="1IW-4S-VTd"/>
                     </connections>
                 </viewController>
